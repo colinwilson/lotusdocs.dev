@@ -31,7 +31,7 @@ enableEmoji = true
         version = true # includes git commit info
 
     [params.social]
-            github = "lotusdocs"        # github.com/YOUR_GITHUB_ID
+            github = "colinwilson/lotusdocs"        # github.com/YOUR_GITHUB_ID
             twitter = "lotusdocs"       # twitter.com/YOUR_TWITTER_ID
             # instagram = "colinwilson"     # instagram.com/YOUR_INSTAGRAM_ID
             # rss = true                    # show rss icon with link
