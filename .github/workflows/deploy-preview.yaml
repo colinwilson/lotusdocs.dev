@@ -52,3 +52,5 @@ jobs:
           github-comment: false
           #vercel-args: '--prod' #Optional
           working-directory: public
+          alias-domains: | #Optional
+            lotusdocs-staging.vercel.app
