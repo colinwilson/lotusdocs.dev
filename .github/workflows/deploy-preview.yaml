@@ -28,6 +28,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: recursive # Fetch submodules
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       # Step 2 - Install Hugo (specific version)
       - name: Install Hugo
