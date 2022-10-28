@@ -8,7 +8,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
 [module]
   # uncomment line below for temporary local development of module
-  replacements = "github.com/colinwilson/lotusdocs -> themes/lotusdocs"
+  # replacements = "github.com/colinwilson/lotusdocs -> themes/lotusdocs"
   [module.hugoVersion]
     extended = true
     min = "0.100.0"
@@ -44,19 +44,24 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         # rss = true                    # show rss icon with link
 
     [params.docs] # Parameter fo the /docs 'template'
-        title         = "Lotus Labs Documentation"  # default html title for documentation pages/sections
-        breadcrumbs   = true                        # default is true
-        backToTop     = true                        # enable back-to-top button? default true
+        title         = "Lotus Labs Documentation"          # default html title for documentation pages/sections
 
-        toc           = true                        # enable table of contents? default is true
-        scrollSpy     = true                        # enable scrollspy on ToC? default is true
+        ghrepo        = "github.com/colinwilson/lotusdocs.vercel.app"  # Git repository URL for your site
+        editPage      = true                               # enable 'Edit this page' feature - default false
+        lastMod       = true                               # enable 'Last modified' date on pages - default false
 
-        descriptions  = true                        # enable front matter descriptions under content title?
-        titleIcon     = true                        # enable front matter icon title prefix? default is false
-        navDesc       = true                        # include front matter descriptions in Prev/Next navigation cards
-        navDescTrunc  = 30                          # Number of characters by which to truncate the Prev/Next descriptions
+        breadcrumbs   = true                                # default is true
+        backToTop     = true                                # enable back-to-top button? default true
 
-        listDescTrunc = 100                         # Number of characters by which to truncate the list card description
+        toc           = true                                # enable table of contents? default is true
+        scrollSpy     = true                                # enable scrollspy on ToC? default is true
+
+        descriptions  = true                                # enable front matter descriptions under content title?
+        titleIcon     = true                                # enable front matter icon title prefix? default is false
+        navDesc       = true                                # include front matter descriptions in Prev/Next navigation cards
+        navDescTrunc  = 30                                  # Number of characters by which to truncate the Prev/Next descriptions
+
+        listDescTrunc = 100                                 # Number of characters by which to truncate the list card description
 
 [menu]
 # [[menu.primary]]
