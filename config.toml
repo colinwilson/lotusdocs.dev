@@ -44,13 +44,14 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         # rss = true                    # show rss icon with link
 
     [params.docs] # Parameter fo the /docs 'template'
-        title         = "Lotus Labs Documentation"          # default html title for documentation pages/sections
+        title           = "Lotus Labs Documentation"          # default html title for documentation pages/sections
 
         ghrepo          = "github.com/colinwilson/lotusdocs.vercel.app"  # Git repository URL for your site
         editPage        = true                                # enable 'Edit this page' feature - default false
         lastMod         = true                                # enable 'Last modified' date on pages - default false
         lastModRelative = true                                # format 'Last modified' time as relative - default true
 
+        sidebarIcons    = true                                # enable sidebar icons? default false
         breadcrumbs     = true                                # default is true
         backToTop       = true                                # enable back-to-top button? default true
 
