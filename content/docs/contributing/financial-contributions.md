@@ -11,25 +11,25 @@ weight: 420
 toc: true
 ---
 
-We use [Open Collective](https://opencollective.com/) to receive contributions, share our budget, and manage expenses. Visit the [Doks Open Collective page](https://opencollective.com/doks).
+We use [Open Collective](https://opencollective.com/) to receive contributions, share our budget, and manage expenses. Visit the [Lotus Labs Open Collective page](https://opencollective.com/lotuslabs).
 
 ## Become a Sponsor
 
-Become a sponsor starting at $100.00 per month. Your logo — with a link to your website — will show up on the [Doks website](https://getdoks.org/), the [Doks repository](https://github.com/h-enk/doks), and the [Doks Open Collective page](https://opencollective.com/doks).
+Become a sponsor starting at $100.00 per month. Your logo — with a link to your website — will show up on the [Lotus Docs website](https://lotusdocs.dev/), the [Lotus Docs repository](https://github.com/colinwilson/lotusdocs), and the [Lotus Labs Open Collective page](https://opencollective.com/lotuslabs).
 
-[![Become a Sponsor](contribute-button.png)](https://opencollective.com/doks/contribute/sponsor-31303/checkout)
+[![Become a Sponsor](contribute-button.png)](https://opencollective.com/lotuslabs/contribute/sponsor-46767/checkout)
 
 ## Become a Backer
 
-Become a backer starting at $5.00 per month. Your avatar will show up on the [Doks repository](https://github.com/h-enk/doks) and the [Doks Open Collective page](https://opencollective.com/doks).
+Become a backer starting at $5.00 per month. Your avatar will show up on the [Lotus Docs repository](https://github.com/colinwilson/lotusdocs) and the [Lotus Docs Open Collective page](https://opencollective.com/lotuslabs).
 
-[![Become a Backer](contribute-button.png)](https://opencollective.com/doks/contribute/backer-31302/checkout)
+[![Become a Backer](contribute-button.png)](https://opencollective.com/lotuslabs/contribute/backer-46766/checkout)
 
 ## Make a Donation
 
 Make a custom one-time or recurring contribution.
 
-[![Make a Donation](contribute-button.png)](https://opencollective.com/doks/donate)
+[![Make a Donation](contribute-button.png)](https://opencollective.com/lotuslabs/donate)
 
 ## Thanks :green_heart:
 
