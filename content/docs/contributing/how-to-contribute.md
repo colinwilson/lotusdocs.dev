@@ -15,8 +15,8 @@ toc: true
 
 ### Create an issue
 
-- [Bug report](https://github.com/h-enk/doks/issues/new?template=bug-report---.md)
-- [Feature request](https://github.com/h-enk/doks/issues/new?template=feature-request---.md)
+- [Bug report](https://github.com/colinwilson/lotusdocs/issues/new?template=bug-report---.md)
+- [Feature request](https://github.com/colinwilson/lotusdocs/issues/new?template=feature-request---.md)
 
 ### Create a Pull Request
 
@@ -31,17 +31,17 @@ toc: true
 
 ### Create an issue
 
-- [Bug report](https://github.com/h-enk/getdoks.org/issues/new?template=bug-report---.md)
-- [Feature request](https://github.com/h-enk/getdoks.org/issues/new?template=feature-request---.md)
+- [Bug report](https://github.com/colinwilson/lotusdocs.vercel.app/issues/new?template=bug-report---.md)
+- [Feature request](https://github.com/colinwilson/lotusdocs.vercel.app/issues/new?template=feature-request---.md)
 
 ## Help others
 
-[Doks Discussions](https://github.com/h-enk/doks/discussions) is the place to get help and help others with Doks.
+[Lotus Docs Discussions](https://github.com/colinwilson/lotusdocs/discussions) is the place to get help and help others with Lotus Docs.
 
 ## Submit to showcase
 
-[Share what you’ve built with us](https://github.com/h-enk/doks/discussions?discussions_q=category%3A%22Show+and+tell%22).
+[Share what you’ve built with us](https://github.com/colinwilson/lotusdocs/discussions?discussions_q=category%3A%22Show+and+tell%22).
 
 ## Contribute financially
 
-Help support the team developing Doks by [becoming a financial contributor](/docs/contributing/financial-contributions/).
+Help support the team developing Lotus Docs by [becoming a financial contributor](/docs/contributing/financial-contributions/).
