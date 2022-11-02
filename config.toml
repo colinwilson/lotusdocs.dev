@@ -1,4 +1,5 @@
 baseURL = "/"
+canonifyURLs = true
 languageCode = "en-GB"
 title = "Lotus Docs"
 theme = "lotusdocs"
