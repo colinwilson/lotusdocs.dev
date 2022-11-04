@@ -43,7 +43,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         # instagram = "colinwilson"     # instagram.com/YOUR_INSTAGRAM_ID
         # rss = true                    # show rss icon with link
 
-    [params.docs] # Parameter fo the /docs 'template'
+    [params.docs] # Parameters for the /docs 'template'
         title           = "Lotus Labs Documentation"          # default html title for documentation pages/sections
 
         ghrepo          = "github.com/colinwilson/lotusdocs.vercel.app"  # Git repository URL for your site
@@ -64,6 +64,11 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         navDescTrunc    = 30                                  # Number of characters by which to truncate the Prev/Next descriptions
 
         listDescTrunc   = 100                                 # Number of characters by which to truncate the list card description
+
+    [params.docsearch] # Parameters for DocSearch
+        appID     = "O2QIOCBDAK" # Algolia Application ID
+        apiKey    = "fdc60eee76a72a35d739b54521498b77" # Algolia Search-Only API Key
+        indexName = "dev_lotusdocs.dev" # Index Name to perform search on
 
 [menu]
 # [[menu.primary]]
