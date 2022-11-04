@@ -68,7 +68,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
     [params.docsearch] # Parameters for DocSearch
         appID     = "O2QIOCBDAK" # Algolia Application ID
         apiKey    = "fdc60eee76a72a35d739b54521498b77" # Algolia Search-Only API Key
-        indexName = "prod_lotusdocs.dev" # Index Name to perform search on
+        indexName = "prod_lotusdocs.dev" # Index Name to perform search on (or set env variable HUGO_PARAM_DOCSEARCH_indexName)
 
 [menu]
 # [[menu.primary]]

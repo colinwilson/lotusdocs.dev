@@ -40,6 +40,8 @@ jobs:
       # Step 3 - Builds the site using Hugo
       - name: Build
         run: hugo -v --minify
+        env:
+          HUGO_PARAM_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
 
       # Step 4 - Push our generated site to Vercel
       - name: Deploy to Vercel
