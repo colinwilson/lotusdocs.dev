@@ -41,7 +41,7 @@ jobs:
       - name: Build
         run: hugo -v -D -e staging
         env:
-          HUGO_PARAM_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
+          HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
 
       # Step 4 - Push our generated site to Vercel
       - name: Deploy to Vercel
