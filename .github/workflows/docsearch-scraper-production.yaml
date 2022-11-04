@@ -1,6 +1,9 @@
 name: DocSearch Scraper
 
 on:
+  workflow_run:
+      workflows: [deploy-production]
+      types: [completed]
   push:
     branches:
       - release
