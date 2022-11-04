@@ -16,7 +16,7 @@ toc: true
 Various notification styles:
 
 {{< alert >}}
-The Tutorial is intended for novice to intermediate users.<br> Hello World
+This is the default alert without any options.<br>No `context` or `icon` parameter defined.
 {{< /alert >}}
 
 {{< alert  context="info" >}}
