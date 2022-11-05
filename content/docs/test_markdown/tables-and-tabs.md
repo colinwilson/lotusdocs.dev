@@ -1,6 +1,6 @@
 ---
 title: "Tables & Tabs"
-icon: table_chart
+icon: table_rows
 description: "A demonstration of how Lotus Docs creates and renders table & tabs"
 lead: "An example markdown page for testing purposes."
 date: 2022-11-05T04:41:15+00:00

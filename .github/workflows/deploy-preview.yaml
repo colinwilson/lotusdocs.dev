@@ -81,12 +81,16 @@ jobs:
     if: needs.deploy-preview.outputs.docs == 'true'
 
     steps:
-      # Step 1 - Format and output DocSearch config
+      # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Step 2 - Format and output DocSearch config
       - name: Retrieve and Format content of docsearch.json as config
         id: docsearch-config
         run: echo "::set-output name=config::$(cat docsearch-preview.json | jq -r tostring)"
 
-      # Step 2 - Update DocSearch Index only if content files were changed
+      # Step 3 - Update DocSearch Index only if content files were changed
       - name: Algolia DocSearch Crawl & Index
         id: docsearch-scrape
         uses: adapttive/algolia-docsearch-action@1.1.1
