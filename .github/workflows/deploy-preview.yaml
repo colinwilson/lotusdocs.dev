@@ -30,6 +30,7 @@ jobs:
           submodules: recursive # Fetch submodules
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
+      # Step 2 Detect changes to Docs Content
       - name: Docs Content Filter
         uses: dorny/paths-filter@v2
         id: filter
@@ -39,20 +40,20 @@ jobs:
               - 'content/docs/**'
           base: develop
 
-      # Step 2 - Install Hugo (specific version)
+      # Step 3 - Install Hugo (specific version)
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.104.2"
           extended: true
 
-      # Step 3 - Builds the site using Hugo
+      # Step 4 - Builds the site using Hugo
       - name: Build
         run: hugo -v -D -e staging
         env:
           HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
 
-      # Step 4 - Push our generated site to Vercel
+      # Step 5 - Push our generated site to Vercel
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v25
         id: vercel-action
@@ -71,7 +72,7 @@ jobs:
         id: docsearch-config
         run: echo "::set-output name=config::$(cat docsearch-preview.json | jq -r tostring)"
 
-      # Update DocSearch Index only if content files were changed
+      # Step 6 - Update DocSearch Index only if content files were changed
       - name: Algolia DocSearch Crawl & Index
         if: steps.filter.outputs.docs == 'true'
         id: docsearch-scrape
