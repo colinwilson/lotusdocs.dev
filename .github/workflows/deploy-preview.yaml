@@ -37,6 +37,7 @@ jobs:
           filters: |
             docs:
               - 'content/docs/**'
+          base: develop
 
       # Step 2 - Install Hugo (specific version)
       - name: Install Hugo
