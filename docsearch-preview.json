@@ -1,0 +1,30 @@
+{
+    "index_name": "dev_lotusdocs.dev",
+    "sitemap_urls": [
+        "https://lotusdocs-staging.vercel.app/sitemap.xml"
+    ],
+    "start_urls": [
+        "https://lotusdocs-staging.vercel.app/docs/"
+    ],
+    "stop_urls": [
+        ".*(?<!/)$"
+    ],
+    "use_anchors": true,
+    "strip_chars": "#",
+    "selectors_exclude": [
+        "i",
+        ".material-icons",
+        "#sidebar",
+        "#toc",
+        "#breadcrumbs"
+    ],
+    "selectors": {
+        "lvl0": ".docs-content .content-title",
+        "lvl1": ".docs-content .lead",
+        "lvl2": "#content h2",
+        "lvl3": "#content h3",
+        "lvl4": "#content h4",
+        "lvl5": "#content h5",
+        "text": "#content p,#content ul,#content ol,#content .alert,#content blockquote"
+    }
+}

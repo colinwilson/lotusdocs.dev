@@ -11,7 +11,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "deploy-production"
+  # This workflow contains two jobs called "deploy-production" and "docsearch-scrape"
   deploy-production:
     # The environment this job references
     environment:
@@ -20,6 +20,10 @@ jobs:
 
     # The type of runner that the job will run on
     runs-on: ubuntu-20.04
+
+    # Job outputs
+    outputs:
+      docs: ${{ steps.filter.outputs.docs }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -30,20 +34,30 @@ jobs:
           submodules: recursive # Fetch submodules
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
-      # Step 2 - Install Hugo (specific version)
+      # Step 2 Detect changes to Docs Content
+      - name: Detect changes in doc content
+        uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            docs:
+              - 'content/docs/**'
+          base: release
+
+      # Step 3 - Install Hugo (specific version)
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.104.2"
           extended: true
 
-      # Step 3 - Builds the site using Hugo
+      # Step 4 - Builds the site using Hugo
       - name: Build
         run: hugo -v --minify
         env:
           HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
 
-      # Step 4 - Push our generated site to Vercel
+      # Step 5 - Push our generated site to Vercel
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v25
         id: vercel-action
@@ -55,3 +69,31 @@ jobs:
           github-comment: false
           vercel-args: "--prod --local-config ../vercel.json" #Optional
           working-directory: public
+
+  docsearch-scrape:
+
+      # The type of runner that the job will run on
+      runs-on: ubuntu-20.04
+      needs: [deploy-production]
+      # Run job only if there are changes to 'content/docs/**'
+      if: needs.deploy-production.outputs.docs == 'true'
+
+      steps:
+        # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
+        - name: Checkout
+          uses: actions/checkout@v3
+
+        # Step 2 - Format and output DocSearch config
+        - name: Output formatted docsearch-*.json as config
+          id: docsearch-config
+          # run: echo "::set-output name=config::$(cat docsearch-preview.json | jq -r tostring)"
+          run: echo "config=$(cat docsearch-prod.json | jq -r tostring)" >> $GITHUB_OUTPUT
+
+        # Step 3 - Update DocSearch Index only if content files were changed
+        - name: Algolia DocSearch Crawl & Index
+          id: docsearch-scrape
+          uses: adapttive/algolia-docsearch-action@1.1.1
+          env:
+            APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
+            API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
+            CONFIG: ${{ steps.docsearch-config.outputs.config }}
