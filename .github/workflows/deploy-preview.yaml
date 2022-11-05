@@ -31,7 +31,7 @@ jobs:
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       # Step 2 Detect changes to Docs Content
-      - name: Docs Content Filter
+      - name: Detect changes in doc content
         uses: dorny/paths-filter@v2
         id: filter
         with:
