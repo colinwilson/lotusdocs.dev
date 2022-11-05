@@ -11,7 +11,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "deploy-preview"
+  # This workflow contains two jobs called "deploy-preview" and "docsearch-update"
   deploy-preview:
     # The environment this job references
     environment:
@@ -68,13 +68,22 @@ jobs:
           alias-domains: | #Optional
             lotusdocs-staging.vercel.app
 
+  docsearch-update:
+
+    # The type of runner that the job will run on
+    runs-on: ubuntu-20.04
+    needs: [deploy-preview]
+    # Run job only if there are changes to 'content/docs/**'
+    if: needs.deploy-preview.steps.filter.outputs.docs == 'true'
+
+    steps:
+      # Step 1 - Format and output DocSearch config
       - name: Retrieve and Format content of docsearch.json as config
         id: docsearch-config
         run: echo "::set-output name=config::$(cat docsearch-preview.json | jq -r tostring)"
 
-      # Step 6 - Update DocSearch Index only if content files were changed
+      # Step 2 - Update DocSearch Index only if content files were changed
       - name: Algolia DocSearch Crawl & Index
-        if: steps.filter.outputs.docs == 'true'
         id: docsearch-scrape
         uses: adapttive/algolia-docsearch-action@1.1.1
         env:
