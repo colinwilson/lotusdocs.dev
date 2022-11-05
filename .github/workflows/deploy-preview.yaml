@@ -30,6 +30,14 @@ jobs:
           submodules: recursive # Fetch submodules
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
+      - name: Docs Content Filter
+        uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            docs:
+              - 'content/docs/**'
+
       # Step 2 - Install Hugo (specific version)
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
@@ -57,3 +65,17 @@ jobs:
           working-directory: public
           alias-domains: | #Optional
             lotusdocs-staging.vercel.app
+
+      - name: Retrieve and Format content of docsearch.json as config
+        id: docsearch-config
+        run: echo "::set-output name=config::$(cat docsearch-preview.json | jq -r tostring)"
+
+      # Update DocSearch Index only if content files were changed
+      - name: Algolia DocSearch Crawl & Index
+        if: steps.filter.outputs.docs == 'true'
+        id: docsearch-scrape
+        uses: adapttive/algolia-docsearch-action@1.1.1
+        env:
+          APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
+          API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
+          CONFIG: ${{ steps.docsearch-config.outputs.config }}
