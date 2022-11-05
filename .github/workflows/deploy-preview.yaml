@@ -21,6 +21,10 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-20.04
 
+    # Job outputs
+    outputs:
+      docs: ${{ steps.filter.outputs.run-docs }}
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
@@ -74,7 +78,7 @@ jobs:
     runs-on: ubuntu-20.04
     needs: [deploy-preview]
     # Run job only if there are changes to 'content/docs/**'
-    if: needs.deploy-preview.steps.filter.outputs.docs == 'true'
+    if: needs.deploy-preview.outputs.docs == 'true'
 
     steps:
       # Step 1 - Format and output DocSearch config
