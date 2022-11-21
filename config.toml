@@ -25,12 +25,12 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 [params]
 
   # google_fonts = [
-  #   ["Nunito Sans", "300, 400, 600, 700"],
+  #   ["Comic Neue", "300, 400, 600, 700"],
   #   ["Source Code Pro", "500, 700"]
   # ]
 
-  # sans_serif_font = "Nunito Sans"     # Default is System font
-  # secondary_font  = "Nunito Sans"     # Default is System font
+  # sans_serif_font = "Comic Neue"     # Default is System font
+  # secondary_font  = "Comic Neue"     # Default is System font
   # mono_font       = "Source Code Pro" # Default is System font
 
     [params.footer]
@@ -45,6 +45,8 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
     [params.docs] # Parameters for the /docs 'template'
         title           = "Lotus Labs Documentation"          # default html title for documentation pages/sections
+
+        darkMode        = true                                # enable dark mode option? default false
 
         ghrepo          = "github.com/colinwilson/lotusdocs.vercel.app"  # Git repository URL for your site
         editPage        = true                                # enable 'Edit this page' feature - default false
@@ -67,7 +69,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
     [params.docsearch] # Parameters for DocSearch
         appID     = "O2QIOCBDAK" # Algolia Application ID
-        apiKey    = "fdc60eee76a72a35d739b54521498b77" # Algolia Search-Only API Key
+        apiKey    = "fdc60eee76a72a35d739b54521498b77" # Algolia Search-Only API (Public) Key
         indexName = "prod_lotusdocs.dev" # Index Name to perform search on (or set env variable HUGO_PARAM_DOCSEARCH_indexName)
 
 [menu]
