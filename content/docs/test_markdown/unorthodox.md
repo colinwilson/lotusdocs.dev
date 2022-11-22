@@ -52,7 +52,7 @@ This next sentence [demonstrates](https://colinwilson.uk) the colour of a link i
 
 {{< alert context="danger" text="The Tutorial is intended for novice to intermediate users.<br> Hello World" />}}
 
-{{< alert context="secondary" >}}
+{{< alert context="light" >}}
 The Tutorial is intended for novice to intermediate users.<br> Hello World
 This next sentence [demonstrates](https://colinwilson.uk) the colour of a link inside an alert box.
 {{< /alert >}}
