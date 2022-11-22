@@ -2,7 +2,7 @@
 weight: 220
 title: "Alerts"
 icon: notification_important
-description: "How to use Alert Shortcodes."
+description: "How to use Alert Shortcodes to render custom page alerts in markdown."
 lead: "Alerts."
 date: 2022-11-22T13:42:31+00:00
 lastmod: 2022-11-22T13:42:31+00:00
@@ -43,7 +43,7 @@ Additional alert contexts include `success`, `danger`, `warning`, `primary`, `li
 
 {{< alert context="warning" text="This is an alert with a <strong>warning</strong> context. It consists of the warning theme colour and icon." />}}
 
-{{< alert context="primary" text="This is an alert with a <strong>primary</strong> context. Its theme and icon color are that of the current primary theme colour." />}}
+{{< alert context="primary" text="This is an alert with a <strong>primary</strong> context. Its theme and icon colors match those of the current primary theme colour." />}}
 
 {{< alert context="light" text="This is an alert with a <strong>light</strong> context. It consists of the light theme colour. The light alert has no default icon." />}}
 

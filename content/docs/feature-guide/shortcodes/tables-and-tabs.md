@@ -1,13 +1,13 @@
 ---
+weight: 240
 title: "Tables & Tabs"
 icon: table_chart
-description: "A demonstration of how Lotus Docs creates and renders table & tabs"
-lead: "An example markdown page for testing purposes."
+description: "How to use Lotus Docs tables & tabs shortcodes to render great looking markdown tables and tabs"
+lead: "Using Hugo shortcodes to render tables and tabs."
 date: 2022-11-05T04:41:15+00:00
 lastmod: 2022-11-05T04:41:15+00:00
 draft: true
 images: []
-weight: 10040
 toc: true
 ---
 
