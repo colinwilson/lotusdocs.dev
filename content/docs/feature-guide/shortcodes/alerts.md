@@ -13,7 +13,7 @@ toc: true
 
 ## Adding a Page Alert
 
-A page alert can be added to your markdown using the following code:
+A page alert can be added to your markdown using the following Hugo shortcode:
 
 ```md
 {{</* alert text="This is the default alert. It consists of a default theme colour and icon." /*/>}}
@@ -35,7 +35,7 @@ Here's what is rendered:
 
 {{< alert context="info" text="This is an alert with an <strong>info</strong> context. It consists of the info theme colour and icon." />}}
 
-The additional available alert contexts include `success`, `danger`, `warning`, `primary`, `light` and `dark`:
+Additional alert contexts include `success`, `danger`, `warning`, `primary`, `light` and `dark`:
 
 {{< alert context="success" text="This is an alert with a <strong>success</strong> context. It consists of the success theme colour and icon." />}}
 
@@ -51,17 +51,17 @@ The additional available alert contexts include `success`, `danger`, `warning`, 
 
 ## Alert with Custom Emoji Icon
 
-The default icon of an alert can be substituted with an emoji using the `icon` parameter:
+The default icon for an alert context can be substituted with an emoji using the `icon` parameter:
 
 ```md
-{{</* alert icon="🍅" context="info" text="This is an <strong>info</strong> context alert with a tomato emoji replacing the default icon. It consists of the info theme colour and icon." /*/>}}
+{{</* alert icon="🍅" context="info" text="This is an <strong>info</strong> context alert with a tomato emoji replacing the default icon. The info theme colour remains unchanged." /*/>}}
 ```
 
-{{< alert icon="🍅" context="info" text="This is an <strong>info</strong> context alert with a tomato emoji replacing the default icon. It consists of the info theme colour and icon." />}}
+{{< alert icon="🍅" context="info" text="This is an <strong>info</strong> context alert with a tomato emoji replacing the default icon. The info theme colour remains unchanged." />}}
 
 ## Alert with No Icon
 
-An alert can be rendered without an icon by setting the `icon` parameter to an empty space, `icon=" "`:
+An alert can be rendered without its default icon by setting the `icon` parameter to an empty space, `icon=" "`:
 
 {{< alert context="warning" >}}
 **N.B.** The icon parameter **must** contain a space. Setting it to `icon=""` will render the default icon.
@@ -79,7 +79,7 @@ Using a [paired shortcode](https://gohugo.io/content-management/shortcodes/) all
 
 ```md
 {{</* alert icon="🛒" context="success" >}}
-This alert contains a **markdown** list and header:
+This ***paired shortcode*** alert contains a **markdown** list and header:
 
 #### My Shopping List:
 1. Tomatoes
@@ -91,7 +91,7 @@ and a sentence <em>styled</em> using <strong>HTML</strong> tags such as \<strong
 ```
 
 {{< alert icon="🛒" context="success" >}}
-This alert contains a **markdown** list and header:
+This ***paired shortcode*** alert contains a **markdown** list and header:
 
 #### My Shopping List:
 1. Tomatoes
