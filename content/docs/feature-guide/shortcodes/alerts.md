@@ -77,26 +77,26 @@ An alert can be rendered without an icon by setting the `icon` parameter to an e
 
 Using a [paired shortcode](https://gohugo.io/content-management/shortcodes/) allows Markdown and HTML to be rendered inside an alert:
 
-```
+```md
 {{</* alert icon="🛒" context="success" >}}
-This alert can contain **markdown** such as a list:
+This alert contains a **markdown** list and header:
 
-My Shopping List:
+#### My Shopping List:
 1. Tomatoes
 2. Bananas
 3. Pineapples
 
-or HTML e.g. <strong><em>A bold, italic sentence</em></strong>
+and a sentence <em>styled</em> using <strong>HTML</strong> tags such as \<strong\> and \<em\>
 {{< /alert /*/>}}
 ```
 
 {{< alert icon="🛒" context="success" >}}
-This alert can contain **markdown** such as a list:
+This alert contains a **markdown** list and header:
 
-My Shopping List:
+#### My Shopping List:
 1. Tomatoes
 2. Bananas
 3. Pineapples
 
-or HTML e.g. <strong><em>A bold, italic sentence</em></strong>
+and a sentence <em>styled</em> using <strong>HTML</strong> tags such as \<strong\> and \<em\>
 {{< /alert >}}
