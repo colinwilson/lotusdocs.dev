@@ -13,7 +13,7 @@ toc: true
 
 ## Adding a Page Alert
 
-A page alert can be added to your markdown using the following Hugo shortcode:
+Page alerts can be added to your markdown using the following shortcode:
 
 ```md
 {{</* alert text="This is the default alert. It consists of a default theme colour and icon." /*/>}}

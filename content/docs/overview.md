@@ -22,7 +22,7 @@ categories = [""]
 +++
 
 {{< alert context="danger" >}}
-Lotus Docs is currently in the very early stages of development and is, therefore, **not** recommended for use in production. You're welcome to test the theme yourself, and contributions to [the project](https://github.com/colinwilson/lotusdocs) a very welcome.
+Lotus Docs is currently in the very early stages of development and, therefore, is **not** recommended for use in production. You're welcome to test the theme yourself, and contributions to [the project](https://github.com/colinwilson/lotusdocs) a very welcome.
 {{< /alert >}}
 
 Welcome to the Lotus Docs user guide. This guide shows you how to start creating technical documentation sites using Lotus Docs, including site customisation and using Lotus Docs' features and templates.
@@ -43,4 +43,4 @@ The site you’re currently reading was built using the Lotus Docs theme! Many o
 
 Lotus Docs is (currently) suited to small or medium technical documentation sets with 100 or fewer pages of docs. That's not to say Lotus Docs won't scale to larger documentation sets, just that its navigation and site structure may not be sufficient for larger data sets without heavy customisation.
 
-The good news is that development to accommodate such sites is progressing. So keep an eye on the [Lotus Docs GitHub repository](https://github.com/colinwilson/lotusdocs) for updates.
+The good news is that development to accommodate such sites is part of the development roadmap. So keep an eye on the [Lotus Docs GitHub repository](https://github.com/colinwilson/lotusdocs) for updates.

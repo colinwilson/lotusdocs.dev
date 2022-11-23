@@ -16,15 +16,18 @@
         ".material-icons",
         "#sidebar",
         "#toc",
-        "#breadcrumbs"
+        "#back-to-top"
     ],
     "selectors": {
-        "lvl0": ".docs-content .content-title",
-        "lvl1": ".docs-content .lead",
+        "lvl0": {
+            "selector": ".breadcrumb a:nth-last-child(2)",
+            "default_value": "Documentation"
+        },
+        "lvl1": ".docs-content .content-title .title-text",
         "lvl2": "#content h2",
         "lvl3": "#content h3",
         "lvl4": "#content h4",
         "lvl5": "#content h5",
-        "text": "#content p,#content ul,#content ol,#content .alert,#content blockquote"
+        "text": ".docs-content .lead,#content p,#content ul,#content ol,#content .alert,#content blockquote"
     }
 }

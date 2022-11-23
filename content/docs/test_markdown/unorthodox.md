@@ -13,7 +13,7 @@ toc: true
 
 ## Shortcode Notifications/Alerts
 
-Various notification styles:
+Various alert notification styles:
 
 {{< alert >}}
 This is the default alert without any options.<br>No `context` or `icon` parameter defined.
@@ -41,7 +41,7 @@ The default <strong>context</strong> icon can be overridden to display no icon b
 {{< alert icon="🌑" context="dark" text="An alert using an emoji (:jack_o_lantern:) instead of the default <strong>context</strong> icon." />}}
 
 {{< alert context="primary">}}
-The Tutorial is intended for novice to intermediate users.
+The Tutorial is intended for beginner to intermediate users.
 
 This next sentence [demonstrates](https://colinwilson.uk) the colour of a link inside an alert box.
 {{< /alert >}}

@@ -6,7 +6,7 @@ author = "Colin Wilson"
 title = "Getting Started"
 icon = "rocket_launch"
 # featured_image = ""
-description = "A guide to getting up and running with Lotus Docs"
+description = "A guide to getting up and running with Lotus Docs."
 publishdate = "2022-09-30T05:34:22+01:00"
 tags = ["Beginners","Guide"]
 categories = [""]
@@ -16,7 +16,7 @@ categories = [""]
   site = "@LotusDocs"
   creator = "@LotusDocs"
   title = "Getting started"
-  description = "Getting started with Lotus Docs"
+  description = "Getting started with Lotus Docs."
   image = ""
 
 +++
