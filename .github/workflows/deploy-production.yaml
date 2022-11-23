@@ -42,6 +42,8 @@ jobs:
           filters: |
             docs:
               - 'content/docs/**'
+            config:
+              - 'docsearch-prod.json'
           base: release
 
       # Step 3 - Install Hugo (specific version)
@@ -75,8 +77,8 @@ jobs:
       # The type of runner that the job will run on
       runs-on: ubuntu-20.04
       needs: [deploy-production]
-      # Run job only if there are changes to 'content/docs/**'
-      if: needs.deploy-production.outputs.docs == 'true'
+      # Run job only if there are changes to 'content/docs/**' or 'docsearch-prod.json'
+      if: needs.deploy-preview.outputs.docs == 'true' || needs.deploy-preview.outputs.config == 'true'
 
       steps:
         # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
