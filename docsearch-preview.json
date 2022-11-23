@@ -15,8 +15,7 @@
         "i",
         ".material-icons",
         "#sidebar",
-        "#toc",
-        "#breadcrumbs"
+        "#toc"
     ],
     "selectors": {
         "lvl0": {

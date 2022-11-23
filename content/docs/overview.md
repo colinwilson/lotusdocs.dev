@@ -9,7 +9,7 @@ toc = true
 # featured_image = ""
 description = "Lotus Docs is a modern documentation theme built for Hugo."
 publishdate = "2022-09-30T05:33:22+01:00"
-tags = ["Beginners","Introduction"]
+tags = ["Beginners"]
 categories = [""]
 
 [twitter]
