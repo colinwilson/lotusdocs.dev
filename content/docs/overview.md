@@ -22,7 +22,7 @@ categories = [""]
 +++
 
 {{< alert context="danger" >}}
-Lotus Docs is currently in the very early stages of development and is, therefore, **not** recommended for use in production. You're welcome to test the theme yourself, and contributions to [the project](https://github.com/colinwilson/lotusdocs) a very welcome.
+Lotus Docs is currently in the very early stages of development and, therefore, is **not** recommended for use in production. You're welcome to test the theme yourself, and contributions to [the project](https://github.com/colinwilson/lotusdocs) a very welcome.
 {{< /alert >}}
 
 Welcome to the Lotus Docs user guide. This guide shows you how to start creating technical documentation sites using Lotus Docs, including site customisation and using Lotus Docs' features and templates.

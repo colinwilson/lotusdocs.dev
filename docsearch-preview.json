@@ -19,7 +19,10 @@
         "#breadcrumbs"
     ],
     "selectors": {
-        "lvl0": ".docs-content .content-title .title-text",
+        "lvl0": {
+            "selector": ".docs-content .content-title .title-text",
+            "global": true
+        },
         "lvl1": ".docs-content .lead",
         "lvl2": "#content h2",
         "lvl3": "#content h3",
