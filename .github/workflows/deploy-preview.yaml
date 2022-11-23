@@ -40,7 +40,7 @@ jobs:
         id: filter
         with:
           filters: |
-            changes:
+            triggers:
               - 'content/docs/**'
               - 'docsearch-preview.json'
           base: develop
@@ -79,7 +79,7 @@ jobs:
     runs-on: ubuntu-20.04
     needs: [deploy-preview]
     # Run job only if there are changes to 'content/docs/**' or 'docsearch-preview.json'
-    if: needs.deploy-preview.outputs.changes == 'true'
+    if: needs.deploy-preview.outputs.triggers == 'true'
 
     steps:
       # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
