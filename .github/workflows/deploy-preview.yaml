@@ -24,6 +24,7 @@ jobs:
     # Job outputs
     outputs:
       docs: ${{ steps.filter.outputs.docs }}
+      docsearch_config: ${{ steps.filter.outputs.config }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -40,8 +41,9 @@ jobs:
         id: filter
         with:
           filters: |
-            triggers:
+            docs:
               - 'content/docs/**'
+            config:
               - 'docsearch-preview.json'
           base: develop
 
@@ -79,7 +81,9 @@ jobs:
     runs-on: ubuntu-20.04
     needs: [deploy-preview]
     # Run job only if there are changes to 'content/docs/**' or 'docsearch-preview.json'
-    if: needs.deploy-preview.outputs.triggers == 'true'
+    if: |
+      needs.deploy-preview.outputs.docs == 'true' ||
+      needs.deploy-preview.outputs.docsearch_config == 'true'
 
     steps:
       # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
