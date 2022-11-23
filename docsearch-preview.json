@@ -27,7 +27,6 @@
         "lvl2": "#content h3",
         "lvl3": "#content h4",
         "lvl4": "#content h5",
-        "lvl5": "#content h6",
         "text": ".docs-content .lead,#content p,#content ul,#content ol,#content .alert,#content blockquote"
     }
 }
