@@ -20,7 +20,7 @@
     ],
     "selectors": {
         "lvl0": {
-            "selector": "",
+            "selector": "#breadcrumbs .breadcrumb-item:nth-last-child(2) a",
             "default_value": "Documentation"
         },
         "lvl1": ".docs-content .content-title .title-text",

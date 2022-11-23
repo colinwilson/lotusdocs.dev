@@ -16,7 +16,7 @@ categories = [""]
   site = "@LotusDocs"
   creator = "@LotusDocs"
   title = "Getting started"
-  description = "Getting started with Lotus Docs"
+  description = "Getting started with Lotus Docs."
   image = ""
 
 +++
