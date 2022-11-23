@@ -15,11 +15,12 @@
         "i",
         ".material-icons",
         "#sidebar",
-        "#toc"
+        "#toc",
+        "#breadcrumbs"
     ],
     "selectors": {
         "lvl0": {
-            "selector": "#breadcrumbs a:nth-last-child(2)",
+            "selector": ".breadcrumb a:nth-last-child(2)",
             "default_value": "Documentation"
         },
         "lvl1": ".docs-content .content-title .title-text",
