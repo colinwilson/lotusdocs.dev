@@ -43,4 +43,4 @@ The site you’re currently reading was built using the Lotus Docs theme! Many o
 
 Lotus Docs is (currently) suited to small or medium technical documentation sets with 100 or fewer pages of docs. That's not to say Lotus Docs won't scale to larger documentation sets, just that its navigation and site structure may not be sufficient for larger data sets without heavy customisation.
 
-The good news is that development to accommodate such sites is progressing. So keep an eye on the [Lotus Docs GitHub repository](https://github.com/colinwilson/lotusdocs) for updates.
+The good news is that development to accommodate such sites is part of the development roadmap. So keep an eye on the [Lotus Docs GitHub repository](https://github.com/colinwilson/lotusdocs) for updates.
