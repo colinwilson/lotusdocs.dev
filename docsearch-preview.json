@@ -16,7 +16,6 @@
         ".material-icons",
         "#sidebar",
         "#toc",
-        "#doc-nav",
         "#back-to-top"
     ],
     "selectors": {
