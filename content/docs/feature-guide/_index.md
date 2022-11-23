@@ -1,7 +1,7 @@
 ---
 weight: 210
 title: "Feature Guide"
-description: "A Guide to Using Lotus Docs' Features."
+description: "A Guide to Lotus Docs Features."
 icon: celebration
 lead: ""
 date: 2022-11-22T12:36:15+00:00
