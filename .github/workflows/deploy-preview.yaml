@@ -80,7 +80,7 @@ jobs:
     runs-on: ubuntu-20.04
     needs: [deploy-preview]
     # Run job only if there are changes to 'content/docs/**' or 'docsearch-preview.json'
-    if: needs.deploy-preview.outputs.docs == 'true' || needs.deploy-preview.outputs.config == 'true'
+    if: ${{ needs.deploy-preview.outputs.docs == 'true' || needs.deploy-preview.outputs.config == 'true' }}
 
     steps:
       # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
