@@ -80,8 +80,8 @@ jobs:
       needs: [deploy-production]
       # Run job only if there are changes to 'content/docs/**' or 'docsearch-prod.json'
       if: |
-        needs.deploy-prod.outputs.docs == 'true' ||
-        needs.deploy-prod.outputs.docsearch_config == 'true'
+        needs.deploy-production.outputs.docs == 'true' ||
+        needs.deploy-production.outputs.docsearch_config == 'true'
 
       steps:
         # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
