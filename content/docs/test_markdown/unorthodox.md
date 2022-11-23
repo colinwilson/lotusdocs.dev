@@ -13,7 +13,7 @@ toc: true
 
 ## Shortcode Notifications/Alerts
 
-Various notification styles:
+Various alert notification styles:
 
 {{< alert >}}
 This is the default alert without any options.<br>No `context` or `icon` parameter defined.
