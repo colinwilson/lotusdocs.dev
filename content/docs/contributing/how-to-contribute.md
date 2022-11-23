@@ -31,8 +31,8 @@ toc: true
 
 ### Create an issue
 
-- [Bug report](https://github.com/colinwilson/lotusdocs.vercel.app/issues/new?template=bug-report---.md)
-- [Feature request](https://github.com/colinwilson/lotusdocs.vercel.app/issues/new?template=feature-request---.md)
+- [Bug report](https://github.com/colinwilson/lotusdocs.dev/issues/new?template=bug-report---.md)
+- [Feature request](https://github.com/colinwilson/lotusdocs.dev/issues/new?template=feature-request---.md)
 
 ## Help others
 
