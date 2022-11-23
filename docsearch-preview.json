@@ -23,7 +23,10 @@
             "selector": ".docs-content .content-title .title-text",
             "global": true
         },
-        "lvl1": "#content h1",
+        "lvl1": {
+            "selector": ".docs-content .content-title .title-text",
+            "global": true
+        },
         "lvl2": "#content h2",
         "lvl3": "#content h3",
         "lvl4": "#content h4",
