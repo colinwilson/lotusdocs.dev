@@ -19,6 +19,10 @@
         "#breadcrumbs"
     ],
     "selectors": {
+        "lvl0": {
+            "selector": "",
+            "default_value": "Documentation"
+        },
         "lvl1": ".docs-content .content-title .title-text",
         "lvl2": "#content h2",
         "lvl3": "#content h3",
