@@ -9,6 +9,7 @@
     "stop_urls": [
         ".*(?<!/)$"
     ],
+    "scrape_start_urls": false,
     "use_anchors": true,
     "strip_chars": "#",
     "selectors_exclude": [

@@ -54,7 +54,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         lastModRelative = true                                # format 'Last modified' time as relative - default true
 
         sidebarIcons    = true                                # enable sidebar icons? default false
-        breadcrumbs     = false                                # default is true
+        breadcrumbs     = true                                # default is true
         backToTop       = true                                # enable back-to-top button? default true
 
         toc             = true                                # enable table of contents? default is true
