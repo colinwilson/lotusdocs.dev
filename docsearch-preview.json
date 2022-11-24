@@ -23,7 +23,7 @@
     ],
     "selectors": {
         "lvl0": {
-            "selector": "//li[@class=\"breadcrumb-item breadcrumb-link text-capitalize active\"]/a",
+            "selector": "//li[@class=\"breadcrumb-item breadcrumb-link text-capitalize active\"]/../../a",
             "type": "xpath",
             "global": true,
             "default_value": "Documentation"
