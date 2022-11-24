@@ -48,6 +48,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
         darkMode        = true                                # enable dark mode option? default false
 
+        # gitinfo
         ghrepo          = "github.com/colinwilson/lotusdocs.vercel.app"  # Git repository URL for your site
         editPage        = true                                # enable 'Edit this page' feature - default false
         lastMod         = true                                # enable 'Last modified' date on pages - default false
@@ -57,11 +58,15 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         breadcrumbs     = true                                # default is true
         backToTop       = true                                # enable back-to-top button? default true
 
+        # ToC
         toc             = true                                # enable table of contents? default is true
         scrollSpy       = true                                # enable scrollspy on ToC? default is true
 
+        # front matter
         descriptions    = true                                # enable front matter descriptions under content title?
         titleIcon       = true                                # enable front matter icon title prefix? default is false
+
+        # content navigation
         navDesc         = true                                # include front matter descriptions in Prev/Next navigation cards
         navDescTrunc    = 30                                  # Number of characters by which to truncate the Prev/Next descriptions
 
