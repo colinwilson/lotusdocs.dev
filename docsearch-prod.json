@@ -16,6 +16,7 @@
         ".material-icons",
         "#sidebar",
         "#toc",
+        "#list-item",
         "#doc-nav",
         "#back-to-top"
     ],
