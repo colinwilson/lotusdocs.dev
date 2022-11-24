@@ -23,7 +23,9 @@
     ],
     "selectors": {
         "lvl0": {
-            "selector": ".breadcrumb .breadcrumb-link:nth-last-child(2)",
+            "selector": "//li[@class=\"breadcrumb-item breadcrumb-link text-capitalize active\"]/../a",
+            "type": "xpath",
+            "global": true,
             "default_value": "Documentation"
         },
         "lvl1": ".docs-content .content-title .title-text",
