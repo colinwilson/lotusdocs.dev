@@ -48,7 +48,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
     [params.docs] # Parameters for the /docs 'template'
         title           = "Lotus Labs Documentation"          # default html title for documentation pages/sections
 
-        darkMode        = true                                # enable dark mode option? default false
+        # darkMode        = true                                # enable dark mode option? default false
 
         # gitinfo
         ghrepo          = "github.com/colinwilson/lotusdocs.vercel.app"  # Git repository URL for your site
