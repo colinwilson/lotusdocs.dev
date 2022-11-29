@@ -15,7 +15,7 @@ toc: true
 
 Page alerts can be added to your markdown using the following shortcode:
 
-```md
+```go
 {{</* alert text="This is the default alert. It consists of a default theme colour and icon." /*/>}}
 ```
 
@@ -27,7 +27,7 @@ The above code results in the following alert:
 
 Add context to an alert via the `context` parameter:
 
-```md
+```go
 {{</* alert context="info" text="This is an alert with an <strong>info</strong> context. It consists of the info theme colour and icon." /*/>}}
 ```
 
@@ -53,7 +53,7 @@ Additional alert contexts include `success`, `danger`, `warning`, `primary`, `li
 
 The default icon for an alert context can be substituted with an emoji using the `icon` parameter:
 
-```md
+```go
 {{</* alert icon="🍅" context="info" text="This is an <strong>info</strong> context alert with a tomato emoji replacing the default icon. The info theme colour remains unchanged." /*/>}}
 ```
 
@@ -67,7 +67,7 @@ An alert can be rendered without its default icon by setting the `icon` paramete
 **N.B.** The icon parameter **must** contain a space. Setting it to `icon=""` will render the default icon.
 {{< /alert >}}
 
-```md
+```go
 {{</* alert icon=" " context="info" text="This <strong>info</strong> context alert has no icon." /*/>}}
 ```
 
@@ -77,7 +77,7 @@ An alert can be rendered without its default icon by setting the `icon` paramete
 
 Using a [paired shortcode](https://gohugo.io/content-management/shortcodes/) allows Markdown and HTML to be rendered inside an alert:
 
-```md
+```go
 {{</* alert icon="🛒" context="success" >}}
 This ***paired shortcode*** alert contains a **markdown** list and header:
 
