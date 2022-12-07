@@ -12,7 +12,7 @@ toc: true
 
 ## Syntax highlighting
 
-[Prism](https://prismjs.com/) syntax highlighting is enabled by default in Lotus Docs. Code blocks enclosed in triple backticks with a declared code language, e.g. ` ```html ` , will automatically be highlighted by Prism:
+Lotus Docs has [Prism](https://prismjs.com/) syntax highlighting enabled by default. Fenced code blocks (code blocks with triple backticks before and after) that specify a code language next to the triple backticks placed before the code block, e.g. ` ```html ` , will automatically be highlighted by Prism:
 
 ````md
 ```html
@@ -30,7 +30,22 @@ toc: true
 ```
 ````
 
-The same result can be achieved by using a paired Prism shortcode with the language declared with the `lang` parameter :
+Result:
+```html
+<html>
+  <head>
+    <title>Buy cool new product</title>
+  </head>
+  <body>
+    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
+    <form action="/create-checkout-session" method="POST">
+      <button type="submit">Checkout</button>
+    </form>
+  </body>
+</html>
+```
+
+The same result can be achieved by using a paired Prism shortcode with the language declared using the `lang` parameter :
 
 ```go
 {{</* prism lang="html" >}}
