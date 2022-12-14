@@ -152,9 +152,34 @@ This renders the following code block:
 </html>
 {{< /prism >}}
 
+Combining `line` & `start` options requires the use of the `line-offset` option:
+
+```go
+{{</* prism lang="html" line-numbers="true" start="48" line="49-51,54" line-offset="48" >}}
+<html>
+  <head>
+  ...
+{{< /prism */>}}
+```
+This renders the following code block:
+
+{{< prism lang="html" line-numbers="true" start="48" line="49-51,54" line-offset="48" >}}
+<html>
+  <head>
+    <title>Buy cool new product</title>
+  </head>
+  <body>
+    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
+    <form action="/create-checkout-session" method="POST">
+      <button type="submit">Checkout</button>
+    </form>
+  </body>
+</html>
+{{< /prism >}}
+
 ## Disable Prism
 
-TBC
+Prism syntax highlighting can be disabled by setting `[params.docs.prism]` to `false` in the `config.toml` configuration file.
 
 ## Command line
 
