@@ -56,7 +56,7 @@ STPAPIClient.shared.createSource(with: sourceParams) { (source, error) in
 }
 ```
 
-{{< prism lang="go" line-offset="46" line="6-13,15-25,27-44,45,46,48-52" >}}
+{{< prism lang="go" start="46" line="6-13,15-25,27-44,45,46,48-52" >}}
 package main
 
 import (

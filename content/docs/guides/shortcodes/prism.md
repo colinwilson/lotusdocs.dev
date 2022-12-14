@@ -12,7 +12,7 @@ toc: true
 
 ## Syntax highlighting
 
-Lotus Docs has [Prism](https://prismjs.com/) syntax highlighting enabled by default. Fenced code blocks (code blocks with triple backticks before and after) that specify a code language next to the triple backticks placed before the code block, e.g. ` ```html ` , will automatically be highlighted by Prism:
+Lotus Docs supports syntax highlighting via [Prism](https://prismjs.com/) (enabled by default). Fenced code blocks (code blocks with triple backticks before and after) that specify a code language next to the triple backticks placed before the block of code, e.g. ` ```html ` , will automatically be highlighted by Prism:
 
 ````md
 ```html
@@ -63,7 +63,7 @@ The same result can be achieved by using a paired Prism shortcode with the langu
 {{< /prism */>}}
 ```
 
-All code blocks highlighted by Prism feature the [Copy to Clipboard Button](https://prismjs.com/plugins/copy-to-clipboard/) plugin. Hover over (or tap if on mobile) either of the above examples and you'll see the copy button appear in the top right hand corner of the code block. Click this button to copy the code to your clipboard.
+All code blocks highlighted by Prism feature the [Copy to Clipboard Button](https://prismjs.com/plugins/copy-to-clipboard/) plugin. Hover over (or tap if on mobile) the examples above and the copy button appears in the top right hand corner of the code block. Click this button to copy the code to your clipboard.
 
 ## Line Highlighting
 
