@@ -159,7 +159,7 @@ The `<pre>` element of all Prism code blocks have an auto-generated id. The gene
 
 The url format follows `#{hash-id}.{lines}`, where `{hash-id}` is the auto-generated hash value of the code block's id element and `{lines}` is one or more lines or line ranges that follows the [line highlighting format](#line-highlighting).
 
-For example, `line 8` in the code block below can be linked using the following anchor [#a41a218.8](#a41a218.8):
+For example, `line 8` in the code block below can be linked using the following anchor [#adea9eb.8](#adea9eb.8):
 
 {{< /alert >}}
 
