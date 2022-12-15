@@ -53,7 +53,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         prism           = true                                # enable syntax highlighting via Prism
 
         # gitinfo
-        ghrepo          = "github.com/colinwilson/lotusdocs.vercel.app"  # Git repository URL for your site
+        ghrepo          = "github.com/colinwilson/lotusdocs.dev"  # Git repository URL for your site
         editPage        = true                                # enable 'Edit this page' feature - default false
         lastMod         = true                                # enable 'Last modified' date on pages - default false
         lastModRelative = true                                # format 'Last modified' time as relative - default true
