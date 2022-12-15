@@ -6,7 +6,7 @@ description: "How to use Alert Shortcodes to render custom page alerts in markdo
 lead: "Alerts."
 date: 2022-11-22T13:42:31+00:00
 lastmod: 2022-11-22T13:42:31+00:00
-draft: true
+draft: false
 images: []
 toc: true
 ---
