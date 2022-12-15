@@ -5,14 +5,14 @@ icon: change_history
 description: "How to use the Prism Shortcode for syntax highlighting code blocks."
 date: 2022-11-28T04:05:31+00:00
 lastmod: 2022-11-28T04:05:31+00:00
-draft: true
+draft: false
 images: []
 toc: true
 ---
 
 ## Syntax highlighting
 
-Lotus Docs has [Prism](https://prismjs.com/) syntax highlighting enabled by default. Fenced code blocks (code blocks with triple backticks before and after) that specify a code language next to the triple backticks placed before the code block, e.g. ` ```html ` , will automatically be highlighted by Prism:
+Lotus Docs supports syntax highlighting via [Prism](https://prismjs.com/) (enabled by default). Fenced code blocks (code blocks with triple backticks before and after) that specify a code language next to the triple backticks placed before the block of code, e.g. ` ```html ` , will automatically be highlighted by Prism:
 
 ````md
 ```html
@@ -63,7 +63,7 @@ The same result can be achieved by using a paired Prism shortcode with the langu
 {{< /prism */>}}
 ```
 
-All code blocks highlighted by Prism feature the [Copy to Clipboard Button](https://prismjs.com/plugins/copy-to-clipboard/) plugin. Hover over (or tap if on mobile) either of the above examples and you'll see the copy button appear in the top right hand corner of the code block. Click this button to copy the code to your clipboard.
+All code blocks highlighted by Prism feature the [Copy to Clipboard Button](https://prismjs.com/plugins/copy-to-clipboard/) plugin. Hover over (or tap if on mobile) the examples above and the copy button appears in the top right hand corner of the code block. Click this button to copy the code to your clipboard.
 
 ## Line Highlighting
 
@@ -125,6 +125,59 @@ The number at which the line starts can be specified by the `start` parameter. e
 </html>
 {{< /prism >}}
 
+## Line Number Anchors
+
+Specific lines in highlighted code blocks can be linked when both the `line-numbers` and `linkable-line-numbers` options are `true`:
+
+```go
+{{</* prism lang="html" linkable-line-numbers="true" line-numbers="true" >}}
+<html>
+  <head>
+  ...
+{{< /prism */>}}
+```
+Rendered code block:
+
+{{< prism lang="html" linkable-line-numbers="true" line-numbers="true" >}}
+<html>
+  <head>
+    <title>Buy cool new product</title>
+  </head>
+  <body>
+    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
+    <form action="/create-checkout-session" method="POST">
+      <button type="submit">Checkout</button>
+    </form>
+  </body>
+</html>
+{{< /prism >}}
+
+Clicking on any of the line numbers above will update the hash of the current page to link to that specific line.
+
+{{< alert context="info" >}}
+The `<pre>` element of all Prism code blocks have an auto-generated id. The generated id is a unique hash of the the code block content plus it's unique position on the page. (custom ids can also be set for each code block using the `id` option).
+
+The url format follows `#{hash-id}.{lines}`, where `{hash-id}` is the auto-generated hash value of the code block's id element and `{lines}` is one or more lines or line ranges that follows the [line highlighting format](#line-highlighting).
+
+For example, `line 8` in the code block below can be linked using the following anchor [#adea9eb.8](#adea9eb.8):
+
+{{< /alert >}}
+
+{{< prism lang="html" line="2-4,6" >}}
+<html>
+  <head>
+    <title>Buy cool new product</title>
+  </head>
+  <body>
+    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
+    <form action="/create-checkout-session" method="POST">
+      <button type="submit">Checkout</button>
+    </form>
+  </body>
+</html>
+{{< /prism >}}
+
+
 ## Combined Line Parameters
 
 Prism's [Line Highlighting](https://prismjs.com/plugins/line-highlight/) & [Line Numbers](https://prismjs.com/plugins/line-numbers/) plugins are compatible with each other. So the `line` & `line-numbers` options can be combined to display both, line numbers and highlight specified lines in a code block:
@@ -152,9 +205,34 @@ This renders the following code block:
 </html>
 {{< /prism >}}
 
+Combining `line` & `start` options requires the use of the `line-offset` option:
+
+```go
+{{</* prism lang="html" line-numbers="true" start="48" line="49-51,54" line-offset="48" >}}
+<html>
+  <head>
+  ...
+{{< /prism */>}}
+```
+This renders the following code block:
+
+{{< prism lang="html" line-numbers="true" start="48" line="49-51,54" line-offset="48" >}}
+<html>
+  <head>
+    <title>Buy cool new product</title>
+  </head>
+  <body>
+    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
+    <form action="/create-checkout-session" method="POST">
+      <button type="submit">Checkout</button>
+    </form>
+  </body>
+</html>
+{{< /prism >}}
+
 ## Disable Prism
 
-TBC
+Prism syntax highlighting can be disabled by setting `[params.docs.prism]` to `false` in the `config.toml` configuration file.
 
 ## Command line
 

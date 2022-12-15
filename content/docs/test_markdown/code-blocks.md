@@ -18,13 +18,21 @@ Syntax highlighting is supported by [Prism](https://prismjs.com/index.html) (the
 curl -X POST -is "http://localhost:4242/create-checkout-session" -d ""
 ```
 
-```javascript {line-numbers="true"}
+```javascript {linenos=inline,linenostart=19,hl_lines=[1,"4-5"],anchorlinenos=true}
 function foo(bar) {
     var a = 42,
         b = 'Prism';
     return a + bar(b);
 }
 ```
+
+{{< prism lang="javascript" linkable-line-numbers="true" line-numbers="true" line="1,4-5" >}}
+function foo(bar) {
+    var a = 42,
+        b = 'Prism';
+    return a + bar(b);
+}
+{{< /prism >}}
 
 ```html
 <html>
@@ -56,7 +64,7 @@ STPAPIClient.shared.createSource(with: sourceParams) { (source, error) in
 }
 ```
 
-{{< prism lang="go" line-offset="46" line="6-13,15-25,27-44,45,46,48-52" >}}
+{{< prism lang="go" start="46" line="6-13,15-25,27-44,45,46,48-52" >}}
 package main
 
 import (
