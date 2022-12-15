@@ -26,6 +26,14 @@ function foo(bar) {
 }
 ```
 
+{{< prism lang="javascript" linkable-line-numbers="true" line-numbers="true" line="1,4-5" >}}
+function foo(bar) {
+    var a = 42,
+        b = 'Prism';
+    return a + bar(b);
+}
+{{< /prism >}}
+
 ```html
 <html>
   <head>
