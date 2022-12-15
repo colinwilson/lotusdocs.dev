@@ -19,7 +19,8 @@
         "#toc",
         "#list-item",
         "#doc-nav",
-        "#back-to-top"
+        "#back-to-top",
+        "pre"
     ],
     "selectors": {
         "lvl0": {

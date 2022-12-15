@@ -18,7 +18,7 @@ Syntax highlighting is supported by [Prism](https://prismjs.com/index.html) (the
 curl -X POST -is "http://localhost:4242/create-checkout-session" -d ""
 ```
 
-```javascript {linenos=inline,linenostart=19,hl_lines=[1,"4-5"]}
+```javascript {linenos=inline,linenostart=19,hl_lines=[1,"4-5"],anchorlinenos=true}
 function foo(bar) {
     var a = 42,
         b = 'Prism';

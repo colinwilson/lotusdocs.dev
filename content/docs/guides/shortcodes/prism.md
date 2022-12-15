@@ -125,6 +125,59 @@ The number at which the line starts can be specified by the `start` parameter. e
 </html>
 {{< /prism >}}
 
+## Line Number Anchors
+
+Specific lines in highlighted code blocks can be linked when both the `line-numbers` and `linkable-line-numbers` options are `true`:
+
+```go
+{{</* prism lang="html" linkable-line-numbers="true" line-numbers="true" >}}
+<html>
+  <head>
+  ...
+{{< /prism */>}}
+```
+Rendered code block:
+
+{{< prism lang="html" linkable-line-numbers="true" line-numbers="true" >}}
+<html>
+  <head>
+    <title>Buy cool new product</title>
+  </head>
+  <body>
+    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
+    <form action="/create-checkout-session" method="POST">
+      <button type="submit">Checkout</button>
+    </form>
+  </body>
+</html>
+{{< /prism >}}
+
+Clicking on any of the line numbers above will update the hash of the current page to link to that specific line.
+
+{{< alert context="info" >}}
+The `<pre>` element of all Prism code blocks have an auto-generated id. The generated id is a unique hash of the the code block content plus it's unique position on the page. (custom ids can also be set for each code block using the `id` option).
+
+The url format follows `#{hash-id}.{lines}`, where `{hash-id}` is the auto-generated hash value of the code block's id element and `{lines}` is one or more lines or line ranges that follows the [line highlighting format](#line-highlighting).
+
+For example, `line 8` in the code block below can be linked using the following anchor [#3d3728e.8](#3d3728e.8):
+
+{{< /alert >}}
+
+{{< prism lang="html" line="2-4,6" >}}
+<html>
+  <head>
+    <title>Buy cool new product</title>
+  </head>
+  <body>
+    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
+    <form action="/create-checkout-session" method="POST">
+      <button type="submit">Checkout</button>
+    </form>
+  </body>
+</html>
+{{< /prism >}}
+
+
 ## Combined Line Parameters
 
 Prism's [Line Highlighting](https://prismjs.com/plugins/line-highlight/) & [Line Numbers](https://prismjs.com/plugins/line-numbers/) plugins are compatible with each other. So the `line` & `line-numbers` options can be combined to display both, line numbers and highlight specified lines in a code block:
