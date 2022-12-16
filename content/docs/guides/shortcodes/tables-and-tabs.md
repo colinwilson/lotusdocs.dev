@@ -1,5 +1,5 @@
 ---
-weight: 240
+weight: 230
 title: "Tables & Tabs"
 icon: table_chart
 description: "How to use Lotus Docs tables & tabs shortcodes to render great looking markdown tables and tabs"

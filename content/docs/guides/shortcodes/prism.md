@@ -1,5 +1,5 @@
 ---
-weight: 242
+weight: 240
 title: "Prism"
 icon: change_history
 description: "How to use the Prism Shortcode for syntax highlighting code blocks."
@@ -10,42 +10,9 @@ images: []
 toc: true
 ---
 
-## Syntax Highlighting
+## Prism Shortcode
 
-Lotus Docs supports syntax highlighting via [Prism](https://prismjs.com/) (enabled by default). Fenced code blocks (code blocks with triple backticks before and after) that specify a code language next to the triple backticks placed before the block of code, e.g. ` ```html ` , will automatically be highlighted by Prism:
-
-````md
-```html
-<html>
-  <head>
-    <title>Buy cool new product</title>
-  </head>
-  <body>
-    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
-    <form action="/create-checkout-session" method="POST">
-      <button type="submit">Checkout</button>
-    </form>
-  </body>
-</html>
-```
-````
-
-Result:
-```html
-<html>
-  <head>
-    <title>Buy cool new product</title>
-  </head>
-  <body>
-    <!-- Use action="/create-checkout-session.php" if your server is PHP based. -->
-    <form action="/create-checkout-session" method="POST">
-      <button type="submit">Checkout</button>
-    </form>
-  </body>
-</html>
-```
-
-The same result can be achieved by using a paired Prism shortcode with the language declared using the `lang` parameter :
+When Prism is enabled in `config.toml` syntax highlighting can also be achieved using a paired Prism shortcode. The code language is declared using the `lang` parameter:
 
 ```go
 {{</* prism lang="html" >}}
