@@ -10,7 +10,7 @@ images: []
 toc: true
 ---
 
-## Syntax highlighting
+## Syntax Highlighting
 
 Lotus Docs supports syntax highlighting via [Prism](https://prismjs.com/) (enabled by default). Fenced code blocks (code blocks with triple backticks before and after) that specify a code language next to the triple backticks placed before the block of code, e.g. ` ```html ` , will automatically be highlighted by Prism:
 
@@ -91,7 +91,7 @@ See the rendered example below:
 </html>
 {{< /prism >}}
 
-## Line numbers
+## Line Numbers
 
 Add line numbers to your code with the `line-numbers="true"` parameter:
 
@@ -234,6 +234,6 @@ This renders the following code block:
 
 Prism syntax highlighting can be disabled by setting `[params.docs.prism]` to `false` in the `config.toml` configuration file.
 
-## Command line
+## Command Line
 
 TBC
