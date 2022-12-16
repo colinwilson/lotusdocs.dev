@@ -1,5 +1,5 @@
 ---
-weight: 249
+weight: 215
 title: "Breadcrumbs"
 icon: keyboard_double_arrow_right
 description: "Lotus Docs Breadcrumb feature."
