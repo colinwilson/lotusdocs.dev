@@ -61,17 +61,17 @@ The default icon for an alert context can be substituted with an emoji using the
 
 ## Alert with No Icon
 
-An alert can be rendered without its default icon by setting the `icon` parameter to an empty space, `icon=" "`:
-
-{{< alert context="warning" >}}
-**N.B.** The icon parameter **must** contain a space. Setting it to `icon=""` will render the default icon.
-{{< /alert >}}
+Setting the `icon` parameter to an empty space, `icon=" "`, will render an alert with no icon:
 
 ```go
 {{</* alert icon=" " context="info" text="This <strong>info</strong> context alert has no icon." /*/>}}
 ```
 
 {{< alert icon=" " context="info" text="This <strong>info</strong> context alert has no icon." />}}
+
+{{< alert context="warning" >}}
+**N.B.** The icon parameter **must** contain a space. Setting it to `icon=""` will render the default icon.
+{{< /alert >}}
 
 ## Render Markdown & HTML inside an Alert
 
