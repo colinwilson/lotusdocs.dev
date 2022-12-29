@@ -119,3 +119,20 @@ func createCheckoutSession(c echo.Context) (err error) {
   return c.Redirect(http.StatusSeeOther, s.URL)
 }
 {{< /prism >}}
+
+```bash
+..
+├── fonts/
+├── images/
+├── js/
+│   ├── vendor/
+│   ├── app.js
+│   └── index.js
+├── lambda/
+└── scss/
+    ├── common/
+    ├── components/
+    ├── layouts/
+    ├── vendor/
+    └── app.scss
+```
