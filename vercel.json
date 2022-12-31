@@ -1,7 +1,7 @@
 {
     "rewrites": [
         {
-            "source": "/stats/:match*",
+            "source": "/stats/js/:all*(js)",
             "destination": "https://plausible.aigis.io/js/script.js"
         }
     ],
