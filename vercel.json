@@ -1,14 +1,4 @@
 {
-    "rewrites": [
-        {
-            "source": "/stats/js/script.js",
-            "destination": "https://plausible.aigis.io/js/script.js"
-        },
-        {
-          "source": "/stats/api/event",
-          "destination": "https://plausible.aigis.io/api/event"
-        }
-    ],
     "headers": [
         {
             "source": "/(.*)",
