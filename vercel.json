@@ -1,4 +1,10 @@
 {
+    "rewrites": [
+        {
+            "source": "/docs/js/script.js",
+            "destination": "https://plausible.aigis.io/js/script.js"
+        }
+    ],
     "headers": [
         {
             "source": "/(.*)",
@@ -33,12 +39,6 @@
                     "value": "public, max-age=31536000, immutable"
                 }
             ]
-        }
-    ],
-    "rewrites": [
-        {
-            "source": "/docs/js/script",
-            "destination": "https://plausible.aigis.io/js/script.js"
         }
     ]
 }
