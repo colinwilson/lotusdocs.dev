@@ -5,7 +5,7 @@
             "destination": "https://plausible.aigis.io/js/script.hash.js"
         },
         {
-          "source": "/api/event",
+          "source": "/stats/api/event",
           "destination": "https://plausible.aigis.io/api/event"
         }
     ],
