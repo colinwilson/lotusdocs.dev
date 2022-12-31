@@ -3,6 +3,10 @@
         {
             "source": "/docs/js/script.js",
             "destination": "https://plausible.aigis.io/js/script.js"
+        },
+        {
+          "source": "/api/event",
+          "destination": "https://plausible.aigis.io/api/event"
         }
     ],
     "headers": [
