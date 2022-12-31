@@ -1,11 +1,11 @@
 {
     "rewrites": [
         {
-            "source": "/docs/js/script.js",
+            "source": "/stats/js/script.js",
             "destination": "https://plausible.aigis.io/js/script.js"
         },
         {
-          "source": "/api/event",
+          "source": "/stats/api/event",
           "destination": "https://plausible.aigis.io/api/event"
         }
     ],
