@@ -82,8 +82,9 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         indexName = "prod_lotusdocs.dev" # Index Name to perform search on (or set env variable HUGO_PARAM_DOCSEARCH_indexName)
 
     [params.analytics] # Parameters for Analytics (Google, Plausible)
-        plausibleURL    = "/docs" # (or set env variable HUGO_PARAM_ANALYTICS_plausibleURL)
-        plausibleDomain = "lotusdocs.dev"      # (or set env variable HUGO_PARAM_ANALYTICS_plausibleDomain)
+        plausibleURL    = "/stats" # (or set via env variable HUGO_PARAM_ANALYTICS_plausibleURL)
+        plausibleAPI    = "/stats" # optional - (or set via env variable HUGO_PARAM_ANALYTICS_plausibleAPI)
+        plausibleDomain = "lotusdocs.dev"      # (or set via env variable HUGO_PARAM_ANALYTICS_plausibleDomain)
 
 [menu]
 # [[menu.primary]]
