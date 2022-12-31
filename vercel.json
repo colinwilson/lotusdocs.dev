@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/stats/js/:all*(js)",
-            "destination": "https://plausible.aigis.io/js/:all*(js)"
+            "source": "/docs/js/script.js",
+            "destination": "https://plausible.aigis.io/js/script.js"
         }
     ],
     "headers": [
