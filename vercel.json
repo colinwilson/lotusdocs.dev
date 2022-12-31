@@ -37,7 +37,7 @@
     ],
     "rewrites": [
         {
-            "source": "/stats/js/script.js",
+            "source": "/docs/js/script",
             "destination": "https://plausible.aigis.io/js/script.js"
         }
     ]
