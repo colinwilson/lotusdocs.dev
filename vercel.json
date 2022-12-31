@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/stats/js/script.js",
-            "destination": "https://plausible.aigis.io/js/script.hash.js"
+            "destination": "https://plausible.aigis.io/js/script.js"
         },
         {
           "source": "/stats/api/event",
