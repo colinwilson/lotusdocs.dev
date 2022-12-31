@@ -59,7 +59,7 @@ jobs:
         run: hugo -v -D -e staging
         env:
           HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
-          HUGO_PARAMS_ANALYTICS_plausibleSitename: ${{ secrets.PLAUSIBLE_SITENAME }}
+          HUGO_PARAMS_ANALYTICS_plausibleDomain: ${{ secrets.PLAUSIBLE_DOMAIN }}
 
       # Step 5 - Push our generated site to Vercel
       - name: Deploy to Vercel
@@ -72,6 +72,7 @@ jobs:
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }} #Required
           github-comment: false
           #vercel-args: '--prod' #Optional
+          vercel-args: "--local-config ../vercel.json" #Optional
           working-directory: public
           alias-domains: | #Optional
             lotusdocs-staging.vercel.app
