@@ -14,10 +14,12 @@ toc: true
 
 Syntax highlighting is supported by [Prism](https://prismjs.com/index.html) (the default). It can be disabled in favour of Hugo's builtin syntax highlighter, [Chroma](https://github.com/alecthomas/chroma).
 
+(👇 code fences - `bash`)
 ```bash
 curl -X POST -is "http://localhost:4242/create-checkout-session" -d ""
 ```
 
+(👇 code fences - `javascript`)
 ```javascript {linenos=inline,linenostart=19,hl_lines=[1,"4-5"],anchorlinenos=true}
 function foo(bar) {
     var a = 42,
@@ -26,6 +28,7 @@ function foo(bar) {
 }
 ```
 
+(👇 prism shortcode - `javascript`)
 {{< prism lang="javascript" linkable-line-numbers="true" line-numbers="true" start="19" line-offset="19" line="19,22-23" >}}
 function foo(bar) {
     var a = 42,
@@ -34,6 +37,7 @@ function foo(bar) {
 }
 {{< /prism >}}
 
+(👇 code fences - `html`)
 ```html
 <html>
   <head>
@@ -47,7 +51,7 @@ function foo(bar) {
   </body>
 </html>
 ```
-
+(👇 code fences - `swift`)
 ```swift
 let cardParams = STPCardParams()
 cardParams.name = "Jenny Rosen"
@@ -63,7 +67,7 @@ STPAPIClient.shared.createSource(with: sourceParams) { (source, error) in
     }
 }
 ```
-
+(👇 prism shortcode - `go`)
 {{< prism lang="go" start="46" line="6-13,15-25,27-44,45,46,48-52" >}}
 package main
 
@@ -120,8 +124,8 @@ func createCheckoutSession(c echo.Context) (err error) {
 }
 {{< /prism >}}
 
-```bash
-..
+(👇 code fences - `treeview`)
+```treeview
 ├── fonts/
 ├── images/
 ├── js/
