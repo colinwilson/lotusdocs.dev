@@ -56,7 +56,7 @@ The following features are included when Prism highlighter is enabled:
 
 All code blocks feature a button that copies the code block to the clipboard when clicked. Hover over any code block and the copy button (<span class="material-icons align-text-bottom">content_copy</span>) will appear in the top right hand corner.
 
-### Code Block `id`
+### Code Block id
 
 Every code block on a page has a unique `id` attribute, an auto-generated value calculated from the `sha1` hash of the block's contents combined with it's position on the page.
 
@@ -80,7 +80,7 @@ If your code blocks are highlighted using the [code fences syntax](https://gohug
 - `linenostart=199`: starts the line number count from 199.
 - `anchorlinenos`: Configure anchors on line numbers. Valid values are `true` or `false`;
 
-So the following code fences syntax:
+So the following example:
 ````md
 ```go {linenos=table,hl_lines=[2,"5-7"],linenostart=199,anchorlinenos=true}
 package main
@@ -106,7 +106,7 @@ func main() {
 ```
 
 {{< alert context="warning" >}}
-Translation of the [Highlight Shortcode](https://gohugo.io/content-management/syntax-highlighting/#example-highlight-shortcode) syntax to Prism is currently not supported.
+Translation of Hugo's [Highlight Shortcode](https://gohugo.io/content-management/syntax-highlighting/#example-highlight-shortcode) syntax by Prism is currently not (fully) supported.
 {{< /alert >}}
 
 

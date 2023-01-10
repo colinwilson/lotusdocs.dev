@@ -120,8 +120,7 @@ func createCheckoutSession(c echo.Context) (err error) {
 }
 {{< /prism >}}
 
-```bash
-..
+```treeview
 ├── fonts/
 ├── images/
 ├── js/
