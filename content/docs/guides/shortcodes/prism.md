@@ -197,6 +197,28 @@ This renders the following code block:
 </html>
 {{< /prism >}}
 
+## File Highlight
+
+External files can be fetched and highlighted using the File Highlight option. Use the `src` parameter to retrieve an external file, like so:
+```go
+{{</* prism src="https://raw.githubusercontent.com/colinwilson/lotusdocs/release/SECURITY.md" /*/>}}
+```
+Result:
+
+{{< prism src="https://raw.githubusercontent.com/colinwilson/lotusdocs/release/SECURITY.md" />}}
+
+Use the `src-range` parameter to retrieve the specific line range of an external file. `src-range="32,46"` will fetch lines 32 to 46 of the file specified by the `src` parameter:
+```go
+{{</* prism src-range="32,46" src="https://raw.githubusercontent.com/colinwilson/lotusdocs/release/data/landing.yaml" line-numbers="true" /*/>}}
+```
+`src-range` can be used with the [`line-numbers`](#line-numbers) option to number the retrieved range. So the above shortcode produces the following code block:
+
+{{< prism src="https://raw.githubusercontent.com/colinwilson/lotusdocs/release/data/landing.yaml" src-range="32,46" line-numbers="true" />}}
+
+{{< alert context="info" >}}
+See the Prism docs for more info on the [File Highlight](https://prismjs.com/plugins/file-highlight/) plugin.
+{{< /alert >}}
+
 ## Disable Prism
 
 Prism syntax highlighting can be disabled by setting `[params.docs.prism]` to `false` in the `config.toml` configuration file.
