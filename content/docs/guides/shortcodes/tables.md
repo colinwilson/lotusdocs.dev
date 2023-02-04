@@ -1,9 +1,9 @@
 ---
 weight: 230
-title: "Tables & Tabs"
+title: "Tables"
 icon: table_chart
-description: "How to use Lotus Docs tables & tabs shortcodes to render great looking markdown tables and tabs"
-lead: "Using Hugo shortcodes to render tables and tabs."
+description: "How to use the Lotus Docs table shortcode to render great looking markdown tables"
+lead: "Use the Lotus docs table shortcode to render various table styles."
 date: 2022-11-05T04:41:15+00:00
 lastmod: 2022-11-05T04:41:15+00:00
 draft: true
@@ -34,7 +34,7 @@ Result:
 
 ## Shortcode Tables
 
-The the table shortcode allows you to implement a number of Bootstrap's table styling classes. The `table` shortcode without any options will render a basic bordered table:
+The the table shortcode allows you to implement a number of Bootstrap's table styling classes. The `table` shortcode without any options will render a basic bordered table with a borderless floating table head:
 
 ```go
 {{</* table >}}
@@ -53,6 +53,10 @@ The the table shortcode allows you to implement a number of Bootstrap's table st
 | `Dog` | Woof | 4 |
 | `Cricket` | Chirp | 6 |
 {{< /table >}}
+
+{{< alert context="warning" >}}
+Since the `table` shortcode works by implementing [Bootstrap's opt-in table styling](https://getbootstrap.com/docs/5.2/content/tables), not all Bootstrap's table styles are compatible with Lotus Docs. All compatible options are documented on this page.
+{{< /alert >}}
 
 ### Striped Rows
 
