@@ -6,7 +6,7 @@ description: "How to use the Lotus Docs table shortcode to render great looking 
 lead: "Use the Lotus docs table shortcode to render various table styles."
 date: 2022-11-05T04:41:15+00:00
 lastmod: 2022-11-05T04:41:15+00:00
-draft: true
+draft: false
 images: []
 toc: true
 ---
