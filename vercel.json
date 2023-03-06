@@ -2,11 +2,11 @@
     "rewrites": [
         {
             "source": "/s/js/script.js",
-            "destination": "https://plausible.aigis.io/js/script.js"
+            "destination": "https://plausible.aigis.uk/js/script.js"
         },
         {
           "source": "/s/api/event",
-          "destination": "https://plausible.aigis.io/api/event"
+          "destination": "https://plausible.aigis.uk/api/event"
         }
     ],
     "headers": [

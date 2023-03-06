@@ -216,7 +216,7 @@ Use the `src-range` parameter to retrieve the specific line range of an external
 {{< prism src="https://raw.githubusercontent.com/colinwilson/lotusdocs/release/data/landing.yaml" src-range="32,46" line-numbers="true" />}}
 
 {{< alert context="info" >}}
-See the Prism docs for more info on the [File Highlight](https://prismjs.com/plugins/file-highlight/) plugin.
+See Prism's docs for more info on the [File Highlight](https://prismjs.com/plugins/file-highlight/) plugin.
 {{< /alert >}}
 
 ## Disable Prism
