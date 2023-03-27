@@ -207,7 +207,7 @@ Result:
 
 {{< prism src="https://raw.githubusercontent.com/colinwilson/lotusdocs/release/SECURITY.md" />}}
 
-Use the `src-range` parameter to retrieve the specific line range of an external file. `src-range="32,46"` will fetch lines 32 to 46 of the file specified by the `src` parameter:
+Use the `src-range` parameter to retrieve a specific line range from an external file. `src-range="32,46"` will fetch lines 32 to 46 of the file specified by the `src` parameter:
 ```go
 {{</* prism src-range="32,46" src="https://raw.githubusercontent.com/colinwilson/lotusdocs/release/data/landing.yaml" line-numbers="true" /*/>}}
 ```
