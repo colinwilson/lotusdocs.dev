@@ -87,11 +87,11 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         plausibleDomain = "lotusdocs.dev"      # (or set via env variable HUGO_PARAM_ANALYTICS_plausibleDomain)
 
 [menu]
-# [[menu.primary]]
-#     name  = "Docs"
-#     url = "/docs"
-#     identifier = "docs"
-#     weight = 10
+[[menu.primary]]
+    name  = "Docs"
+    url = "/docs"
+    identifier = "docs"
+    weight = 10
 
 # [[menu.primary]]
 #     name  = "Showcase"
