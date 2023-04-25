@@ -11,27 +11,27 @@ images: []
 toc: true
 ---
 
-### Simple Tabs
+## Simple Tabs
 
 {{< tabs tabTotal="3">}}
-{{< tab tabName="Tab 1" >}}
+{{< tab tabName="Windows" >}}
 
-**Tab 1 Content**
-
-{{< /tab >}}
-{{< tab tabName="Tab 2" >}}
-
-**Tab 2 Content**
+**Windows Content**
 
 {{< /tab >}}
-{{< tab tabName="Tab 3">}}
+{{< tab tabName="MacOS" >}}
 
-**Tab 3 Content**
+**MacOS Content**
+
+{{< /tab >}}
+{{< tab tabName="Linux">}}
+
+**Linux Content**
 
 {{< /tab >}}
 {{< /tabs >}}
 
-### Right Aligned Tab
+## Right Aligned Tab
 
 {{< tabs tabTotal="3" tabRightAlign="2">}}
 {{< tab tabName="Tab 1" >}}

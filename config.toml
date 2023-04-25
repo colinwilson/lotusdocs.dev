@@ -26,14 +26,14 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
 [params]
 
-  # google_fonts = [
-  #   ["Poppins", "300, 400, 600, 700"],
-  #   ["Source Code Pro", "500, 700"]
-  # ]
+  google_fonts = [
+    ["Poppins", "300, 400, 600, 700"],
+    ["Source Code Pro", "500, 700"]
+  ]
 
-  # sans_serif_font = "Poppins"     # Default is System font
-  # secondary_font  = "Poppins"     # Default is System font
-  # mono_font       = "Source Code Pro" # Default is System font
+  sans_serif_font = "Poppins"     # Default is System font
+  secondary_font  = "Poppins"     # Default is System font
+  mono_font       = "Source Code Pro" # Default is System font
 
     [params.footer]
         copyright = "© :YEAR: Lotus Labs. Designed by Colin Wilson"
