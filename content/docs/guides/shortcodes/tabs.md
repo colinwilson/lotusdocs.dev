@@ -17,104 +17,110 @@ You need a minimum of one `tab` shortcode nested inside a `tabs` shortcode for t
 
 ```go
 {{</* tabs tabTotal="1">}}
-{{< tab tabName="Tab 1" >}}
+{{% tab tabName="Tab 1" %}}
 
 **Tab 1 Content**
 
-{{< /tab >}}
+{{% /tab %}}
 {{< /tabs */>}}
 ```
 
 ## Basic Tabs
 
-The following is an example of a basic multi tab navigation.
+The following example demonstrates how to create a basic multi tab navigation component using the `tabs` and `tab` shortcodes.
 
 ```go
-{{</* tabs tabTotal="3" >}}
-{{< tab tabName="Windows" >}}
+{{</* tabs tabTotal="3">}}
+{{% tab tabName="Windows" %}}
 
 **Windows Content**
 
-{{< /tab >}}
-{{< tab tabName="MacOS" >}}
+Example content specific to **Windows** operating systems
+
+{{% /tab %}}
+{{% tab tabName="MacOS" %}}
 
 **MacOS Content**
 
-{{< /tab >}}
-{{< tab tabName="Linux">}}
+Example content specific to **Mac** operating systems
+
+{{% /tab %}}
+{{% tab tabName="Linux" %}}
 
 **Linux Content**
 
-{{< /tab >}}
+Example content specific to **Linux** operating systems
+
+{{% /tab %}}
 {{< /tabs */>}}
 ```
 
-Renders the following:
+Renders:
 
 {{< tabs tabTotal="3">}}
-{{< tab tabName="Windows" >}}
+{{% tab tabName="Windows" %}}
 
 **Windows Content**
 
-Content specific to **Windows** operating systems
+Example content specific to **Windows** operating systems
 
-{{< /tab >}}
-{{< tab tabName="MacOS" >}}
+{{% /tab %}}
+{{% tab tabName="MacOS" %}}
 
 **MacOS Content**
 
-Content specific to **Mac** operating systems
+Example content specific to **Mac** operating systems
 
-{{< /tab >}}
-{{< tab tabName="Linux">}}
+{{% /tab %}}
+{{% tab tabName="Linux" %}}
 
 **Linux Content**
 
-Content specific to **Linux** operating systems
+Example content specific to **Linux** operating systems
 
-{{< /tab >}}
+{{% /tab %}}
 {{< /tabs >}}
 
 ## Right Aligned Tabs
 
 ```go
 {{</* tabs tabTotal="3" tabRightAlign="2">}}
-{{< tab tabName="Tab 1" >}}
+{{% tab tabName="Tab 1" %}}
 
 **Tab 1 Content**
 
-{{< /tab >}}
-{{< tab tabName="Tab 2" >}}
+{{% /tab %}}
+{{% tab tabName="Tab 2" %}}
 
 **Tab 2 Content**
 
-{{< /tab >}}
-{{< tab tabName="Tab 3">}}
+{{% /tab %}}
+{{% tab tabName="Tab 3" %}}
 
 **Tab 3 Content**
 
-{{< /tab >}}
+{{% /tab %}}
 {{< /tabs */>}}
 ```
 
-Renders the following:
+Renders:
 
 {{< tabs tabTotal="3" tabRightAlign="2">}}
-{{< tab tabName="Tab 1" >}}
+{{% tab tabName="Tab 1" %}}
 
 **Tab 1 Content**
 
-{{< /tab >}}
-{{< tab tabName="Tab 2" >}}
+{{% /tab %}}
+{{% tab tabName="Tab 2" %}}
 
 **Tab 2 Content**
 
-{{< /tab >}}
-{{< tab tabName="Tab 3">}}
+{{% /tab %}}
+{{% tab tabName="Tab 3"%}}
 
 **Tab 3 Content**
 
-{{< /tab >}}
+{{% /tab %}}
 {{< /tabs >}}
 
 ## How does it work?
