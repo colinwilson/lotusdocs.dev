@@ -24,7 +24,7 @@ The following:
 
 ```html
 <!-- An example HTML code block -->
-<h1>
+<h1>Hello World</h1>
 
 {{< /markdownify */>}}
 ```
