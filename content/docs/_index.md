@@ -1,7 +1,7 @@
 ---
 weight: 10
-title: "Lotus Docs Documentation"
-description: "Explore our guides and examples to deploy your docs using Lotus Docs."
+title: "Documentation"
+description: "Explore our guides and examples to deploy your site using Lotus Docs."
 icon: menu_book
 lead: ""
 date: 2022-10-10T02:21:15+00:00

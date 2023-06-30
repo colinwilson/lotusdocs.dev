@@ -6,7 +6,7 @@ description: "Reference table of configuration options for the Lotus Docs theme.
 lead: ""
 date: 2023-01-21T16:16:15+00:00
 lastmod: 2023-01-21T16:16:15+00:00
-draft: true
+draft: false
 images: []
 toc: true
 ---
