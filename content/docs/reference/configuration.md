@@ -29,5 +29,5 @@ A list of available configuration settings in the site configuration file, `hugo
 {{< table "table table-striped" >}}
 | Parameter | Default Value | Description |
 |---------|--------|------|
-| `copyright` | N/A | Sets the copyright text inside the docs footer section |
+| `copyright` | N/A | Sets the copyright text inside the docs footer section (supports Markdown) |
 {{</ table >}}
