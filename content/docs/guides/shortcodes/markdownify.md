@@ -43,9 +43,9 @@ Renders:
 
 ## Nested Shortcodes
 
-The `markdownify` sortcode is especially usefully when you require portions of content nested inside another shortcode be parsed as Markdown.
+The `markdownify` sortcode is especially useful when you require portions of content nested inside another shortcode be parsed as Markdown.
 
-For example, here's a paragraph of markdown text and a `prism` shortcode codeblock nested in a `tabs` shortcode:
+For example, here's a paragraph of markdown text and a `prism` shortcode codeblock nested within a `tabs` shortcode:
 
 ```go
 {{</* tabs tabTotal="1" >}}
@@ -79,7 +79,8 @@ Renders:
 {{< tab tabName="Tab 1" >}}
 
 {{< markdownify >}}
-### Markdownified Text
+
+***Markdownified Text***
 
 Some `markdownified` text inside a `tabs` shortcode
 
