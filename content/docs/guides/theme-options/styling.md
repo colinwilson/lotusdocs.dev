@@ -1,5 +1,5 @@
 ---
-weight: 218
+weight: 540
 title: "Styling"
 icon: palette
 description: "Styling Lotus Docs."

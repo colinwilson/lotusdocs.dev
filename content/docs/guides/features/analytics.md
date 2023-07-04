@@ -1,5 +1,5 @@
 ---
-weight: 212
+weight: 515
 title: "Analytics"
 description: "How to add analytics tools to Lotus Docs."
 icon: trending_up

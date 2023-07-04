@@ -1,4 +1,5 @@
 ---
+weight: 905
 title: "How to Contribute"
 icon: volunteer_activism
 description: "Contribute to code, improve documentation, help others, submit to showcase, and contribute financially."
@@ -7,7 +8,6 @@ date: 2022-10-19T21:49:38+01:00
 lastmod: 2022-10-19T21:49:38+01:00
 draft: false
 images: []
-weight: 410
 toc: true
 ---
 

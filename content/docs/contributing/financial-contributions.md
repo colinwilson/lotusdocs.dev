@@ -1,4 +1,5 @@
 ---
+weight: 910
 title: "Financial Contributions"
 icon: paid
 description: "Help support the Lotus Docs development team by becoming a financial contributor."
@@ -7,7 +8,6 @@ date: 2022-10-19T07:07:38+01:00
 lastmod: 2022-10-19T07:07:38+01:00
 draft: false
 images: []
-weight: 420
 toc: true
 ---
 

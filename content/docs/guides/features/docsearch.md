@@ -1,5 +1,5 @@
 ---
-weight: 215
+weight: 525
 title: "DocSearch"
 description: "DocSearch is a Server Side Search plugin."
 icon: search

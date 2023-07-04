@@ -1,5 +1,5 @@
 ---
-weight: 210
+weight: 500
 title: "Guides"
 description: "Guides to getting the most out of Lotus Docs."
 icon: menu_book

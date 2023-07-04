@@ -1,5 +1,5 @@
 ---
-weight: 400
+weight: 900
 title: "Contributing"
 description: "How to contribute to Lotus Labs."
 icon: heart_plus
