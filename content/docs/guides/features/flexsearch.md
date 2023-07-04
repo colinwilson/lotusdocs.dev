@@ -31,6 +31,6 @@ With FlexSearch enabled you should see a search button in the top navigation bar
 2. search input
 3. query result
 
-Click on the search button (or use `ctrl` + `/`) to reveal and activate the search input bar. Just start typing a search query and the result will appear automatically just below the search bar.
+Click on the search button (or use `ctrl` + `/`) to reveal and activate the search input bar. Start typing a search query and the result(s) will automatically appear in a 'suggestions' panel underneath.
 
-![Lotus Docs - FlexSearch Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/v1688185913/Lotus%20Docs/images/lotus_docs_flexsearch_ui_components_diagram_v1.0_zfkkg3.png)
+![Lotus Docs - FlexSearch Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/v1688442518/Lotus%20Docs/images/lotus_docs_flexsearch_ui_components_diagram_v1.1_jp2f0l.webp "FlexSearch components - 1. Search Button 2. Search Input Bar 3. Search Result - Lotus Docs")
