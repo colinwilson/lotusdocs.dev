@@ -1,5 +1,5 @@
 ---
-weight: 231
+weight: 560
 title: "Tabs"
 icon: tab
 description: "How to use the Lotus Docs tabs shortcode to render Bootstrap Tabs"

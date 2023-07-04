@@ -1,5 +1,5 @@
 ---
-weight: 305
+weight: 705
 title: "Configuration"
 icon: settings
 description: "Reference table of configuration options for the Lotus Docs theme."
@@ -29,5 +29,5 @@ A list of available configuration settings in the site configuration file, `hugo
 {{< table "table table-striped" >}}
 | Parameter | Default Value | Description |
 |---------|--------|------|
-| `copyright` | N/A | Sets the copyright text inside the docs footer section (supports Markdown) |
+| `copyright` | N/A | Sets the footer copyright text for both the landing page and `/docs` section (supports Markdown) |
 {{</ table >}}

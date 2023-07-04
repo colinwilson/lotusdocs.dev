@@ -1,5 +1,5 @@
 ---
-weight: 210
+weight: 510
 title: "Syntax Highlighting"
 description: "Code highlighting in Lotus Docs."
 icon: highlight

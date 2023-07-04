@@ -1,5 +1,5 @@
 ---
-weight: 505
+weight: 1105
 title: "Advanced Support"
 description: "Advanced Support options for implementing Lotus Docs."
 icon: support_agent

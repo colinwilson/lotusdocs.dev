@@ -1,5 +1,5 @@
 ---
-weight: 225
+weight: 545
 title: "Shortcodes"
 description: "Lotus Docs Custom Shortcodes."
 icon: code

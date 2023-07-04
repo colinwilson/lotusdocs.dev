@@ -1,4 +1,5 @@
 ---
+weight: 920
 title: "Code of Conduct"
 icon: handshake
 description: "Contributor Covenant Code of Conduct."
@@ -7,7 +8,6 @@ date: 2022-10-15T02:21:15+00:00
 lastmod: 2022-10-15T02:21:15+00:00
 draft: false
 images: []
-weight: 430
 toc: true
 ---
 
