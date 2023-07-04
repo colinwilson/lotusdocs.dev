@@ -1,5 +1,5 @@
 ---
-weight: 220
+weight: 530
 title: "Theme Options"
 description: "Optional features in Lotus Docs."
 icon: tune

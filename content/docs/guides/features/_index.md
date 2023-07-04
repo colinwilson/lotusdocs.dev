@@ -1,5 +1,5 @@
 ---
-weight: 210
+weight: 505
 title: "Features"
 description: "A guide to the core features of Lotus Docs."
 icon: auto_awesome

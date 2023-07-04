@@ -1,5 +1,5 @@
 ---
-weight: 500
+weight: 1100
 title: "Help"
 description: "Help using the Lotus Docs theme."
 icon: help
