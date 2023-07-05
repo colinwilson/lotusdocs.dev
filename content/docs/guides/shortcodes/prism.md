@@ -121,14 +121,14 @@ Rendered code block:
 
 Clicking on any of the line numbers above will update the hash of the current page to link to that specific line.
 
-{{< alert context="info" >}}
+{{% alert context="info" %}}
 All `<pre>` elements of Prism code blocks have an auto-generated id attribute. These ids are a combination of the unique hash of the code block content plus it's unique position on the page. The generated hash can be overridden using a Custom id set via the `id` option.
 
 The url format follows `#{hash-id}.{lines}`, where `{hash-id}` is the auto-generated hash value of the code block and `{lines}` is one or more lines or line ranges that follows the [line highlighting format](#line-highlighting).
 
 For example, `line 8` in the code block below can be linked using the following anchor [#adea9eb.8](#adea9eb.8):
 
-{{< /alert >}}
+{{% /alert %}}
 
 {{< prism lang="html" line="2-4,6" >}}
 <html>
@@ -215,9 +215,9 @@ Use the `src-range` parameter to retrieve a specific line range from an external
 
 {{< prism src="https://raw.githubusercontent.com/colinwilson/lotusdocs/release/data/landing.yaml" src-range="32,46" line-numbers="true" />}}
 
-{{< alert context="info" >}}
+{{% alert context="info" %}}
 See Prism's docs for more info on the [File Highlight](https://prismjs.com/plugins/file-highlight/) plugin.
-{{< /alert >}}
+{{% /alert %}}
 
 ## Disable Prism
 

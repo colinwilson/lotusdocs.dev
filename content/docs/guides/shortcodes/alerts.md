@@ -69,16 +69,16 @@ Setting the `icon` parameter to an empty space, `icon=" "`, will render an alert
 
 {{< alert icon=" " context="info" text="This <strong>info</strong> context alert has no icon." />}}
 
-{{< alert context="warning" >}}
+{{% alert context="warning" %}}
 **N.B.** The icon parameter **must** contain a space. Setting it to `icon=""` will render the default icon.
-{{< /alert >}}
+{{% /alert %}}
 
 ## Render Markdown & HTML inside an Alert
 
-Using a [paired shortcode](https://gohugo.io/content-management/shortcodes/) allows Markdown and HTML to be rendered inside an alert:
+Use a [paired shortcode](https://gohugo.io/content-management/shortcodes/) with the `%` delimiter[^1] to render Markdown and HTML inside an alert:
 
 ```go
-{{</* alert icon="🛒" context="success" >}}
+{{%/* alert icon="🛒" context="success" %}}
 This ***paired shortcode*** alert contains a **markdown** list and header:
 
 #### My Shopping List:
@@ -87,10 +87,10 @@ This ***paired shortcode*** alert contains a **markdown** list and header:
 3. Pineapples
 
 and a sentence <em>styled</em> using <strong>HTML</strong> tags such as \<strong\> and \<em\>
-{{< /alert /*/>}}
+{{% /alert */%}}
 ```
 
-{{< alert icon="🛒" context="success" >}}
+{{% alert icon="🛒" context="success" %}}
 This ***paired shortcode*** alert contains a **markdown** list and header:
 
 #### My Shopping List:
@@ -99,4 +99,6 @@ This ***paired shortcode*** alert contains a **markdown** list and header:
 3. Pineapples
 
 and a sentence <em>styled</em> using <strong>HTML</strong> tags such as \<strong\> and \<em\>
-{{< /alert >}}
+{{% /alert %}}
+
+[^1]: [Shortcodes with Markdown - gohugo.io](https://gohugo.io/content-management/shortcodes/#shortcodes-with-markdown)

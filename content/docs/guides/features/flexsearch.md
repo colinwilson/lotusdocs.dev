@@ -15,7 +15,9 @@ The FlexSearch Static Search plugin provides the smoothest, fastest and easiest 
 
 ## Enabling FlexSearch
 
-**FlexSearch is enabled by default** in Lotus Docs. To disable it, simply set the `enabled` parameter nested under `[params.flexsearch]` in the `hugo.toml` configuration file to `false`. That's it!
+{{% alert context="info" text="**FlexSearch is enabled by default**" /%}}
+
+To disable it, simply set the `enabled` parameter nested under `[params.flexsearch]` in the `hugo.toml` configuration file to `false`. That's it!
 
 ```toml
 [params.flexsearch]
@@ -32,3 +34,13 @@ With FlexSearch enabled you should see a search button in the top navigation bar
 Click on the search button (or use `ctrl` + `/`) to reveal and activate the search input bar. Start typing a search query and the result(s) will automatically appear in a 'suggestions' panel underneath. Click a search result to navigate to said page.
 
 ## Advanced options
+
+The various settings below offer more advanced control over how FlexSearch should index your site content.
+
+{{% alert context="info" %}}
+**Note:** Since the default settings[^1] for FlexSearch are capable of providing accurate search results, most Lotus Docs users can ignore all the options in this section. However, if your site has a large number of posts, the generated index file can be relatively large; in such cases it may be beneficial to limit indexing to specific elements to reduce the overall size of the file.
+{{% /alert %}}
+
+
+
+[^1]: [https://github.com/colinwilson/lotusdocs](https://github.com/colinwilson/lotusdocs/blob/release/layouts/partials/docs/footer/flexsearch.html#L90-L93).
