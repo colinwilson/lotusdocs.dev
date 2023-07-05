@@ -11,7 +11,13 @@ images: []
 
 ## What is FlexSearch?
 
-The FlexSearch Static Search plugin provides the smoothest, fastest and easiest search possible for your Lotus Docs site. Static Search provides instant, dynamic results for any search terms, and comes equipped with a wealth of options and settings to fine-tune the functionality to perfectly meet the needs of your site visitors.
+FlexSearch is a Static Search plugin that provides a fast and simple search experience for your Lotus Docs site. Static Search provides instant, dynamic results for any search terms, and includes a wealth of options and settings to fine-tune the functionality to best suit the needs of your site visitors.
+
+## How does FlexSearch work?
+
+FlexSearch works via a mechanism known as **Contextual Search** (invented by [Thomas Wilkerling](https://github.com/ts-thomas)). A Contextual Search [boosts queries to a complete new level](https://nextapps-de.github.io/flexsearch/bench/) but also requires some additional memory (depending on depth). The basic idea of this concept is to limit relevance by its context instead of calculating relevance through the whole distance of its corresponding document. This way contextual search also [improves the results of relevance-based queries](https://nextapps-de.github.io/flexsearch/bench/match.html) on large Lotus Docs sites with many pages.
+
+![Model of Contextual-based Scoring](https://res.cloudinary.com/lotuslabs/image/upload/v1688597756/Lotus%20Docs/images/contextual-index_gnhpqm.webp "**Model of Contextual-based Scoring** - Copyright 2018-2021 Thomas Wilkerling Nextapps GmbH - [*source*](https://github.com/nextapps-de/flexsearch/blob/master/README.md#contextual-search)")
 
 ## Enabling FlexSearch
 
