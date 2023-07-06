@@ -1,15 +1,13 @@
 ---
 weight: 515
-title: "Analytics"
-description: "How to add analytics tools to Lotus Docs."
+title: "Plausible Analytics"
+description: "How to add Plausible Analytics to your Lotus Docs site."
 icon: trending_up
 date: 2022-12-29T16:28:15+00:00
-lastmod: 2022-12-29T16:28:15+00:00
+lastmod: 2023-07-05T23:45:15+00:00
 draft: true
 images: []
 ---
-
-## Plausible Analytics
 
 [Plausible Analytics](https://plausible.io) is a simple, open source, lightweight (< 1 KB) and privacy-friendly alternative to Google Analytics. Plausible is completely independent, self-funded and bootstrapped. Read more [about them](https://plausible.io/about).
 
