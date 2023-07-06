@@ -54,9 +54,9 @@ The the table shortcode allows you to implement a number of Bootstrap's table st
 | `Cricket` | Chirp | 6 |
 {{< /table >}}
 
-{{< alert context="warning" >}}
+{{% alert context="warning" %}}
 Since the `table` shortcode works by implementing [Bootstrap's opt-in table styling](https://getbootstrap.com/docs/5.2/content/tables), not all Bootstrap's table styles are compatible with Lotus Docs. All compatible options are documented on this page.
-{{< /alert >}}
+{{% /alert %}}
 
 ### Striped Rows
 

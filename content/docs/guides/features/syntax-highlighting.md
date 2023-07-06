@@ -98,9 +98,9 @@ Both Prism & Chroma support a vast array of languages. See the links below for a
 
 ## Code Fence Translations
 
-{{< alert context="info" >}}
+{{% alert context="info" %}}
 For more extensive code highlighting options with Prism, consider using the [Prism Shortcode](../../shortcodes/prism/) in place of the code fences syntax.
-{{< /alert >}}
+{{% /alert %}}
 
 If your code blocks are highlighted using the [code fences syntax](https://gohugo.io/content-management/syntax-highlighting/#highlighting-in-code-fences), Prism will auto translate the following Hugo Shortcode options[^1]:
 
@@ -134,9 +134,9 @@ func main() {
 }
 ```
 
-{{< alert context="warning" >}}
+{{% alert context="warning" %}}
 Translation of Hugo's [Highlight Shortcode](https://gohugo.io/content-management/syntax-highlighting/#example-highlight-shortcode) syntax by Prism is currently not (fully) supported.
-{{< /alert >}}
+{{% /alert %}}
 
 
 [^1]: [Highlight Shortcode - Hugo](https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode)
