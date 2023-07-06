@@ -59,7 +59,7 @@ jobs:
         run: hugo -v -D -e staging
         env:
           HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
-          HUGO_PARAMS_ANALYTICS_plausibleDomain: ${{ secrets.PLAUSIBLE_DOMAIN }}
+          HUGO_PARAM_PLAUSIBLE_dataDomain: ${{ secrets.PLAUSIBLE_DOMAIN }}
           HUGO_GOOGLEANALYTICS: ${{ vars.HUGO_GOOGLEANALYTICS }}
 
       # Step 5 - Push our generated site to Vercel
@@ -99,7 +99,7 @@ jobs:
         # run: echo "::set-output name=config::$(cat docsearch-preview.json | jq -r tostring)"
         run: echo "config=$(cat docsearch-preview.json | jq -r tostring)" >> $GITHUB_OUTPUT
 
-      # Step 3 - Update DocSearch Index only if content files were changed
+      # Step 3 - Update DocSearch Index (only if content files were changed)
       - name: Algolia DocSearch Crawl & Index
         id: docsearch-scrape
         uses: adapttive/algolia-docsearch-action@1.1.1

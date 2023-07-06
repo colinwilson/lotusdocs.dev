@@ -33,20 +33,20 @@ Make a note of the domain name that you entered when [adding your website to Pla
 
 ## Enable Plausible Analytics
 
-To enable Plausible Analytics, provide the following parameters in your configuration file:
+To enable Plausible Analytics, provide the following parameters in your configuration file under `[params.plausible]`:
 
-- `plausibleDomain` - Enter the domain that you will be tracking through Plausible Analytics here e.g. `lotusdocs.dev`; make sure it's the same domain you entered when adding your website to your Plausible account.
-- `plausibleURL` - Enter the URL that points to your self-hosted `script.js` file e.g. `mydomain.com`. By default or when empty it will always link to `plausible.io` (https://plausible.io/js/script.js).
-- `plausibleAPI` - If you're proxying Plausible requests via another service (e.g. [Vercel](https://plausible.io/docs/proxy/guides/vercel), [Netlify](https://plausible.io/docs/proxy/guides/netlify), [Cloudflare](https://plausible.io/docs/proxy/guides/cloudflare)), enter the appropriate proxy URL here.
+- `dataDomain` - Enter the domain name that you will be tracking through Plausible Analytics, e.g. `lotusdocs.dev`; make sure it's the same domain you entered when adding your website to your Plausible account.
+- `scriptURL` - Enter the URL that points to your self-hosted `script.js` file e.g. `mydomain.com`. By default or when empty it will always link to `plausible.io` ([https://plausible.io/js/script.js](https://plausible.io/js/script.js)).
+- `eventAPI` - If you're [proxying Plausible](https://plausible.io/docs/proxy/introduction) requests via another service (e.g. [Vercel](https://plausible.io/docs/proxy/guides/vercel), [Netlify](https://plausible.io/docs/proxy/guides/netlify), [Cloudflare](https://plausible.io/docs/proxy/guides/cloudflare)), enter the appropriate event API path here.
 
 {{< tabs tabTotal="3">}}
 {{% tab tabName="hugo.toml" %}}
 
 ```toml
 [params.plausible] # Parameters for Plausible Analytics
-        plausibleURL    = "plausible.io"
-        plausibleAPI    = "/docs/s"       # optional
-        plausibleDomain = "lotusdocs.dev"
+        dataDomain = "lotusdocs.dev"
+        scriptURL  = "plausible.io"
+        eventAPI   = "/docs/s"       # optional
 ```
 
 {{% /tab %}}
@@ -55,9 +55,9 @@ To enable Plausible Analytics, provide the following parameters in your configur
 ```yaml
 params:
     plausible: # Parameters for Plausible Analytics
-        plausibleURL: "plausible.io"
-        plausibleAPI: "/docs/s"       # optional
-        plausibleDomain: "lotusdocs.dev"
+        dataDomain: "lotusdocs.dev"
+        scriptURL: "plausible.io"
+        eventAPI: "/docs/s"       # optional
 ```
 
 {{% /tab %}}
@@ -67,9 +67,9 @@ params:
 {
    "params": {
         "plausible": {
-            "plausibleURL": "plausible.io",
-            "plausibleAPI": "/docs/s",
-            "plausibleDomain": "lotusdocs.dev"
+            "dataDomain": "lotusdocs.dev",
+            "scriptURL": "plausible.io",
+            "eventAPI": "/docs/s"
         }
    }
 }
