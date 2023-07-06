@@ -59,7 +59,7 @@ jobs:
         run: hugo -v --minify
         env:
           HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
-          HUGO_PARAM_PLAUSIBLE_dataDomain: ${{ secrets.PLAUSIBLE_DOMAIN }}
+          HUGO_PARAMS_PLAUSIBLE_dataDomain: ${{ secrets.PLAUSIBLE_DOMAIN }}
 
       # Step 5 - Push our generated site to Vercel
       - name: Deploy to Vercel
