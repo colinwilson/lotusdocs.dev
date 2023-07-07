@@ -35,16 +35,16 @@ Make a note of the domain name that you entered when [adding your website to Pla
 
 To enable Plausible Analytics, provide the following parameters in your configuration file under `[params.plausible]`:
 
-- `dataDomain` - Enter the domain name that you will be tracking through Plausible Analytics, e.g. `lotusdocs.dev`; make sure it's the same domain you entered when adding your website to your Plausible account.
-- `scriptURL` - Enter the URL that points to your self-hosted `script.js` file e.g. `mydomain.com`. By default or when empty it will always link to `plausible.io` ([https://plausible.io/js/script.js](https://plausible.io/js/script.js)).
-- `eventAPI` - If you're [proxying Plausible](https://plausible.io/docs/proxy/introduction) requests via another service (e.g. [Vercel](https://plausible.io/docs/proxy/guides/vercel), [Netlify](https://plausible.io/docs/proxy/guides/netlify), [Cloudflare](https://plausible.io/docs/proxy/guides/cloudflare)), enter the appropriate event API path here.
+- **dataDomain** - Enter the domain name that you will be tracking through Plausible Analytics, e.g. `lotusdocs.dev`; make sure it's the same domain you entered when adding your website to your Plausible account.
+- **scriptURL** - Enter the URL that points to your self-hosted `script.js` file e.g. `mydomain.com`. By default or when empty it will always link to `plausible.io` ([https://plausible.io/js/script.js](https://plausible.io/js/script.js)).
+- **eventAPI** - If you're [proxying Plausible](https://plausible.io/docs/proxy/introduction) requests via another service (e.g. [Vercel](https://plausible.io/docs/proxy/guides/vercel), [Netlify](https://plausible.io/docs/proxy/guides/netlify), [Cloudflare](https://plausible.io/docs/proxy/guides/cloudflare)), enter the appropriate event API path here.
 
 {{< tabs tabTotal="3">}}
 {{% tab tabName="hugo.toml" %}}
 
 ```toml
 [params.plausible] # Parameters for Plausible Analytics
-        dataDomain = "lotusdocs.dev"
+        dataDomain = "yourdomain.com"
         scriptURL  = "plausible.io"
         eventAPI   = "/docs/s"       # optional
 ```
@@ -55,7 +55,7 @@ To enable Plausible Analytics, provide the following parameters in your configur
 ```yaml
 params:
     plausible: # Parameters for Plausible Analytics
-        dataDomain: "lotusdocs.dev"
+        dataDomain: "yourdomain.com"
         scriptURL: "plausible.io"
         eventAPI: "/docs/s"       # optional
 ```
@@ -67,7 +67,7 @@ params:
 {
    "params": {
         "plausible": {
-            "dataDomain": "lotusdocs.dev",
+            "dataDomain": "yourdomain.com",
             "scriptURL": "plausible.io",
             "eventAPI": "/docs/s"
         }
@@ -79,3 +79,71 @@ params:
 {{< /tabs >}}
 
 ## Proxying Plausible through Vercel
+
+Some adblockers/browsers block every tracking script, even privacy-first analytics like plausible.io. You can mitigate this by [proxying the script](https://plausible.io/docs/proxy/introduction).
+
+[Vercel](https://vercel.com) is our preferred platform on which to deploy Lotus Docs themed sites. Follow the instructions below to setup proxying the Plausible script when hosting your Lotus Docs site on Vercel:
+
+1. Create a `vercel.json` file in the root of your site:
+   ```
+   /vercel.json
+   ```
+
+2. Add the following JSON to rewrite calls within your Lotus Docs site to Plausible's resources:
+   ```json
+   {
+        "rewrites": [
+            {
+                "source": "/stats/js/script.js",
+                "destination": "https://plausible.io/js/script.js"
+            },
+            {
+                "source": "/stats/api/event",
+                "destination": "https://plausible.io/api/event"
+            }
+        ]
+   }
+   ```
+   {{% alert context="info" text="you can use whatever paths you like here (for example, here prefixing with `/stats/`)." /%}}
+
+3. Set Lotus Docs' `[params.plausible]` parameters to use the values configured above:
+   {{< tabs tabTotal="3">}}
+   {{% tab tabName="hugo.toml" %}}
+
+   ```toml
+    [params.plausible] # Parameters for Plausible Analytics
+        dataDomain = "yourdomain.com"
+        scriptURL  = "/stats"
+        eventAPI   = "/stats"       # optional
+   ```
+
+   {{% /tab %}}
+   {{% tab tabName="hugo.yaml" %}}
+
+   ```yaml
+    params:
+        plausible: # Parameters for Plausible Analytics
+            dataDomain: "yourdomain.com"
+            scriptURL: "/stats"
+            eventAPI: "/stats"       # optional
+   ```
+
+   {{% /tab %}}
+   {{% tab tabName="hugo.json" %}}
+
+   ```json
+    {
+        "params": {
+            "plausible": {
+                "dataDomain": "yourdomain.com",
+                "scriptURL": "/stats",
+                "eventAPI": "/stats"
+            }
+        }
+    }
+   ```
+
+   {{% /tab %}}
+   {{< /tabs >}}
+
+{{% alert context="info" text="Plausible has many [guides to settting up proxying](https://plausible.io/docs/proxy/introduction#are-you-concerned-about-missing-data) on many different platforms." /%}}
