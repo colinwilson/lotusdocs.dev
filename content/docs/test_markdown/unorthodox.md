@@ -15,36 +15,36 @@ toc: true
 
 Various alert notification styles:
 
-{{< alert >}}
+{{% alert %}}
 This is the default alert without any options.<br>No `context` or `icon` parameter defined.
-{{< /alert >}}
+{{% /alert %}}
 
-{{< alert  context="info" >}}
+{{% alert  context="info" %}}
 **Markdown** and <em>HTML</em> will be rendered. This next sentence [demonstrates](https://colinwilson.uk) the colour of a link inside an alert box. We’re currently designing a new way to integrate the Payment Element, which allows you to create the PaymentIntent or SetupIntent after you render the Payment Element. If you’re interested in learning more about this feature.
 
 *Beginning* of a second paragraph.
-{{< /alert >}}
+{{% /alert %}}
 
-{{< alert icon="🎃" context="info" >}}
+{{% alert icon="🎃" context="info" %}}
 The default <strong>context</strong> icon can be overridden with an emoji by setting the named parameter <code>icon</code> to the emoji of choice. e.g. <code>{{\< alert icon="🎃" text="Make sure to always self-close the alert shortcode." />}}</code>
-{{< /alert >}}
+{{% /alert %}}
 
-{{< alert icon=" " context="primary" >}}
+{{% alert icon=" " context="primary" %}}
 The default <strong>context</strong> icon can be overridden to display no icon by setting the named parameter <code>icon</code> to an empty space. e.g.
 ```
 {{\< alert icon=" " text="Make sure to always self-close the alert shortcode." />}}
 ```
-{{< /alert >}}
+{{% /alert %}}
 
-{{< alert icon="🌕" context="light" text="An <strong>light</strong> context alert using an emoji (:full_moon:) instead of the default <strong>icon</strong>." />}}
+{{% alert icon="🌕" context="light" text="An <strong>light</strong> context alert using an emoji (:full_moon:) instead of the default <strong>icon</strong>." /%}}
 
 {{< alert icon="🌑" context="dark" text="An alert using an emoji (:jack_o_lantern:) instead of the default <strong>context</strong> icon." />}}
 
-{{< alert context="primary">}}
+{{% alert context="primary" %}}
 The Tutorial is intended for beginner to intermediate users.
 
 This next sentence [demonstrates](https://colinwilson.uk) the colour of a link inside an alert box.
-{{< /alert >}}
+{{% /alert %}}
 
 {{< alert context="success" text="The Tutorial is intended for novice to intermediate users.<br> Hello World" />}}
 
@@ -52,10 +52,10 @@ This next sentence [demonstrates](https://colinwilson.uk) the colour of a link i
 
 {{< alert context="danger" text="The Tutorial is intended for novice to intermediate users.<br> Hello World" />}}
 
-{{< alert context="light" >}}
+{{% alert context="light" %}}
 The Tutorial is intended for novice to intermediate users.<br> Hello World
 This next sentence [demonstrates](https://colinwilson.uk) the colour of a link inside an alert box.
-{{< /alert >}}
+{{% /alert %}}
 
 ## Small Image
 

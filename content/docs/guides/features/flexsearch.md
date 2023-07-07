@@ -92,37 +92,37 @@ The following FlexSearch options are available:
 
 This option sets the behaviour for the search process; that is, how it looks for the words that are being searched for and how effective the search is. Generally-speaking, the `full` setting will provide the most effective search experience, but alternative, simpler options may be used on large websites to limit the amount of memory required for the search. The available settings for this option are:
 
-- `strict` - Only exact matches for the search term will be shown in the results.
-- `forward` (**default**) - Words are searched for starting from the first letter in a forward order, allowing partial matches to be displayed; unfinished words or words with mispellings at the end will still display results e.g. if searching for 'Testing', entering only 'Tes' will provide some results.
-- `reverse` - A result will be shown when the letters of the search term occur in both forward or reverse order, provide even more support for mispellings or incomplete searches e.g. if searching for 'Testing', entering either 'Tes' or 'ing' will provide some results.
-- `full` - Combines all of the above, plus partial matches for the middle section of the search term e.g. if searching for 'Testing', entering either 'Tes', 'ing' or 'sti', or other combinations thereof will provide some results.
+- **`strict`** - Only exact matches for the search term will be shown in the results.
+- **`forward`** (**default**) - Words are searched for starting from the first letter in a forward order, allowing partial matches to be displayed; unfinished words or words with mispellings at the end will still display results e.g. if searching for 'Testing', entering only 'Tes' will provide some results.
+- **`reverse`** - A result will be shown when the letters of the search term occur in both forward or reverse order, provide even more support for mispellings or incomplete searches e.g. if searching for 'Testing', entering either 'Tes' or 'ing' will provide some results.
+- **`full`** - Combines all of the above, plus partial matches for the middle section of the search term e.g. if searching for 'Testing', entering either 'Tes', 'ing' or 'sti', or other combinations thereof will provide some results.
 
 ### Cache
 
 If enabled, FlexSearch will use the available cache to store popular searches in order to provide instant search when typing in the search bar. The options available in this section are:
 
-- `true` - **no size limit** - Searches will be saved to provide dynamic searches when typing and autocomplete suggestions if enabled.
-- `false` - **Disabled** - No searches will be stored; searches may run slower than when the cache is enabled.
-- `<number>` - **with size limit** - The number entered in this field defines the maximum number of searches that FlexSearch should save for dynamic searches and suggestions. By default, this is set to `100`.
+- **`true`** - **no size limit** - Searches will be saved to provide dynamic searches when typing and autocomplete suggestions if enabled.
+- **`false`** - **Disabled** - No searches will be stored; searches may run slower than when the cache is enabled.
+- **`<number>`** - **with size limit** - The number entered in this field defines the maximum number of searches that FlexSearch should save for dynamic searches and suggestions. By default, this is set to `100`.
 
 ### Optimize
 
 When enabled it uses a memory-optimized stack flow for the index.
 
-- `true` - Enable memory-optimized stack flow for the index.
-- `false` - Disabled
+- **`true`** - Enable memory-optimized stack flow for the index.
+- **`false`** - Disabled
 
 ### Minimum query character count
 
 The `minQueryChar` parameter defines the minimum number of entered characters required before any search results are rendered. A higher number decreases memory allocation:
 
-- `0` - **Disabled** - (**default**) Search suggestions are presented as soon as an entry is made in the search input.
-- `<number>` - The minimum number of characters required before search suggestions are presented.
+- **`0`** - **Disabled** - (**default**) Search suggestions are presented as soon as an entry is made in the search input.
+- **`<number>`** - The minimum number of characters required before search suggestions are presented.
 
 ### Maximum number of results
 
 You can control the maximum number of results presented for a search via the `maxResult` parameter:
 
-- `<number>` - Maximum number of results displayed in the suggestions box for a search query. The default is `5`.
+- **`<number>`** - Maximum number of results displayed in the suggestions box for a search query. The default is `5`.
 
 [^1]: [https://github.com/colinwilson/lotusdocs](https://github.com/colinwilson/lotusdocs/blob/release/layouts/partials/docs/footer/flexsearch.html#L90-L93).
