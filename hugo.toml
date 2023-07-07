@@ -36,8 +36,8 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
     ["Source Code Pro", "500, 700"]
   ]
 
-  sans_serif_font = "Poppins"     # Default is System font
-  secondary_font  = "Poppins"     # Default is System font
+  sans_serif_font = "Poppins"         # Default is System font
+  secondary_font  = "Poppins"         # Default is System font
   mono_font       = "Source Code Pro" # Default is System font
 
     [params.footer]
@@ -45,10 +45,10 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         version = true # includes git commit info
 
     [params.social]
-        github = "colinwilson/lotusdocs"        # github.com/YOUR_GITHUB_ID
-        twitter = "lotusdocs"       # twitter.com/YOUR_TWITTER_ID
-        # instagram = "colinwilson"     # instagram.com/YOUR_INSTAGRAM_ID
-        # rss = true                    # show rss icon with link
+        github = "colinwilson/lotusdocs" # github.com/YOUR_GITHUB_ID
+        twitter = "lotusdocs"            # twitter.com/YOUR_TWITTER_ID
+        # instagram = "colinwilson"      # instagram.com/YOUR_INSTAGRAM_ID
+        # rss = true                     # show rss icon with link
 
     [params.docs] # Parameters for the /docs 'template'
         title           = "Lotus Docs"          # default html title for documentation pages/sections
@@ -93,14 +93,14 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         # searchSectionsIndex = []
 
     [params.docsearch] # Parameters for DocSearch
-        appID     = "O2QIOCBDAK" # Algolia Application ID
+        appID     = "O2QIOCBDAK"                       # Algolia Application ID
         apiKey    = "fdc60eee76a72a35d739b54521498b77" # Algolia Search-Only API (Public) Key
-        indexName = "prod_lotusdocs.dev" # Index Name to perform search on (or set env variable HUGO_PARAM_DOCSEARCH_indexName)
+        indexName = "prod_lotusdocs.dev"               # Index Name to perform search on (or set env variable HUGO_PARAM_DOCSEARCH_indexName)
 
-    [params.analytics] # Parameters for Plausible Analytics
-        plausibleURL    = "/docs/s"            # (or set via env variable HUGO_PARAM_ANALYTICS_plausibleURL)
-        plausibleAPI    = "/docs/s"            # optional - (or set via env variable HUGO_PARAM_ANALYTICS_plausibleAPI)
-        plausibleDomain = "lotusdocs.dev"      # (or set via env variable HUGO_PARAM_ANALYTICS_plausibleDomain)
+    [params.plausible] # Parameters for Plausible Analytics
+        dataDomain = "lotusdocs.dev" # (or set via env variable HUGO_PARAMS_PLAUSIBLE_dataDomain)
+        scriptURL  = "/docs/s"       # (or set via env variable HUGO_PARAMS_PLAUSIBLE_scriptURL)
+        eventAPI   = "/docs/s"       # optional - (or set via env variable HUGO_PARAMS_PLAUSIBLE_eventAPI)
 
 [menu]
 [[menu.primary]]

@@ -11,7 +11,7 @@ images: []
 
 Lotus Docs utilises Hugo's internal [Google Analytics v4](https://support.google.com/analytics/#topic=9143232) template[^1].
 
-{{% alert context="info" text="Starting **July 1, 2023**, Universal Analytics (UA) are **deprecated** and are [no longer processed](https://support.google.com/analytics/answer/11583528) by Google. Lotus Docs does not include support for UA." /%}}
+{{% alert context="info" text="Starting **July 1, 2023**, Universal Analytics (UA) was **deprecated** and is [no longer processed](https://support.google.com/analytics/answer/11583528) by Google. Lotus Docs does not include support for UA." /%}}
 
 ## Enabling Google Analytics
 
