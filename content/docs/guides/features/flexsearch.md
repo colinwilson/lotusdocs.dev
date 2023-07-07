@@ -23,13 +23,40 @@ FlexSearch works via a mechanism known as **Contextual Search** (invented by [Th
 
 {{% alert context="info" text="**FlexSearch is enabled by default**" /%}}
 
-To disable it, simply set the `enabled` parameter nested under `[params.flexsearch]` in the `hugo.toml` configuration file to `false`. That's it!
+To disable it, simply set the `enabled` parameter nested under `[params.flexsearch]` in your configuration file to `false`. That's it!
+
+{{< tabs tabTotal="3">}}
+{{% tab tabName="hugo.toml" %}}
 
 ```toml
 [params.flexsearch]
-
     enabled = false
 ```
+
+{{% /tab %}}
+{{% tab tabName="hugo.yaml" %}}
+
+```yaml
+params:
+    flexsearch:
+        enabled: false
+```
+
+{{% /tab %}}
+{{% tab tabName="hugo.json" %}}
+
+```json
+{
+   "params": {
+        "flexsearch": {
+            "enabled": false
+        }
+   }
+}
+```
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ## How to search your site using FlexSearch
 
