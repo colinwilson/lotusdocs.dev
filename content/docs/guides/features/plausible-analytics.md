@@ -25,7 +25,7 @@ As previously mentioned, Plausible is an open source, privacy-focused Google Ana
 
 You can read more about Plausible Analytics and their polices [here](https://plausible.io/about).
 
-## Create an Account on plausible.io
+## Create an Account with plausible.io
 
 Before enabling Plausible Analytics in Lotus Docs, make sure to [register an account](https://plausible.io/docs/register-account) with them and add your site domain to your account; without an active account, no data can be collected by Plausible.
 
