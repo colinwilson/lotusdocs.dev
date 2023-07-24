@@ -19,6 +19,10 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
 [markup]
   defaultMarkdownHandler = "goldmark"
+    [markup.tableOfContents]
+      endLevel = 3
+      ordered = false
+      startLevel = 1
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true # https://jdhao.github.io/2019/12/29/hugo_html_not_shown/
@@ -72,7 +76,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         # ToC
         toc             = true                                # enable table of contents? default is true
         tocMobile       = true                                # enable table of contents in mobile view? default is true
-        scrollSpy       = true                                # enable scrollspy on ToC? default is true
+        scrollSpy       = false                                # enable scrollspy on ToC? default is true
 
         # front matter
         descriptions    = true                                # enable front matter descriptions under content title?
