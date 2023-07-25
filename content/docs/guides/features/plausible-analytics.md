@@ -37,7 +37,7 @@ To enable Plausible Analytics, provide the following parameters in your configur
 
 - **`dataDomain`** - Enter the domain name that you will be tracking through Plausible Analytics, e.g. `lotusdocs.dev`; make sure it's the same domain you entered when adding your website to your Plausible account.
 - **`scriptURL`** - Enter the URL that points to your self-hosted `script.js` file e.g. `mydomain.com`. By default or when empty it will always link to `plausible.io` ([https://plausible.io/js/script.js](https://plausible.io/js/script.js)).
-- **`eventAPI`** - If you're [proxying Plausible](https://plausible.io/docs/proxy/introduction) requests via another service (e.g. [Vercel](https://plausible.io/docs/proxy/guides/vercel), [Netlify](https://plausible.io/docs/proxy/guides/netlify), [Cloudflare](https://plausible.io/docs/proxy/guides/cloudflare)), enter the appropriate event API path here.
+- **`eventAPI`** - If you're [proxying Plausible](#proxying-plausible-through-vercel) requests via another service (e.g. [Vercel](https://plausible.io/docs/proxy/guides/vercel), [Netlify](https://plausible.io/docs/proxy/guides/netlify), [Cloudflare](https://plausible.io/docs/proxy/guides/cloudflare)), enter the appropriate event API path here.
 
 {{< tabs tabTotal="3">}}
 {{% tab tabName="hugo.toml" %}}
