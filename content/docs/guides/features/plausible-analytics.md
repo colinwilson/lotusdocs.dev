@@ -4,12 +4,12 @@ title: "Plausible Analytics"
 description: "How to add Plausible Analytics to your Lotus Docs site."
 icon: trending_up
 date: 2022-12-29T16:28:15+00:00
-lastmod: 2023-07-05T23:45:15+00:00
-draft: true
+lastmod: 2023-07-27T23:28:15+00:00
+draft: false
 images: []
 ---
 
-[Plausible Analytics](https://plausible.io) is a simple, open source, lightweight (< 1 KB) and privacy-focused alternative to Google Analytics. Plausible is completely independent, self-funded and bootstrapped. Read more about them [here](https://plausible.io/about).
+[Plausible Analytics](https://plausible.io) is a simple, open source, lightweight (< 1 KB), privacy-focused alternative to Google Analytics. Plausible is completely independent, self-funded and bootstrapped. Read more about them [here](https://plausible.io/about).
 
 ![Plausible Analytics Dashboard Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/v1673015990/Lotus%20Docs/Social%20Media/plausible-analytics-screenshot_ds_rdd_c6bi3o.webp)
 
@@ -36,8 +36,8 @@ Make a note of the domain name that you entered when [adding your website to Pla
 To enable Plausible Analytics, provide the following parameters in your configuration file under `[params.plausible]`:
 
 - **`dataDomain`** - Enter the domain name that you will be tracking through Plausible Analytics, e.g. `lotusdocs.dev`; make sure it's the same domain you entered when adding your website to your Plausible account.
-- **`scriptURL`** - Enter the URL that points to your self-hosted `script.js` file e.g. `mydomain.com`. By default or when empty it will always link to `plausible.io` ([https://plausible.io/js/script.js](https://plausible.io/js/script.js)).
-- **`eventAPI`** - If you're [proxying Plausible](#proxying-plausible-through-vercel) requests via another service (e.g. [Vercel](https://plausible.io/docs/proxy/guides/vercel), [Netlify](https://plausible.io/docs/proxy/guides/netlify), [Cloudflare](https://plausible.io/docs/proxy/guides/cloudflare)), enter the appropriate event API path here.
+- **`scriptURL`** - **optional** - Enter the URL that points to your self-hosted `script.js` file e.g. `yourdomain.com`. When not set, the `scriptURL` value defaults to `https://plausible.io/js/script.js`.
+- **`eventAPI`** - **optional** - If you're [proxying Plausible](#proxying-plausible-through-vercel) requests via another service (e.g. [Vercel](https://plausible.io/docs/proxy/guides/vercel), [Netlify](https://plausible.io/docs/proxy/guides/netlify), [Cloudflare](https://plausible.io/docs/proxy/guides/cloudflare)), enter the appropriate event API path here.
 
 {{< tabs tabTotal="3">}}
 {{% tab tabName="hugo.toml" %}}
@@ -45,8 +45,8 @@ To enable Plausible Analytics, provide the following parameters in your configur
 ```toml
 [params.plausible] # Parameters for Plausible Analytics
         dataDomain = "yourdomain.com"
-        scriptURL  = "plausible.io"
-        eventAPI   = "/docs/s"       # optional
+        scriptURL  = "yourdomain.com" # optional
+        eventAPI   = "/stats"         # optional
 ```
 
 {{% /tab %}}
@@ -56,8 +56,8 @@ To enable Plausible Analytics, provide the following parameters in your configur
 params:
     plausible: # Parameters for Plausible Analytics
         dataDomain: "yourdomain.com"
-        scriptURL: "plausible.io"
-        eventAPI: "/docs/s"       # optional
+        scriptURL: "yourdomain.com" # optional
+        eventAPI: "/stats"        # optional
 ```
 
 {{% /tab %}}
@@ -68,8 +68,8 @@ params:
    "params": {
         "plausible": {
             "dataDomain": "yourdomain.com",
-            "scriptURL": "plausible.io",
-            "eventAPI": "/docs/s"
+            "scriptURL": "yourdomain.com",
+            "eventAPI": "/stats"
         }
    }
 }
@@ -80,11 +80,11 @@ params:
 
 ## Proxying Plausible through Vercel
 
-Some adblockers/browsers block every tracking script, even privacy-first analytics like plausible.io. You can mitigate this by [proxying the script](https://plausible.io/docs/proxy/introduction).
+Some adblockers/browsers block every tracking script, even privacy-focused analytics like plausible.io. You can mitigate this by [proxying the script](https://plausible.io/docs/proxy/introduction).
 
-[Vercel](https://vercel.com) is our preferred platform on which to deploy Lotus Docs themed sites. Follow the instructions below to setup proxying the Plausible script when hosting your Lotus Docs site on Vercel:
+[Vercel](https://vercel.com) is the preferred platform on which to deploy Lotus Docs themed sites. Follow the instructions below to setup proxying the Plausible script when hosting your Lotus Docs site on Vercel:
 
-1. Create a `vercel.json` file in the root of your site:
+1. Create a `vercel.json` file at the root of your site:
    ```
    /vercel.json
    ```
@@ -104,7 +104,7 @@ Some adblockers/browsers block every tracking script, even privacy-first analyti
         ]
    }
    ```
-   {{% alert context="info" text="you can use whatever paths you like here (for example, here prefixing with `/stats/`)." /%}}
+   {{% alert context="info" text="you can use whatever paths you like here (the above example is prefixed with `/stats/`)." /%}}
 
 3. Set Lotus Docs' `[params.plausible]` parameters to use the values configured above:
    {{< tabs tabTotal="3">}}
