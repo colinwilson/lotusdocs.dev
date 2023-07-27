@@ -85,7 +85,7 @@ func main() {
 
 Specific sections of code can be linked and highlighted by combining the code block `id` with the desired line numbers or ranges.
 
-The syntax follows, `/#<code block id>.<line no./range>`.
+The URL format follows, `/#{code block id}.{line no. range}`.
 
 For example, [`/#80c9335.3,5,7-13`](#80c9335.3,5,7-13) will link to (and highlight) lines 3, 5 and 7-13 in the code block above:
 

@@ -122,7 +122,7 @@ Rendered code block:
 Clicking on any of the line numbers above will update the hash of the current page to link to that specific line.
 
 {{% alert context="info" %}}
-All `<pre>` elements of Prism code blocks have an auto-generated id attribute. These ids are a combination of the unique hash of the code block content plus it's unique position on the page. The generated hash can be overridden using a Custom id set via the `id` option.
+All `<pre>` elements of Prism code blocks have an auto-generated id attribute. This id is a combination of the unique hash of the code block content plus it's unique position on the page. The generated hash can be overridden using a Custom id set via the `id` option.
 
 The url format follows `#{hash-id}.{lines}`, where `{hash-id}` is the auto-generated hash value of the code block and `{lines}` is one or more lines or line ranges that follows the [line highlighting format](#line-highlighting).
 
