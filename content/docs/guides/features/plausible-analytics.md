@@ -9,7 +9,7 @@ draft: false
 images: []
 ---
 
-[Plausible Analytics](https://plausible.io) is a simple, open source, lightweight (< 1 KB), privacy-focused alternative to Google Analytics. Plausible is completely independent, self-funded and bootstrapped. Read more about them [here](https://plausible.io/about).
+[Plausible Analytics](https://plausible.io) is a simple, open source, lightweight (< 1 KB), privacy-focused alternative to Google Analytics. Plausible is completely independent, self-funded and bootstrapped. Read more about [Plausible Analytics](https://plausible.io/about).
 
 ![Plausible Analytics Dashboard Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/v1673015990/Lotus%20Docs/Social%20Media/plausible-analytics-screenshot_ds_rdd_c6bi3o.webp)
 
@@ -23,7 +23,7 @@ As previously mentioned, Plausible is an open source, privacy-focused Google Ana
 - **Open Source** - Plausible Analytics is completely open source so anyone can view, review and inspect the code they're running to verify whether their actions match their claims of privacy.
 - **Your data is encrypted** - Plausible minimize their data collection and whatever is tracked is kept **fully secured**, **encrypted** and hosted on servers **in the EU** (European Union) to ensure it's covered by strict laws on data privacy.
 
-You can read more about Plausible Analytics and their polices [here](https://plausible.io/about).
+You can read more about [Plausible Analytics and their polices](https://plausible.io/about).
 
 ## Create an Account with plausible.io
 
