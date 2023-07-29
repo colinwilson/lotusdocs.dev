@@ -20,7 +20,8 @@
         "#list-item",
         "#doc-nav",
         "#back-to-top",
-        "pre"
+        "pre",
+        "svg"
     ],
     "selectors": {
         "lvl0": {
