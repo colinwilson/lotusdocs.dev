@@ -5,9 +5,11 @@ description: "Search your Lotus Docs site using the FlexSearch Static site Searc
 icon: search
 date: 2023-06-20T15:30:15+00:00
 lastmod: 2023-06-20T15:30:15+00:00
-draft: true
+draft: false
 images: []
 ---
+
+{{% alert context="warning" text="**Caution** - This documentation is in progress" /%}}
 
 ## What is FlexSearch?
 
