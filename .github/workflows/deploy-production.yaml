@@ -51,13 +51,14 @@ jobs:
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.115.3"
+          hugo-version: "0.116.0"
           extended: true
 
       # Step 4 - Builds the site using Hugo
       - name: Build
         run: hugo -v --minify
         env:
+          HUGO_BASEURL: ${{ vars.BASE_URL }}
           # HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
           HUGO_PARAMS_DOCSEARCH_appID: ${{ vars.DOCSEARCH_APPID }}
           HUGO_PARAMS_DOCSEARCH_apiKey: ${{ vars.DOCSEARCH_APIKEY }}
