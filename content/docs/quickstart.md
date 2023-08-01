@@ -98,7 +98,7 @@ git init
 git submodule add https://github.com/colinwilson/lotusdocs themes/lotusdocs
 ```
 
-Initialize the Lotus Docs as a module:
+Initialize the Lotus Docs theme as a module:
 ```shell
 hugo mod init theme/lotusdocs
 ```
