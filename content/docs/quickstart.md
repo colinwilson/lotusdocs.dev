@@ -23,7 +23,8 @@ categories = [""]
 ## Requirements
 
 - **git**
-- **Hugo** ≥ **v0.100.0** (Extended Version)
+- **Go ≥ v1.19**
+- **Hugo ≥ v0.100.0** (Extended Version)
 
 ## Install Hugo
 
@@ -112,8 +113,30 @@ curl -O https://raw.githubusercontent.com/colinwilson/lotusdocs/release/exampleS
 {{% /tab %}}
 {{% tab tabName="Add as a Hugo Module" %}}
 
+Create a new Hugo project using the `hugo new` command:
+
 ```shell
-TBD
+hugo new site my-docs-site && cd my-docs-site
+```
+
+Now initialize the new project as a Hugo Module using the `hugo mod` command:
+
+```
+hugo mod init my-docs-site
+```
+
+Edit the `hugo.toml` configuration file to include the Lotus Docs theme and the Hugo Bootstrap module (lines `4 to 9` below):
+
+```toml {linenos=table,hl_lines=[4,"6-9"],anchorlinenos=true}
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "github.com/colinwilson/lotusdocs"
+
+[module]
+  [[module.imports]]
+    path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
+    disable = false
 ```
 
 {{% /tab %}}
@@ -151,9 +174,9 @@ weight = 999
 
 Modify the options to suit your needs.
 
-The code below shows the front matter code used to create this page, along with some markdown in the body:
+The code below shows the front matter code used to create this page, along with a portion of markdown from the body:
 
-```md
+{{< prism lang="md" >}}
 +++
 weight = 100
 date = "2023-05-03T22:37:22+01:00"
@@ -171,11 +194,23 @@ tags = ["Beginners"]
 
 Navigate to the root of your Hugo project and use the `hugo new` command to create a file in the `content/docs` directory:
 
-    ```shell
-    hugo new docs/examplepage.md
-    ```
-...
+```shell
+hugo new docs/examplepage.md
 ```
+...
+{{< /prism >}}
+
+## Preview your Site
+
+Now that you've created some sample content you can preview your new Lotus Docs site using the `huge server` command:
+
+```shell
+hugo server -D
+```
+
+Navigate to `localhost:1313/docs` and you should see a card link to the **Example Page** created earlier:
+
+![New Lotus Docs Site - Example Content](https://res.cloudinary.com/lotuslabs/image/upload/v1690992310/Lotus%20Docs/images/lotus_docs_new_site_and_content_module_setup_oiuyex.png)
 
 ## Ordering Content
 

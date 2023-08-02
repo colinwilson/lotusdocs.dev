@@ -111,7 +111,7 @@ If your code blocks are highlighted using the [code fences syntax](https://gohug
 
 So the following example:
 ````md
-```go {linenos=table,hl_lines=[2,"5-7"],linenostart=199,anchorlinenos=true}
+```go {linenos=table,hl_lines=[3,"5-7"],linenostart=199,anchorlinenos=true}
 package main
 
 import "fmt"
@@ -124,7 +124,7 @@ func main() {
 
 Will render as shown below:
 
-```go {linenos=true,hl_lines=[2,"5-7"],linenostart=199,anchorlinenos=true,lineanchors=prefix}
+```go {linenos=true,hl_lines=[3,"5-7"],linenostart=199,anchorlinenos=true,lineanchors=prefix}
 package main
 
 import "fmt"
