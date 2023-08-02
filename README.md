@@ -1,4 +1,4 @@
-# Documentation Website for the Lotus Docs Hugo Theme
+# Documentation for the Lotus Docs Hugo Theme
 
 ![Lotus Docs Production Deployment Status](https://img.shields.io/github/deployments/colinwilson/lotusdocs.dev/production?style=for-the-badge&logo=vercel&label=vercel)
 
