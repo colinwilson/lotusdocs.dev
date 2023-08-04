@@ -1,25 +1,25 @@
-+++
-weight = 100
-date = "2022-09-30T05:33:22+01:00"
-draft = false
-author = "Colin Wilson"
-title = "Overview"
-icon = "circle"
-toc = true
-# featured_image = ""
-description = "Lotus Docs is a modern documentation theme built for Hugo."
-publishdate = "2022-09-30T05:33:22+01:00"
-tags = ["Beginners"]
-categories = [""]
+---
+weight: 100
+date: "2022-09-30T05:33:22+01:00"
+draft: false
+author: "Colin Wilson"
+title: "Overview"
+icon: "circle"
+toc: true
+# featured_image: ""
+description: "Lotus Docs is a modern documentation theme built for Hugo."
+publishdate: "2022-09-30T05:33:22+01:00"
+tags: ["Beginners"]
+categories: [""]
 
-[twitter]
-  card = "summary"
-  site = "@LotusDocs"
-  creator = "@LotusDocs"
-  title = "What is Lotus Docs?"
-  description = "Overview of Lotus Docs"
-  image = ""
-+++
+twitter:
+  card: "summary"
+  site: "@LotusDocs"
+  creator: "@LotusDocs"
+  title: "What is Lotus Docs?"
+  description: "Overview of Lotus Docs"
+  image: ""
+---
 
 {{% alert context="danger" %}}
 Lotus Docs is currently in the very early stages of development and, therefore, is **not** recommended for use in production. You're welcome to test the theme yourself, and contributions to [the project](https://github.com/colinwilson/lotusdocs) a very welcome.
