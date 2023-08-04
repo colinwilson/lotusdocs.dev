@@ -4,10 +4,12 @@ title: "DocSearch"
 description: "DocSearch is a free and powerful Server Side Search plugin available in Lotus Docs."
 icon: search
 date: 2023-07-01T14:09:15+00:00
-lastmod: 2023-07-01T14:09:15+00:00
-draft: true
+lastmod: 2023-08-04T00:22:15+00:00
+draft: false
 images: []
 ---
+
+{{% alert context="warning" text="**Caution** - This documentation is in progress" /%}}
 
 ## What is DocSearch?
 
