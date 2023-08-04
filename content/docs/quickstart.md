@@ -98,7 +98,7 @@ You can now choose your preferred method for adding the Lotus Docs theme to your
 
 Edit the `hugo.toml` configuration file to include the [Lotus Docs theme](https://github.com/colinwilson/lotusdocs) and the [Hugo Bootstrap module](https://github.com/gohugoio/hugo-mod-bootstrap-scss) (lines `5 to 11` below):
 
-```toml {linenos=table,hl_lines=["5-11"],anchorlinenos=true}
+```toml {linenos=table,hl_lines=["5-11"]}
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
@@ -125,7 +125,7 @@ git submodule add https://github.com/colinwilson/lotusdocs themes/lotusdocs
 
 Update your existing `hugo.toml` config file with the configuration below:
 
-```toml {linenos=table,hl_lines=["5-11"],anchorlinenos=true}
+```toml {linenos=table,hl_lines=["5-11"]}
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
@@ -154,7 +154,7 @@ git clone https://github.com/colinwilson/lotusdocs themes/lotusdocs
 
 Edit the `hugo.toml` configuration file to include the Lotus Docs theme and the Hugo Bootstrap module (lines `5 to 11` below):
 
-```toml {linenos=table,hl_lines=[4,"6-9"],anchorlinenos=true}
+```toml {linenos=table,hl_lines=["5-11"]}
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
