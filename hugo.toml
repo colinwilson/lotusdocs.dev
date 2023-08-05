@@ -34,6 +34,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
 [params]
 
+  # Google Fonts
   google_fonts = [
     ["Inter", "300, 400, 600, 700"],
     ["Fira Code", "500, 700"]
@@ -45,7 +46,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
     [params.footer]
         copyright = "© :YEAR: Lotus Labs. Powered by [Lotus Docs](https://github.com/colinwilson/lotusdocs), [Hugo](https://gohugo.io/) and [Vercel](https://vercel.com/)"
-        version = true # includes git commit info
+        version   = true # includes git commit info
 
     [params.social]
         github = "colinwilson/lotusdocs" # github.com/YOUR_GITHUB_ID
