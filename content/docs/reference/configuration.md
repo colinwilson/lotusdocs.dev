@@ -43,7 +43,7 @@ Social links are displayed as icons in the top left corner of the Lotus Docs the
 
 ### Social Icon Links
 
-{{< table "table table-striped" >}}
+{{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `github` | string | N/A | Enables the GitHub social icon link using the GitHub URL value set here e.g. `colinwilson` or `colinwilson/lotusdocs` |
@@ -70,7 +70,7 @@ Options to help you configure Lotus Docs to suite your needs.
 
 ### GitInfo Options
 
-{{< table "table table-striped" >}}
+{{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `ghrepo` | string | N/A | Set the Git repository URL for your site e.g. `github.com/colinwilson/lotusdocs.dev` |
