@@ -13,7 +13,7 @@ toc: true
 
 A list of available configuration settings in the site configuration file, `hugo.toml`, `hugo.yaml`, or `hugo.json`:
 
-## `[params]`
+## [params]
 
 ### Google Fonts
 
@@ -26,7 +26,7 @@ A list of available configuration settings in the site configuration file, `hugo
 | `mono_font` | string | System Font | Set the Mono font. e.g. `"Fira Code"` |
 {{</ table >}}
 
-## `[params.footer]`
+## [params.footer]
 
 ### Footer
 
@@ -37,7 +37,7 @@ A list of available configuration settings in the site configuration file, `hugo
 | `version` | boolean | `false` | Display the site's `git` commit info in the footer? |
 {{</ table >}}
 
-## `[params.social]`
+## [params.social]
 
 Social links are displayed as icons in the top left corner of the Lotus Docs theme. This goes for the landing page and docs site.
 
@@ -52,7 +52,7 @@ Social links are displayed as icons in the top left corner of the Lotus Docs the
 | `rss` | boolean | `false` | Display an RSS icon link? |
 {{</ table >}}
 
-## `[params.docs]`
+## [params.docs]
 
 Options to help you configure Lotus Docs to suite your needs.
 
