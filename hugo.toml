@@ -7,9 +7,12 @@ enableEmoji = true
 enableGitInfo = true # N.B. .GitInfo does not currently function with submodule content directories
 # googleAnalytics = "G-VXQVVP7V8K" # (or set via env variable HUGO_GOOGLEANALYTICS)
 
+[build]
+  noJSConfigInAssets = true
+
 [module]
   # uncomment line below for temporary local development of module
-  # replacements = "github.com/colinwilson/lotusdocs -> lotusdocs"
+  replacements = "github.com/colinwilson/lotusdocs -> lotusdocs"
   [module.hugoVersion]
     extended = true
     min = "0.100.0"

@@ -13,11 +13,6 @@ toc: true
 
 ## Contribute to code
 
-### Create an issue
-
-- [Bug report](https://github.com/colinwilson/lotusdocs/issues/new?template=bug-report---.md)
-- [Feature request](https://github.com/colinwilson/lotusdocs/issues/new?template=feature-request---.md)
-
 ### Create a Pull Request
 
 - Follow the [GitHub flow](https://guides.github.com/introduction/flow/).
