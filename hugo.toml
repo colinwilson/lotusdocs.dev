@@ -1,7 +1,7 @@
 baseURL = "/" # (or set via env variable HUGO_BASEURL)
 languageCode = "en-GB"
 title = "Lotus Docs | A Hugo Documentation Theme"
-theme = "lotusdocs"
+# theme = "lotusdocs"
 contentDir = "content"
 enableEmoji = true
 enableGitInfo = true # N.B. .GitInfo does not currently function with submodule content directories
