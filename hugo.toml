@@ -51,7 +51,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
   mono_font       = "Fira Code" # Default is System font
 
     [params.footer]
-        copyright = "© :YEAR: Lotus Labs. Powered by [Lotus Docs](https://github.com/colinwilson/lotusdocs), [Hugo](https://gohugo.io/) and [Vercel](https://vercel.com/)"
+        copyright = "© :YEAR: Lotus Labs. Built with [Lotus Docs](https://github.com/colinwilson/lotusdocs)"
         version   = true # includes git commit info
 
     [params.social]

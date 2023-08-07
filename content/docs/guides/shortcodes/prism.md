@@ -12,7 +12,7 @@ toc: true
 
 ## Prism Shortcode
 
-When Prism is enabled in `config.toml` syntax highlighting can also be achieved using a paired Prism shortcode. The code language is declared using the `lang` parameter:
+When Prism is enabled in `hugo.toml` syntax highlighting can also be achieved using a paired Prism shortcode. The code language is declared using the `lang` parameter:
 
 ```go
 {{</* prism lang="html" >}}
@@ -221,7 +221,7 @@ See Prism's docs for more info on the [File Highlight](https://prismjs.com/plugi
 
 ## Disable Prism
 
-Prism syntax highlighting can be disabled by setting `[params.docs.prism]` to `false` in the `config.toml` configuration file.
+Prism syntax highlighting can be disabled by setting `[params.docs.prism]` to `false` in the `hugo.toml` configuration file.
 
 ## Command Line
 
