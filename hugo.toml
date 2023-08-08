@@ -41,14 +41,14 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 [params]
 
   # Google Fonts
-  google_fonts = [
-    ["Inter", "300, 400, 600, 700"],
-    ["Fira Code", "500, 700"]
-  ]
+  # google_fonts = [
+  #   ["Inter", "300, 400, 600, 700"],
+  #   ["Fira Code", "500, 700"]
+  # ]
 
-  sans_serif_font = "Inter"     # Default is System font
-  secondary_font  = "Inter"     # Default is System font
-  mono_font       = "Fira Code" # Default is System font
+  # sans_serif_font = "Inter"     # Default is System font
+  # secondary_font  = "Inter"     # Default is System font
+  # mono_font       = "Fira Code" # Default is System font
 
     [params.footer]
         copyright = "© :YEAR: Lotus Labs. Built with [Lotus Docs](https://github.com/colinwilson/lotusdocs)"
@@ -77,24 +77,25 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         lastMod         = true                                # enable 'Last modified' date on pages - default false
         lastModRelative = true                                # format 'Last modified' time as relative - default true
 
-        sidebarIcons    = true                                # enable sidebar icons? default false
-        breadcrumbs     = true                                # default is true
-        backToTop       = true                                # enable back-to-top button? default true
-
         # ToC
         toc             = true                                # enable table of contents? default is true
         tocMobile       = true                                # enable table of contents in mobile view? default is true
         scrollSpy       = true                                # enable scrollspy on ToC? default is true
 
-        # front matter
-        descriptions    = true                                # enable front matter descriptions under content title?
+        # icons
+        sidebarIcons    = true                                # enable sidebar icons? default false
         titleIcon       = true                                # enable front matter icon title prefix? default is false
-
+        
         # content navigation
+        breadcrumbs     = true                                # default is true
         navDesc         = true                                # include front matter descriptions in Prev/Next navigation cards
         navDescTrunc    = 30                                  # Number of characters by which to truncate the Prev/Next descriptions
 
         listDescTrunc   = 100                                 # Number of characters by which to truncate the list card description
+        backToTop       = true                                # enable back-to-top button? default true
+
+        # front matter
+        descriptions    = true                                # enable front matter descriptions under content title?
 
     [params.flexsearch] # Parameters for FlexSearch
         enabled             = true
@@ -112,7 +113,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
     [params.plausible] # Parameters for Plausible Analytics
         dataDomain = "lotusdocs.dev" # (or set via env variable HUGO_PARAMS_PLAUSIBLE_dataDomain)
-        scriptURL  = "/docs/s"       # (or set via env variable HUGO_PARAMS_PLAUSIBLE_scriptURL)
+        # scriptURL  = "/docs/s"       # (or set via env variable HUGO_PARAMS_PLAUSIBLE_scriptURL)
         eventAPI   = "/docs/s"       # optional - (or set via env variable HUGO_PARAMS_PLAUSIBLE_eventAPI)
 
 [menu]

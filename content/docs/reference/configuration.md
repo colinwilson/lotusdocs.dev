@@ -47,7 +47,7 @@ Social links are displayed as icons in the top left corner of the Lotus Docs the
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `github` | string | N/A | Enables the GitHub social icon link using the GitHub URL value set here e.g. `colinwilson` or `colinwilson/lotusdocs` |
-| `twitter` | string | N/A | Enables the Twitter (X - Ugh!) social icon link using the username value set here e.g. `lotusdocs` |
+| `twitter` | string | N/A | Enables the Twitter / X (Ugh!) social icon link using the username value set here e.g. `lotusdocs` |
 | `instagram` | string | N/A | Enables the Instagram social icon link using the username value set here e.g. `lotusdocs` |
 | `rss` | boolean | `false` | Display an RSS icon link? |
 {{</ table >}}
@@ -64,8 +64,30 @@ Options to help you configure Lotus Docs to suite your needs.
 | `title` | string | N/A | Set the default HTML title for your documentation pages/sections e.g. `Lotus Docs` (This parameter is separate from the root Hugo [`title`](https://gohugo.io/getting-started/configuration/#title) parameter that sets the title for your site overall e.g the landing page.) |
 | `pathName` | string | `docs` | Pathname for the documentation site. A few additional changes to the Lotus Docs theme are required when this value is updated. See the **Installation** guide for more details. |
 | `themeColor` | string | `blue` | Set the sites accent color. This affects links, buttons and icons. Available options/colors include, `blue` (default), `green`, `red`, `yellow`, `emerald`, `cardinal`, `magenta`, `cyan`. |
-| `darkMode` | boolean | `false` | Enable Dark Mode for the site? |
+| `darkMode` | boolean | `false` | Enable Dark Mode? |
 | `prism` | boolean | `true` | Enable the PrismJS syntax highlighting plugin? See the [Syntax Highlighting](../../guides/features/syntax-highlighting/#prism-features) and [Prism Shortcode](../../guides/shortcodes/prism/) guides for more details. |
+{{</ table >}}
+
+### UI Options
+
+{{< table "table table-striped" >}}
+| Parameter | Type | Default Value | Description |
+|---------|-----|-----|------|
+| `breadcrumbs` | boolean | `true` | Enable breadcrumb navigation links above the content title? |
+| `descriptions` | boolean | `true` | Enable front matter descriptions under content title? |
+| `backToTop` | boolean | `true` | Enable back-to-top button? |
+| `navDesc` | boolean | `true` | Enable front matter descriptions in content Prev/Next navigation card links? |
+| `navDescTrunc` | integer | `40` | Number of characters by which to truncate the Prev/Next link front matter descriptions. |
+| `listDescTrunc` | integer | `100` | Number of characters by which to truncate card front matter description. |
+{{</ table >}}
+
+### Icon Options
+
+{{< table "table table-striped" >}}
+| Parameter | Type | Default Value | Description |
+|---------|-----|-----|------|
+| `sidebarIcons` | boolean | `false` | Enable icons for menu items in the sidebar?. |
+| `titleIcon` | boolean | `false` | Prefix content titles with an icon? When enabled and no icon is set in front matter, a the default [Material Symbol icon `article`](https://fonts.google.com/icons?icon.style=Outlined&icon.query=article&icon.platform=web&selected=Material+Symbols+Outlined:article:) is set. |
 {{</ table >}}
 
 ### GitInfo Options
@@ -87,4 +109,50 @@ Options to help you configure Lotus Docs to suite your needs.
 | `toc` | boolean | `true` | Enable a Table of Contents for all documentation pages? (Activates only if a documentation page generates a ToC). |
 | `tocMobile` | boolean | `true` | Enable a Table of Contents menu in mobile view? Helps navigate pages with a lot of headings/sections. |
 | `scrollSpy` | boolean | `true` | Enable [scrollSpy](https://getbootstrap.com/docs/5.3/components/scrollspy/) on the Table of Contents menus? |
+{{</ table >}}
+
+## [params.flexsearch]
+
+### FlexSearch Options
+
+See the the [FlexSearch Guide](../../guides/features/flexsearch) for more information regarding the options below.
+
+{{< table "table table-striped" >}}
+| Parameter | Type | Default Value | Description |
+|---------|-----|-----|------|
+| `enabled` | boolean | `true` | Enable FlexSearch. **N.B:** If `[params.docsearch]` is configured, FlexSearch is automatically disable regardless of the value set here. |
+| `tokenize` | string | `forward` | Set the behaviour for the search process. Options include: `full`, `strict`, `forward`, and `reverse`. |
+| `optimize` | boolean | `false` | Enabled to uses a memory-optimized stack flow for the FlexSearch index? |
+| `cache` | integer/boolean | `100` | Enable of set cache behaviour. FlexSearch will use the available cache to store popular searches. |
+| `minQueryChar` | integer | `0` | Set the minimum number of entered characters required before any search results are rendered. `0` disables this requirement and results are shown as soon as any character is entered. |
+| `maxResult` | integer | `5` | Set the maximum number of results presented for a search query. |
+| `searchSectionsIndex` | array | `[]` | **TBD**. |
+{{</ table >}}
+
+## [params.docsearch]
+
+### DocSearch Options
+
+See the the [DocSearch Guide](../../guides/features/docsearch) for more information about DocSearch.
+
+{{< table "table table-striped" >}}
+| Parameter | Type | Default Value | Description |
+|---------|-----|-----|------|
+| `appID` | string | N/A | DocSearch / Algolia Application ID. |
+| `apiKey` | string | N/A | DocSearch Algolia Search-Only API (Public) Key. |
+| `indexName` | string | N/A | Index Name to perform search on. |
+{{</ table >}}
+
+## [params.plausible]
+
+### Plausible Analytics Options
+
+See the the [Plausible Analytics Guide](../../guides/features/plausible-analytics) for more information about how to configure Plausible Analytics for your Lotus Docs site.
+
+{{< table "table table-striped" >}}
+| Parameter | Type | Default Value | Description |
+|---------|-----|-----|------|
+| `dataDomain` | string | N/A | Set the domain name that you wish to track via Plausible Analytics, e.g. `lotusdocs.dev`. |
+| `scriptURL` | string | `https://plausible.io` | **optional** - Set the URL (domain/subdomain name) where your `script.js` file is hosted, e.g. `https://lotusdocs.dev`. |
+| `eventAPI` | string | N/A | **optional** - Set the event API path. |
 {{</ table >}}
