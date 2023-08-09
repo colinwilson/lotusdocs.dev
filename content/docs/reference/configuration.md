@@ -33,7 +33,7 @@ A list of available configuration settings in the site configuration file, `hugo
 {{< table "table table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
-| `copyright` | string | N/A | Sets the footer copyright text for both the landing page and `/docs` section (**supports Markdown**) |
+| `copyright` | string | N/A | Sets the footer copyright text for both the landing page and documentation site (**supports Markdown**) |
 | `version` | boolean | `false` | Display the site's `git` commit info in the footer? |
 {{</ table >}}
 
@@ -47,7 +47,7 @@ Social links are displayed as icons in the top left corner of the Lotus Docs the
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `github` | string | N/A | Enables the GitHub social icon link using the GitHub URL value set here e.g. `colinwilson` or `colinwilson/lotusdocs` |
-| `twitter` | string | N/A | Enables the Twitter / X (Ugh!) social icon link using the username value set here e.g. `lotusdocs` |
+| `twitter` | string | N/A | Enables the Twitter / X social icon link using the username value set here e.g. `lotusdocs` |
 | `instagram` | string | N/A | Enables the Instagram social icon link using the username value set here e.g. `lotusdocs` |
 | `rss` | boolean | `false` | Display an RSS icon link? |
 {{</ table >}}
