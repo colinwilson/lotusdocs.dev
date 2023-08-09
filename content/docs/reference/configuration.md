@@ -117,7 +117,7 @@ Options to help you configure Lotus Docs to suite your needs.
 
 See the the [FlexSearch Guide](../../guides/features/flexsearch) for more information regarding the options below.
 
-{{< table "table table-striped" >}}
+{{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `enabled` | boolean | `true` | Enable FlexSearch. **N.B:** If `[params.docsearch]` is configured, FlexSearch is automatically disable regardless of the value set here. |
@@ -149,7 +149,7 @@ See the the [DocSearch Guide](../../guides/features/docsearch) for more informat
 
 See the the [Plausible Analytics Guide](../../guides/features/plausible-analytics) for more information about how to configure Plausible Analytics for your Lotus Docs site.
 
-{{< table "table table-striped" >}}
+{{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `dataDomain` | string | N/A | Set the domain name that you wish to track via Plausible Analytics, e.g. `lotusdocs.dev`. |
