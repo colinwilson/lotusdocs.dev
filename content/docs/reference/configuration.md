@@ -33,7 +33,7 @@ A list of available configuration settings in the site configuration file, `hugo
 {{< table "table table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
-| `copyright` | string | N/A | Sets the footer copyright text for both the landing page and `/docs` section (**supports Markdown**) |
+| `copyright` | string | N/A | Sets the footer copyright text for both the landing page and documentation site (**supports Markdown**) |
 | `version` | boolean | `false` | Display the site's `git` commit info in the footer? |
 {{</ table >}}
 
@@ -47,7 +47,7 @@ Social links are displayed as icons in the top left corner of the Lotus Docs the
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `github` | string | N/A | Enables the GitHub social icon link using the GitHub URL value set here e.g. `colinwilson` or `colinwilson/lotusdocs` |
-| `twitter` | string | N/A | Enables the Twitter / X (Ugh!) social icon link using the username value set here e.g. `lotusdocs` |
+| `twitter` | string | N/A | Enables the Twitter / X social icon link using the username value set here e.g. `lotusdocs` |
 | `instagram` | string | N/A | Enables the Instagram social icon link using the username value set here e.g. `lotusdocs` |
 | `rss` | boolean | `false` | Display an RSS icon link? |
 {{</ table >}}
@@ -117,7 +117,7 @@ Options to help you configure Lotus Docs to suite your needs.
 
 See the the [FlexSearch Guide](../../guides/features/flexsearch) for more information regarding the options below.
 
-{{< table "table table-striped" >}}
+{{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `enabled` | boolean | `true` | Enable FlexSearch. **N.B:** If `[params.docsearch]` is configured, FlexSearch is automatically disable regardless of the value set here. |
@@ -149,7 +149,7 @@ See the the [DocSearch Guide](../../guides/features/docsearch) for more informat
 
 See the the [Plausible Analytics Guide](../../guides/features/plausible-analytics) for more information about how to configure Plausible Analytics for your Lotus Docs site.
 
-{{< table "table table-striped" >}}
+{{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `dataDomain` | string | N/A | Set the domain name that you wish to track via Plausible Analytics, e.g. `lotusdocs.dev`. |
