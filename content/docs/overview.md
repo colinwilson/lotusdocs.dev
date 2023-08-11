@@ -29,15 +29,99 @@ Welcome to the Lotus Docs user guide. This guide shows you how to start creating
 
 ## What is Lotus Docs?
 
-Lotus Docs is a theme for the [Hugo](https://gohugo.io) static site generator (SSG), specifically designed for technical documentation sets and includes many best practices by default. Use Lotus Docs to get a working and reliable documentation site up and running fast, leaving valuable time to focus on creating content for your users.
+Lotus Docs is a theme for the [Hugo](https://gohugo.io) static site generator (SSG), specifically designed for technical documentation sets and includes many best practices by default (The site you’re currently reading was built using the Lotus Docs theme!). Use Lotus Docs to get a working and reliable documentation site up and running fast, leaving valuable time to focus on creating content for your users.
 
-The site you’re currently reading was built using the Lotus Docs theme! Many of the features and configurations available in the Lotus Docs theme are on display here. You can clone this entire site and edit it to suit your projects, or explore the site, its source and see what Lotus Docs can do.
+### Features
 
-{{% alert context="warning" %}}
-**Source hosting and management:** Our theme and [site source code](https://github.com/colinwilson/lotusdocs) are hosted on GitHub, which is the recommended approach for most projects. You can also keep your project files in GitLab, BitBucket, locally, or wherever you like. Be aware that where you host your site's source code may affect the Lotus Docs features you can use (such as letting users create documentation issues) and site deployment options.
+Many of the features and configurations available in the Lotus Docs theme are on display here in this documentation. You can clone this entire site and edit it to suit your projects, or explore the site, its source and see what Lotus Docs can do. Check out a few of Lotus Docs' features:
 
-**Site deployment:** You can find out about deployment options in Previews and Deployment. This site uses [Vercel](https://vercel.com).
-{{% /alert %}}
+<div class="row flex-xl-wrap pb-4">
+
+<div id="list-item" class="col-md-4 col-12 py-2">
+  <a class="text-decoration-none text-reset" href="../guides/features/syntax-highlighting/">
+  <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+      <span class="h1 icon-color">
+        <i class="material-icons align-middle">highlight</i>
+      </span>
+      <div class="card-body p-0 content">
+        <p class="fs-5 fw-semibold card-title mb-1">Syntax Highlighting</p>
+        <p class="para card-text mb-0">Highlight your code blocks via PrismJS</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div id="list-item" class="col-md-4 col-12 py-2">
+  <a class="text-decoration-none text-reset" href="../guides/features/docsearch/">
+    <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+      <span class="h1 icon-color">
+        <i class="material-icons align-middle">search</i>
+      </span>
+      <div class="card-body p-0 content">
+        <p class="fs-5 fw-semibold card-title mb-1">DocSearch</p>
+        <p class="para card-text mb-0">A powerful Server Side Search plugin</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div id="list-item" class="col-md-4 col-12 py-2">
+  <a class="text-decoration-none text-reset" href="../guides/features/plausible-analytics/">
+    <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+      <span class="h1 icon-color">
+        <i class="material-icons align-middle">trending_up</i>
+      </span>
+      <div class="card-body p-0 content">
+        <p class="fs-5 fw-semibold card-title mb-1">Plausible Analytics</p>
+        <p class="para card-text mb-0">Open source, Privacy-focused web analytics</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div id="list-item" class="col-md-4 col-12 py-2">
+  <a class="text-decoration-none text-reset" href="../guides/shortcodes/">
+    <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+      <span class="h1 icon-color">
+        <i class="material-icons align-middle">code</i>
+      </span>
+      <div class="card-body p-0 content">
+        <p class="fs-5 fw-semibold card-title mb-1">Shortcodes</p>
+        <p class="para card-text mb-0">Custom shortcodes for when you want to do more than Markdown can offer</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- <div id="list-item" class="col-md-4 col-12 py-2">
+  <a class="text-decoration-none text-reset" href="../guides/landing-page/">
+    <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+      <span class="h1 icon-color">
+        <i class="material-icons align-middle">flight_land</i>
+      </span>
+      <div class="card-body p-0 content">
+        <p class="fs-5 fw-semibold card-title mb-1">Landing Page</p>
+        <p class="para card-text mb-0">Customizable landing page and templates</p>
+      </div>
+    </div>
+  </a>
+</div> -->
+
+<!-- <div id="list-item" class="col-md-4 col-12 py-2">
+  <a class="text-decoration-none text-reset" href="../guides/features/feedback/">
+    <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+      <span class="h1 icon-color">
+        <i class="material-icons align-middle">reviews</i>
+      </span>
+      <div class="card-body p-0 content">
+        <p class="fs-5 fw-semibold card-title mb-1">Feedback Widget</p>
+        <p class="para card-text mb-0">Enable your visitors to provide you feedback on your content</p>
+      </div>
+    </div>
+  </a>
+</div> -->
+
+</div>
 
 ## Who is Lotus Docs for?
 
