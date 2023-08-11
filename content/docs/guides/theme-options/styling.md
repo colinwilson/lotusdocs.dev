@@ -12,6 +12,6 @@ toc: true
 
 ## Theme Colour/Accent
 
-## Assets
-
 ## Google Fonts
+
+## Assets
