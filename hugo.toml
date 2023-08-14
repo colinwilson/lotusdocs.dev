@@ -116,7 +116,9 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         scriptURL  = "/docs/s"       # (or set via env variable HUGO_PARAMS_PLAUSIBLE_scriptURL)
         eventAPI   = "/docs/s"       # optional - (or set via env variable HUGO_PARAMS_PLAUSIBLE_eventAPI)
 
-[menu]
+    [params.feedback]
+        enabled = true
+
 [[menu.primary]]
     name  = "Docs"
     url = "/docs"
