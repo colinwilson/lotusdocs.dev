@@ -85,7 +85,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         # icons
         sidebarIcons    = true                                # enable sidebar icons? default false
         titleIcon       = true                                # enable front matter icon title prefix? default is false
-        
+
         # content navigation
         breadcrumbs     = true                                # default is true
         navDesc         = true                                # include front matter descriptions in Prev/Next navigation cards
@@ -118,6 +118,9 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
     [params.feedback]
         enabled = true
+        analytics = "plausible"
+        positiveName = "Positive Feedback"
+        negativeName = "Negative Feedback"
 
 [[menu.primary]]
     name  = "Docs"
