@@ -127,4 +127,4 @@ You can control the maximum number of results presented for a search via the `ma
 
 - **`<number>`** - Maximum number of results displayed in the suggestions box for a search query. The default is `5`.
 
-[^1]: [https://github.com/colinwilson/lotusdocs](https://github.com/colinwilson/lotusdocs/blob/release/layouts/partials/docs/footer/flexsearch.html#L90-L93).
+[^1]: [https://github.com/colinwilson/lotusdocs](https://github.com/colinwilson/lotusdocs/blob/release/layouts/partials/docs/footer/flexsearch.html#L90-L93)
