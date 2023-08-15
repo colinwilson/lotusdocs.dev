@@ -130,7 +130,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
           ["Something else"]
         ]
         negativeForm = [
-          ["Inaccurate", "Doesn't accurately describe the product or feature."],
+          ["Inaccurate", "Doesn't accurately describe the feature or option."],
           ["Couldn't find what I was looking for", "Missing important information."],
           ["Hard to understand", "Too complicated or unclear."],
           ["Code sample errors", "One or more code samples are incorrect."],
