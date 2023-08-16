@@ -96,4 +96,4 @@ params:
 {{% /tab %}}
 {{< /tabs >}}
 
-{{% alert context="info" text="There's not much sense in having multiple search engines simultaneously active on a single website. Therefore, **FlexSearch** is automatically disabled whenever **DocSearch** is configured." /%}}
+{{% alert context="info" text="There's not much sense to having multiple search engines simultaneously active on a single website. Therefore, **FlexSearch** is automatically disabled whenever **DocSearch** is configured." /%}}

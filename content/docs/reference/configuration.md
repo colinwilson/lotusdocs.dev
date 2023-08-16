@@ -34,7 +34,7 @@ A list of available configuration settings in the site configuration file, `hugo
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `copyright` | string | N/A | Sets the footer copyright text for both the landing page and documentation site (**supports Markdown**) |
-| `version` | boolean | `false` | Display the site's `git` commit info in the footer? |
+| `version` | boolean | `false` | Display the site's truncated `git` commit hash in the footer? |
 {{</ table >}}
 
 ## [params.social]
@@ -115,12 +115,12 @@ Options to help you configure Lotus Docs to suite your needs.
 
 ### FlexSearch Options
 
-See the the [FlexSearch Guide](../../guides/features/flexsearch) for more information regarding the options below.
+See the the [FlexSearch Guide](../../guides/features/flexsearch/) for more information regarding the options below.
 
 {{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
-| `enabled` | boolean | `true` | Enable FlexSearch. **N.B:** If `[params.docsearch]` is configured, FlexSearch is automatically disable regardless of the value set here. |
+| `enabled` | boolean | `true` | Enable FlexSearch? **N.B:** If `[params.docsearch]` is configured, FlexSearch is automatically disable regardless of the value set here. |
 | `tokenize` | string | `forward` | Set the behaviour for the search process. Options include: `full`, `strict`, `forward`, and `reverse`. |
 | `optimize` | boolean | `false` | Enabled to uses a memory-optimized stack flow for the FlexSearch index? |
 | `cache` | integer/boolean | `100` | Enable of set cache behaviour. FlexSearch will use the available cache to store popular searches. |
@@ -133,7 +133,7 @@ See the the [FlexSearch Guide](../../guides/features/flexsearch) for more inform
 
 ### DocSearch Options
 
-See the the [DocSearch Guide](../../guides/features/docsearch) for more information about DocSearch.
+See the the [DocSearch Guide](../../guides/features/docsearch/) for more information about DocSearch.
 
 {{< table "table table-striped" >}}
 | Parameter | Type | Default Value | Description |
@@ -147,7 +147,7 @@ See the the [DocSearch Guide](../../guides/features/docsearch) for more informat
 
 ### Plausible Analytics Options
 
-See the the [Plausible Analytics Guide](../../guides/features/plausible-analytics) for more information about how to configure Plausible Analytics for your Lotus Docs site.
+See the the [Plausible Analytics Guide](../../guides/features/plausible-analytics/) for more information about how to configure Plausible Analytics for your Lotus Docs site.
 
 {{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |
@@ -155,4 +155,24 @@ See the the [Plausible Analytics Guide](../../guides/features/plausible-analytic
 | `dataDomain` | string | N/A | Set the domain name that you wish to track via Plausible Analytics, e.g. `lotusdocs.dev`. |
 | `scriptURL` | string | `https://plausible.io/js/script.js` | **optional** - Set the URL (domain/subdomain name) where your `script.js` file is self-hosted, e.g. `https://plausible.lotusdocs.dev/js/script.js`. |
 | `eventAPI` | string | N/A | **optional** - Set the event API path. e.g. `https://plausible.lotusdocs.dev/api/event` |
+{{</ table >}}
+
+## [params.feedback]
+
+### Feedback Widget
+
+See the the [Feedback Widget Guide](../../guides/features/feedback-widget/) for detailed information about how to configure the widget for Plausible and Google Analytics.
+
+{{< table "table table-responsive table-striped" >}}
+| Parameter | Type | Default Value | Description |
+|---------|-----|-----|------|
+| `enabled` | boolean | false | Enable the Feedback Widget? **N.B:** Either Google or Plausible Analytics need to be configured for the Feedback Widget to function. |
+| `positiveEventName` | string | `Positive Feedback` | **optional** - Set the name for positive feedback events. |
+| `negativeEventName` | string | `Negative Feedback` | **optional** - Set the name for negative feedback events. |
+| `positiveFormTitle` | string | `What did you like?` | **optional** - Set the title for the positive feedback form. |
+| `negativeFormTitle` | string | `What went wrong?` | **optional** - Set the title for the negative feedback form. |
+| `successMsg` | string | `Thank you for helping to improve our documentation!` | **optional** - Set the message that's displayed when feedback is successfully submitted. |
+| `errorMsg` | string | `Sorry! There was an error while attempting to submit your feedback!` | **optional** - Set the message that's displayed when there is an error in submitting feedback. |
+| `positiveForm` | array | N/A | **optional** - A nested array of ratings and descriptions for the positive feedback form. e.g. `[["Easy to understand","Easy to follow and comprehend."]]`, the first element in the nested array represents the rating, and the second, the description.  |
+| `negativeForm` | array | N/A | **optional** - A nested array of ratings and descriptions for the negative feedback form. e.g. `[["Hard to understand","Too complicated or unclear."]]`, the first element in the nested array represents the rating, and the second, the description.  |
 {{</ table >}}
