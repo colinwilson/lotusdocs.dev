@@ -141,7 +141,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
 [[menu.primary]]
     name  = "Docs"
-    url = "/docs"
+    url = "/docs/"
     identifier = "docs"
     weight = 10
 
