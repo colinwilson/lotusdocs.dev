@@ -153,6 +153,6 @@ See the the [Plausible Analytics Guide](../../guides/features/plausible-analytic
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `dataDomain` | string | N/A | Set the domain name that you wish to track via Plausible Analytics, e.g. `lotusdocs.dev`. |
-| `scriptURL` | string | `https://plausible.io` | **optional** - Set the URL (domain/subdomain name) where your `script.js` file is hosted, e.g. `https://lotusdocs.dev`. |
-| `eventAPI` | string | N/A | **optional** - Set the event API path. |
+| `scriptURL` | string | `https://plausible.io/js/script.js` | **optional** - Set the URL (domain/subdomain name) where your `script.js` file is self-hosted, e.g. `https://plausible.lotusdocs.dev/js/script.js`. |
+| `eventAPI` | string | N/A | **optional** - Set the event API path. e.g. `https://plausible.lotusdocs.dev/api/event` |
 {{</ table >}}

@@ -105,8 +105,11 @@ For more extensive code highlighting options with Prism, consider using the [Pri
 If your code blocks are highlighted using the [code fences syntax](https://gohugo.io/content-management/syntax-highlighting/#highlighting-in-code-fences), Prism will auto translate the following Hugo Shortcode options[^1]:
 
 - `linenos`: configure line numbers. Valid values are `true`, `false`, `table`, or `inline`. `false` will turn off line numbers if it’s configured to be on in site config. All remaining options will translate to a line number at the beginning of code lines (as described by  Prism's [Line Numbers](https://prismjs.com/plugins/line-numbers/) plugin).
+
 - `hl_lines`: lists a set of line numbers or line number ranges to be highlighted.
+
 - `linenostart=199`: starts the line number count from 199.
+
 - `anchorlinenos`: Configure anchors on line numbers. Valid values are `true` or `false`;
 
 So the following example:
