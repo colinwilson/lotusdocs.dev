@@ -118,7 +118,6 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
     [params.feedback]
         enabled = true
-        analytics = "plausible"
         positiveEventName = "Positive Feedback"
         negativeEventName = "Negative Feedback"
         positiveFormTitle = "What did you like?"

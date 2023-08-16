@@ -148,4 +148,4 @@ Some adblockers/browsers block every tracking script, even privacy-focused analy
    {{% /tab %}}
    {{< /tabs >}}
 
-{{% alert context="info" text="Plausible has many [guides to settting up proxying](https://plausible.io/docs/proxy/introduction#are-you-concerned-about-missing-data) on many different platforms." /%}}
+{{% alert context="info" text="Plausible's documentation has [guides to settting up proxying](https://plausible.io/docs/proxy/introduction#are-you-concerned-about-missing-data) on many different hosting platforms." /%}}

@@ -70,7 +70,7 @@ Click on the search button (or use `ctrl` + `/`) to reveal and activate the sear
 
 ## Advanced options
 
-The various settings below offer more advanced control over how FlexSearch should index your site content.
+The various settings below offer more advanced control over how FlexSearch indexes your site content.
 
 {{% alert context="info" %}}
 **Note:** Since the default settings[^1] for FlexSearch are capable of providing accurate search results, most Lotus Docs users can ignore all the options in this section. However, if your site has a large number of posts, the generated index file can be relatively large; in such cases it may be beneficial to limit indexing to specific elements to reduce the overall size of the file.
@@ -122,7 +122,7 @@ When enabled it uses a memory-optimized stack flow for the index.
 
 ### Minimum query character count
 
-The `minQueryChar` parameter defines the minimum number of entered characters required before any search results are rendered. A higher number decreases memory allocation:
+The `minQueryChar` parameter defines the minimum number of characters typed before any search results are rendered. A higher number decreases memory allocation:
 
 - **`0`** - **Disabled** - (**default**) Search suggestions are presented as soon as an entry is made in the search input.
 
@@ -130,7 +130,7 @@ The `minQueryChar` parameter defines the minimum number of entered characters re
 
 ### Maximum number of results
 
-You can control the maximum number of results presented for a search via the `maxResult` parameter:
+You can control the maximum number of results presented per a search via the `maxResult` parameter:
 
 - **`<number>`** - Maximum number of results displayed in the suggestions box for a search query. The default is `5`.
 

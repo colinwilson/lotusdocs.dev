@@ -155,7 +155,7 @@ Run the following command from your project’s root directory to clone the Lotu
 git clone https://github.com/colinwilson/lotusdocs themes/lotusdocs
 ```
 
-Edit the `hugo.toml` configuration file to include the Lotus Docs theme and the Hugo Bootstrap module (lines `5 to 11` below):
+Edit the `hugo.toml` configuration file to include the Lotus Docs theme and the Hugo Bootstrap module (lines `5 to 14` below):
 
 ```toml {linenos=table,hl_lines=["5-11"]}
 baseURL = 'http://example.org/'
@@ -237,7 +237,7 @@ Now that you've created some sample content you can preview your new Lotus Docs 
 hugo server -D
 ```
 
-Navigate to `localhost:1313/docs` and you should see a card link to the **Example Page** created earlier:
+Navigate to `localhost:1313/docs/` and you should see a card link to the **Example Page** created earlier:
 
 ![New Lotus Docs Site - Example Content](https://res.cloudinary.com/lotuslabs/image/upload/v1690992310/Lotus%20Docs/images/lotus_docs_new_site_and_content_module_setup_oiuyex.webp)
 
