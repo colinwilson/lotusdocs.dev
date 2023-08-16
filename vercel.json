@@ -5,7 +5,7 @@
             "destination": "https://plausible.aigis.uk/js/script.js"
         },
         {
-          "source": "/docs/s/api/event",
+          "source": "/docs/s/api/event/",
           "destination": "https://plausible.aigis.uk/api/event"
         }
     ],
@@ -44,5 +44,6 @@
                 }
             ]
         }
-    ]
+    ],
+    "trailingSlash": true
 }

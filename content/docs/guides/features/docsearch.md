@@ -36,7 +36,9 @@ DocSearch's mission is to make finding relevant content in technical documentati
 ### In order to use DocSearch, your website must meet these conditions:
 
 1. Your website must be publicly available so that DocSearch can index it.
+
 2. Your website must be a documentation site for an open-source project, or a technical blog. Algolia will reduce the scope of the data that they collect for searches to helpful pages only.
+
 3. Your website is production-ready; that is, already contains content relevant and useful documentation. Algolia will not accept placeholder or lorem ipsum websites that are intended to be updated later.
 
 ## How to get started?
