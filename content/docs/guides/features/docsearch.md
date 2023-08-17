@@ -9,8 +9,6 @@ draft: false
 images: []
 ---
 
-{{% alert context="warning" text="**Caution** - This documentation is in progress" /%}}
-
 ![DocSearch Logo](https://res.cloudinary.com/lotuslabs/image/upload/v1691600620/Lotus%20Docs/images/docsearch_logo_mod_bikkhc.svg)
 
 ## What is DocSearch?
