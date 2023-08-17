@@ -18,6 +18,6 @@ Breadcrumb navigation is enabled by default[^1] and appears in the top right-han
 
 ## Structured Data
 
-The breadcrumb navigation also auto-generates [structured data](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data) for [rich results](https://developers.google.com/search/docs/data-types/breadcrumb) to help enable search results that are more engaging to users.
+The breadcrumb navigation also auto-generates [structured data](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data) for [rich results](https://developers.google.com/search/docs/data-types/breadcrumb) to help enable search results that are more engaging to users. Here are the Breadcrumb Rich Results [test results](https://search.google.com/test/rich-results/result?id=Di10MqNNX6Fw8oAUrqRXQA) for this very page.
 
 [^1]: [Breadcrumb configuration reference](../../../reference/configuration/#ui-options).
