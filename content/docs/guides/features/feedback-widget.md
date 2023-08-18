@@ -29,7 +29,7 @@ The Feedback Widget works by leveraging custom events:
 - **Google Analytics v4** via [Custom events](https://support.google.com/analytics/answer/12229021)
 - **Plausible Analytics** via [Custom event goals](https://plausible.io/docs/custom-event-goals)
 
-The above events send visitor interactions from the Feedback Widget to the analytics service.
+The above events send visitor interactions from the Feedback Widget to the corresponding analytics service.
 
 When enabled, the widget appears at the bottom of every content page. Once a visitor answers the initial call-to-action ('**Was this page helpful?**') **Yes** or **No**, a positive or negative feedback form is presented.
 
@@ -211,9 +211,9 @@ Messages displayed after feedback is submitted:
 
 An array of options for each feedback form. The first item in each nested array sets the name of the feedback option/rating. The second item sets the description of that feedback option/rating. So `["Solved my problem", "Helped me resolve an issue."]` results in:
 
-![Feedback Form Option](https://res.cloudinary.com/lotuslabs/image/upload/v1692325859/Lotus%20Docs/images/lotusdocs_feedback_form_option_mpskqm.webp)
+![Feedback Form Option](https://res.cloudinary.com/lotuslabs/image/upload/v1692328347/Lotus%20Docs/images/lotusdocs_feedback_form_option_selected_ppf1hb.webp)
 
-The feedback option name, `Solved my problem` is sent as a parameter of the [event name](#event-name).
+The feedback option name, `Solved my problem` is sent as an [event parameter](https://developers.google.com/analytics/devguides/collection/ga4/event-parameters?client_type=gtag) value of a key named `rating` and any text entered in the text area is sent as a value of a key named `message`.
 
 - **`positiveForm`** - A nested array consisting of positive feedback rating names and their optional descriptions e.g. `["Accurate", "Accurately describes the feature or option."]`.(**default**)
 
