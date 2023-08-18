@@ -45,5 +45,6 @@
             ]
         }
     ],
-    "trailingSlash": true
+    "trailingSlash": true,
+    "outputDirectory": "public/docs/"
 }

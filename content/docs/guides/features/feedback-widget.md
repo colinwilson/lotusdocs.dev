@@ -67,7 +67,7 @@ The Feedback Widget is configured via the `[params.feedback]` parameter:
         negativeEventName = "Negative Feedback"                                          # optional
         positiveFormTitle = "What did you like?"                                         # optional
         negativeFormTitle = "What went wrong?"                                           # optional
-        successMsg = "Thank you for helping to improve our documentation!"       # optional
+        successMsg = "Thank you for helping to improve our documentation!"               # optional
         errorMsg = "Sorry! There was an error while attempting to submit your feedback!" # optional
         positiveForm = [
           ["Accurate", "Accurately describes the feature or option."],
@@ -90,13 +90,13 @@ The Feedback Widget is configured via the `[params.feedback]` parameter:
    ```yaml
     params:
         feedback:
-            enabled: true
-            positiveEventName: Positive Feedback
-            negativeEventName: Negative Feedback
-            positiveFormTitle: What did you like?
-            negativeFormTitle: What went wrong?
-            successMsg: Thank you for helping to improve our documentation!
-            errorMsg: Sorry! There was an error while attempting to submit your feedback!
+            enabled: true                                                                 # default / not set = false
+            positiveEventName: Positive Feedback                                          # optional
+            negativeEventName: Negative Feedback                                          # optional
+            positiveFormTitle: What did you like?                                         # optional
+            negativeFormTitle: What went wrong?                                           # optional
+            successMsg: Thank you for helping to improve our documentation!               # optional
+            errorMsg: Sorry! There was an error while attempting to submit your feedback! # optional
             positiveForm:
                 - - Accurate
                   - Accurately describes the feature or option.
@@ -209,12 +209,15 @@ Messages displayed after feedback is submitted:
 
 ### Form Feedback Options
 
-An array of options for each feedback form. The first item in each nested array sets the name of the feedback option/rating. The second item sets the description of that feedback option/rating. So `["Solved my problem", "Helped me resolve an issue."]` results in:
+A nested array of options for each feedback form. The first string in each nested array sets the name of the feedback option/rating. The second string sets the description of that feedback option/rating.
+
+- **`positiveForm`** - A nested array consisting of a positive rating name and description (optional) for each feedback radio option e.g. `[["Accurate", "Accurately describes the feature or option."]]`.
+
+- **`negativeForm`** - A nested array consisting of a negative rating name and description (optional) for each feedback radio option e.g. `[["Code sample errors", "One or more code samples are incorrect."]]`.
+
+So `["Solved my problem", "Helped me resolve an issue."]` results in:
 
 ![Feedback Form Option](https://res.cloudinary.com/lotuslabs/image/upload/v1692328347/Lotus%20Docs/images/lotusdocs_feedback_form_option_selected_ppf1hb.webp)
 
 The feedback option name, `Solved my problem` is sent as an [event parameter](https://developers.google.com/analytics/devguides/collection/ga4/event-parameters?client_type=gtag) value of a key named `rating` and any text entered in the text area is sent as a value of a key named `message`.
 
-- **`positiveForm`** - A nested array consisting of positive feedback rating names and their optional descriptions e.g. `["Accurate", "Accurately describes the feature or option."]`.(**default**)
-
-- **`negativeForm`** - A nested array consisting of negative feedback rating names and their optional descriptions e.g. `["Code sample errors", "One or more code samples are incorrect."]`.(**default**)
