@@ -1,7 +1,7 @@
 ---
 weight: 525
 title: "DocSearch"
-description: "DocSearch is a free and powerful Server Side Search plugin available in Lotus Docs."
+description: "DocSearch is a free and powerful Server Side Search plugin integrated with Lotus Docs."
 icon: search
 date: 2023-07-01T14:09:15+00:00
 lastmod: 2023-08-04T00:22:15+00:00
@@ -17,9 +17,9 @@ images: []
 
 ## How does DocSearch work?
 
-Much like other search engines, DocSearch uses a scraper to index your site content; in simple terms, the scraper scans your website and stores the data, which it can then collate to make a custom search that is effective for your site. Uniquely, DocSearch is targeted to documentation specifically; this means it's designed to help users more effectively find answers to specific questions or subjects within a narrow scope rather than looking for more generalised relevance, and it also offers autocomplete functionality to help users locate the sections that will be more helpful in answering their query.
+Much like other search engines, DocSearch uses a scraper to index your site content; in simple terms, the scraper scans your website and stores the data, which it can then collate to make a custom search that is effective for your site. Uniquely, DocSearch is targeted at documentation specifically; this means it's designed to help users more effectively find answers to specific questions or subjects within a narrow scope rather than looking for more generalised relevance, and it also offers autocomplete functionality to help users locate the sections that will be more helpful in answering their query.
 
-With the data collected, Algolia will automatically configure a search relevant to your site content, then provide methods to integrate the search into your site. The functionality for the search is handled by DocSearch itself; processing the search query and delivering results occurs separate from your site’s infrastructure.
+With the data collected, Algolia will automatically configure a search relevant to your site content, then provide methods to integrate this search into your site. The functionality for the search is handled by DocSearch itself; processing the search query and delivering results occurs separate from your site’s infrastructure.
 
 ## Why DocSearch?
 
@@ -31,17 +31,17 @@ If you're running a website providing technical documentation on an open-source 
 
 DocSearch's mission is to make finding relevant content in technical documentation easier, rather than to create a general search engine that any site can use. Therefore, in order to use DocSearch, each site must meet certain criteria.
 
-### In order to use DocSearch, your website must meet these conditions:
+### To be eligible to use DocSearch, your website must meet these conditions:
 
 1. Your website must be publicly available so that DocSearch can index it.
 
-2. Your website must be a documentation site for an open-source project, or a technical blog. Algolia will reduce the scope of the data that they collect for searches to helpful pages only.
+2. Your website must be a documentation site for an open-source project or a technical blog. Algolia will reduce the scope of the data they collect for searches to helpful pages only.
 
-3. Your website is production-ready; that is, already contains content relevant and useful documentation. Algolia will not accept placeholder or lorem ipsum websites that are intended to be updated later.
+3. Your website is production-ready; that is, already contains  relevant and useful documentation content. Algolia will not accept placeholder or lorem ipsum websites intended to be updated later.
 
 ## How to get started?
 
-Once your website is online and ready to add search functionality, you should [submit an application to DocSearch](https://docsearch.algolia.com/apply/) via their frontpage; the form in the header of the site will allow you to do this. You only need provide the website URL and your email address so that you can receive the search credentials once they are ready; note that you will also need to be the owner of the website in question and verify this when submitting your application. Once Algolia accepts your submission they will send you the credentials for enabling your search via email.
+Once your website is online and ready to add search functionality, you should [submit an application to DocSearch](https://docsearch.algolia.com/apply/) via their frontpage; the form in the header of the site will allow you to do this. You only need provide the website URL and your email address so you can receive the search credentials once they are ready; note that you will also need to be the owner of the site in question and verify this when submitting your application. Once Algolia accepts your submission they will send you the credentials for enabling your search via email.
 
 After receiving the confirmation email, you will need to copy the following data in order to add it into the plugin options:
 
@@ -49,11 +49,11 @@ After receiving the confirmation email, you will need to copy the following data
 - **API Key**
 - **Index Name**
 
-Once the plugin has been enabled and the relevant data added, DocSearch will crawl your website every 7 days to ensure your search is up-to-date. By default Lotus Docs generates a full sitemap for you. DocSearch will make use of this sitemap to better track changes to content.
+Once the plugin has been enabled and the relevant data added, DocSearch will crawl your website every 7 days to ensure your search is up-to-date. By default Lotus Docs generates a complete sitemap for you. DocSearch will make use of this sitemap to better track changes to content.
 
 ## Enabling the DocSearch Plugin
 
-To enable DocSearch simply set the values to parameters nested under `[params.docsearch]` in your configuration file using the credentials emailed to you by Algolia after the submitted site was approved.
+To enable DocSearch, set the values to parameters nested under `[params.docsearch]` in your configuration file using the credentials emailed to you by Algolia after the submitted site was approved.
 
 {{< tabs tabTotal="3">}}
 {{% tab tabName="hugo.toml" %}}
