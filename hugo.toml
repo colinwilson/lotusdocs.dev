@@ -52,7 +52,7 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
     [params.footer]
         copyright = "© :YEAR: Lotus Labs. Built with [**Lotus Docs**](https://github.com/colinwilson/lotusdocs)"
-        version   = true # includes git commit info
+        version   = true # include git commit info in footer
 
     [params.social]
         github = "colinwilson/lotusdocs" # github.com/YOUR_GITHUB_ID
