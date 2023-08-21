@@ -11,7 +11,7 @@ images: []
 
 The feedback plugin integrates with Google or Plausible Analytics to allow your visitors to provide feedback on your site's content.
 
-![Feedback Widget Initial](https://res.cloudinary.com/lotuslabs/image/upload/v1692284302/Lotus%20Docs/images/feedback_widget_init_kplua6.svg)
+![Emoticon Icons Illustration](https://res.cloudinary.com/lotuslabs/image/upload/v1692583809/Lotus%20Docs/images/feedback_emoticons_tr5v43.svg)
 
 ## Why use web analytics to collect feedback?
 

@@ -120,7 +120,7 @@ See the the [FlexSearch Guide](../../guides/features/flexsearch/) for more infor
 {{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
-| `enabled` | boolean | `true` | Enable FlexSearch? **N.B:** If `[params.docsearch]` is configured, FlexSearch is automatically disable regardless of the value set here. |
+| `enabled` | boolean | `true` | Enable FlexSearch? <br><br> **Note:** If `[params.docsearch]` is configured, FlexSearch is automatically disabled regardless of the value set here. |
 | `tokenize` | string | `forward` | Set the behaviour for the search process. Options include: `full`, `strict`, `forward`, and `reverse`. |
 | `optimize` | boolean | `false` | Enabled to uses a memory-optimized stack flow for the FlexSearch index? |
 | `cache` | integer/boolean | `100` | Enable of set cache behaviour. FlexSearch will use the available cache to store popular searches. |
@@ -166,13 +166,34 @@ See the the [Feedback Widget Guide](../../guides/features/feedback-widget/) for 
 {{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
-| `enabled` | boolean | false | Enable the Feedback Widget? **N.B:** Either Google or Plausible Analytics need to be configured for the Feedback Widget to function. |
-| `positiveEventName` | string | `Positive Feedback` | **optional** - Set the name for positive feedback events. |
-| `negativeEventName` | string | `Negative Feedback` | **optional** - Set the name for negative feedback events. |
-| `positiveFormTitle` | string | `What did you like?` | **optional** - Set the title for the positive feedback form. |
-| `negativeFormTitle` | string | `What went wrong?` | **optional** - Set the title for the negative feedback form. |
+| `enabled` | boolean | false | Enable the Feedback Widget? <br><br> **Note:** Either Google or Plausible Analytics need to be configured for the Feedback Widget to function. |
+| `emoticonTpl` | boolean | false | **optional** - Enable the emoticon Feedback Widget template? |
+| `eventDest` | array | N/A | **optional** - An array to define which configured web analytics services to send feedback events to. Available options currently include, `google` and `plausible`. <br><br> **Note:** If not set, the feedback widget will send feedback events to all web analytics services configured in `hugo.toml`. |
 | `successMsg` | string | `Thank you for helping to improve our documentation!` | **optional** - Set the message that's displayed when feedback is successfully submitted. |
 | `errorMsg` | string | `Sorry! There was an error while attempting to submit your feedback!` | **optional** - Set the message that's displayed when there is an error in submitting feedback. |
-| `positiveForm` | array | N/A | **optional** - A nested array of ratings and descriptions for the positive feedback form. e.g. `[["Easy to understand","Easy to follow and comprehend."]]`, the first element in the nested array represents the rating, and the second, the description.  |
-| `negativeForm` | array | N/A | **optional** - A nested array of ratings and descriptions for the negative feedback form. e.g. `[["Hard to understand","Too complicated or unclear."]]`, the first element in the nested array represents the rating, and the second, the description.  |
+{{</ table >}}
+
+### Emoticon Feedback Template
+
+Parameters specific to the emoticon feedback widget template.
+
+{{< table "table table-responsive table-striped" >}}
+| Parameter | Type | Default Value | Description |
+|---------|-----|-----|------|
+| `emoticonEventName` | string | `Feedback` | **optional** - Set the feedback event name for the emoticon template. |
+{{</ table >}}
+
+### Default Feedback Template
+
+Parameters specific to the default feedback template.
+
+{{< table "table table-responsive table-striped" >}}
+| Parameter | Type | Default Value | Description |
+|---------|-----|-----|------|
+| `positiveEventName` | string | `Positive Feedback` | **optional** - Set the name for the positive feedback event. <br><br> **Note:** Does not apply to emoticon feedback template |
+| `negativeEventName` | string | `Negative Feedback` | **optional** - Set the name for the negative feedback event. <br><br> **Note:** Does not apply to emoticon feedback template |
+| `positiveFormTitle` | string | `What did you like?` | **optional** - Set the title for the positive feedback form. <br><br> **Note:** Does not apply to emoticon feedback template |
+| `negativeFormTitle` | string | `What went wrong?` | **optional** - Set the title for the negative feedback form. <br><br> **Note:** Does not apply to emoticon feedback template |
+| `positiveForm` | array | N/A | **optional** - A nested array of ratings and descriptions for the positive feedback form. e.g. `[["Easy to understand","Easy to follow and comprehend."]]`, the first element in the nested array represents the rating, and the second, the description. <br><br> **Note:** Does not apply to emoticon feedback template |
+| `negativeForm` | array | N/A | **optional** - A nested array of ratings and descriptions for the negative feedback form. e.g. `[["Hard to understand","Too complicated or unclear."]]`, the first element in the nested array represents the rating, and the second, the description. <br><br> **Note:** Does not apply to emoticon feedback template |
 {{</ table >}}
