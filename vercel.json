@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/docs/s/js/script.js",
-            "destination": "https://plausible.aigis.uk/js/script.js"
+            "source": "/docs/s/js/script.outbound-links.js",
+            "destination": "https://plausible.aigis.uk/js/script.outbound-links.js"
         },
         {
           "source": "/docs/s/api/event/",
