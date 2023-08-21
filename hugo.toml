@@ -118,7 +118,9 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
     [params.feedback]
         enabled = true
-        template = "emoticon"
+        emoticonTpl = true
+        eventDest = ["plausible","google"]
+        emoticonEventName = "Feedback"
         positiveEventName = "Positive Feedback"
         negativeEventName = "Negative Feedback"
         positiveFormTitle = "What did you like?"
