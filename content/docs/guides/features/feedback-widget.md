@@ -43,19 +43,21 @@ The feedback form uses these custom events to send visitor interactions to the c
 
 Lotus Docs currently offers two template styles for the feedback widget:
 
-**Emoticon**:
+#### Emoticon
 
 <div class="d-flex justify-content-center pb-4">
     <video width="90%" controls>
     <source src="https://res.cloudinary.com/lotuslabs/video/upload/v1692663574/Lotus%20Docs/video/lotusdocs_emoticon_feedback_template_sjk1rm.webm" type="video/webm">
+    <source src="https://res.cloudinary.com/lotuslabs/video/upload/v1692663574/Lotus%20Docs/video/lotusdocs_emoticon_feedback_template_sjk1rm.mp4" type="video/mp4">
     </video>
 </div>
 
-**Default**:
+#### Default
 
 <div class="d-flex justify-content-center pb-4">
     <video width="90%" controls>
     <source src="https://res.cloudinary.com/lotuslabs/video/upload/v1692664585/Lotus%20Docs/video/lotusdocs_default_feedback_template_ybut2q.webm" type="video/webm">
+    <source src="https://res.cloudinary.com/lotuslabs/video/upload/v1692664585/Lotus%20Docs/video/lotusdocs_default_feedback_template_ybut2q.wmp4" type="video/mp4">
     </video>
 </div>
 
