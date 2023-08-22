@@ -45,18 +45,18 @@ Lotus Docs currently offers two template styles for the feedback widget:
 
 **Emoticon**:
 
-<div class="d-flex justify-content-center">
-
-![Lotus Docs Emoticon Feedback Widget Template GIF](https://res.cloudinary.com/lotuslabs/image/upload/v1692640002/Lotus%20Docs/images/lotusdocs_emoticon_feedback_template_rd_pgxjgs.gif)
-
+<div class="d-flex justify-content-center pb-4">
+    <video width="90%" controls>
+    <source src="https://res.cloudinary.com/lotuslabs/video/upload/v1692663574/Lotus%20Docs/video/lotusdocs_emoticon_feedback_template_sjk1rm.webm" type="video/webm">
+    </video>
 </div>
 
 **Default**:
 
-<div class="d-flex justify-content-center">
-
-![Lotus Docs Default Feedback Widget Template GIF](https://res.cloudinary.com/lotuslabs/image/upload/v1692646394/Lotus%20Docs/images/lotusdocs_default_feedback_template_rd_j65pd5.gif)
-
+<div class="d-flex justify-content-center pb-4">
+    <video width="90%" controls>
+    <source src="https://res.cloudinary.com/lotuslabs/video/upload/v1692664585/Lotus%20Docs/video/lotusdocs_default_feedback_template_ybut2q.webm" type="video/webm">
+    </video>
 </div>
 
 ## Configure your analytics for Custom Events
