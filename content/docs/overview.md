@@ -107,19 +107,19 @@ Many of the features and configurations available in the Lotus Docs theme are on
   </a>
 </div> -->
 
-<!-- <div id="list-item" class="col-md-4 col-12 py-2">
-  <a class="text-decoration-none text-reset" href="../guides/features/feedback/">
+<div id="list-item" class="col-md-4 col-12 py-2">
+  <a class="text-decoration-none text-reset" href="../guides/features/feedback-widget/">
     <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
       <span class="h1 icon-color">
         <i class="material-icons align-middle">reviews</i>
       </span>
       <div class="card-body p-0 content">
         <p class="fs-5 fw-semibold card-title mb-1">Feedback Widget</p>
-        <p class="para card-text mb-0">Enable your visitors to provide you feedback on your content</p>
+        <p class="para card-text mb-0">Collect feedback from your visitors on your site’s content</p>
       </div>
     </div>
   </a>
-</div> -->
+</div>
 
 </div>
 
