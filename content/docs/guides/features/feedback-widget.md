@@ -11,7 +11,7 @@ images: []
 
 The Lotus Docs feedback plugin integrates with Google or Plausible Analytics to allow you to collect visitor feedback on your sites' content.
 
-![Emoticon Icons Illustration](https://res.cloudinary.com/lotuslabs/image/upload/v1692622991/Lotus%20Docs/images/lotusdocs_emoticon_feedback_widget_screenshot_rd_wnj72x.webp)
+![Lotus Docs Emoticon Feedback Widget Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/v1692841008/Lotus%20Docs/images/lotusdocs_emoticon_feedback_widget_screenshot_rd_v2_mmoxca.webp)
 
 ## Why use web analytics to collect feedback?
 
@@ -28,14 +28,14 @@ When enabled, the feedback widget appears at bottom of every content page. Whene
 
 ### Custom Events
 
-The Feedback Widget works by leveraging custom events. What is a custom event? From Google:
+The Feedback Widget works by leveraging custom events. What is a custom event?
 
-> A custom event is an event that you define so you can collect information about an interaction that's important to your business.
+> A custom event is an event that you define so you can collect information about an interaction that's important to your business.[^1]
 
-Here's more info on how custom events work with Plausible and Google:
+Check out the links below for more info on how custom events work:
 
-- **Google Analytics v4** via [Custom events](https://support.google.com/analytics/answer/12229021)
-- **Plausible Analytics** via [Custom event goals](https://plausible.io/docs/custom-event-goals)
+- **Google Analytics v4** - [Custom events](https://support.google.com/analytics/answer/12229021)
+- **Plausible Analytics** - [Custom event goals](https://plausible.io/docs/custom-event-goals)
 
 The feedback form uses these custom events to send visitor interactions to the corresponding analytics service.
 
@@ -52,7 +52,7 @@ Lotus Docs currently offers two template styles for the feedback widget:
     </video>
 </div>
 
-#### Default
+#### Default (Classic)
 
 <div class="d-flex justify-content-center pb-4">
     <video width="90%" controls>
@@ -61,7 +61,7 @@ Lotus Docs currently offers two template styles for the feedback widget:
     </video>
 </div>
 
-## Configure your analytics for Custom Events
+## Configure Custom Events
 
 Your web analytics service may require some preparation prior to receiving custom events from the feedback widget.
 
@@ -75,13 +75,23 @@ To configure a goal, go to [your website's settings](https://plausible.io/docs/w
 
 Click on the "**+ Add goal**" button to go to the goal creation form.
 
-Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must match the one you added as a CSS class name on your site for conversions to appear in your analytics dashboard. So in our example where you added a CSS class name `plausible-event-name=Form+Submit`, the goal to add to your Plausible account is `Form Submit` (plus is replaced by a space).
+Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering e.g. `Feedback`, the default name of the emoticon template feedback event. The name must match the value you set for `[params.feedback.emoticonEventName]` in your `hugo.toml` config.
 
 ![Add Goal to Plausible Account](https://res.cloudinary.com/lotuslabs/image/upload/v1692655733/Lotus%20Docs/images/plausible_goals_setup_2_mod_uut38r.webp)
 
-Head back to the stat page for your site and scroll to the bottom to view the `Goal Conversion` statistics. You'll see the Feedback goal along with the breakdown by `rating`.
+Head back to the stat page for your site and scroll to the bottom to view the `Goal Conversion` statistics. You'll see the Feedback goal along with the breakdown by `rating`. Next to it is a `message` link, which shows a breakdown of any messages received via the widget's text area.
 
 ![Lotus Docs Feedback Goal Conversion statistics](https://res.cloudinary.com/lotuslabs/image/upload/v1692656039/Lotus%20Docs/images/plausible_feedback_goal_conversions_mod_kcin8h.webp)
+
+### Google
+
+Once Google Analytics and the feedback widget are configured in your `hugo.toml` file, no additional configuration is required to view collected events in the Google Analytics Admin dashboard. However, there are a couple of tasks that will help you better view and understand your feedback stats in Google Analytics:
+
+- **See the events in your reports** - After you configure the feedback widget and Google Analytics collects the feedback event, you can use the [Events](https://support.google.com/analytics/answer/12926615) report in the Reports section to see how many times feedback was collected and other data (`ratings`, `messages`) about the event in the specified date range.
+
+    You can also select the feedback event name to open a more detailed report, including details about the ratings and messages, and how many users triggered the event (and the associated parameters) in realtime.
+
+- **Custom dimensions and metrics** - To access the different values assigned to the `ratings` and `message` event parameters in your reports, you should create a custom dimension or metric. A custom dimension or metric lets you see the information you collected from `ratings` and `message` parameters. For example, with the `rating` event parameter, you could create a custom metric called 'Rating' that allows you to see each value assigned to the event parameter. [Learn more about custom dimensions and metrics](https://support.google.com/analytics/answer/10075209).
 
 ## How to configure the Feedback Widget
 
@@ -233,7 +243,11 @@ Option to choose the feedback template:
 
 ### Event Destination
 
-This determines which of your configured web analytics services to send your collected feedback to. If this parameter is not set, and the feedback widget is enabled, it will send feedback to all web analytics configured in `hugo.toml`:
+This determines which of your configured web analytics services to send your collected feedback to:
+
+{{% alert context="warning" %}}
+If this parameter is not set, and the feedback widget is enabled, feedback will be sent to all web analytics configured in `hugo.toml`
+{{% /alert %}}
 
 - **`eventDest`** - Which web analytics services to send visitor feedback to e.g. `["plausible", "google"]` (**default**)
 
@@ -279,3 +293,4 @@ So `["Solved my problem", "Helped me resolve an issue."]` results in:
 
 The feedback rating `Solved my problem` is sent as an [event parameter](https://developers.google.com/analytics/devguides/collection/ga4/event-parameters?client_type=gtag) value of a key named `rating`, and any text entered in the text area, is sent as a value of a key named `message`.
 
+[^1]: [[GA4] Custom events - Analytics Help](https://support.google.com/analytics/answer/12229021)
