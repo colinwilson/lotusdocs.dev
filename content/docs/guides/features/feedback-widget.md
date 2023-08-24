@@ -4,8 +4,8 @@ title: "Feedback Widget"
 description: "How to configure the Feedback Widget so visitors can rate or/and comment on your site's content."
 icon: reviews
 date: 2023-08-08T23:33:15+00:00
-lastmod: 2023-08-08T23:33:15+00:00
-draft: true
+lastmod: 2023-08-24T02:43:15+00:00
+draft: false
 images: []
 ---
 
@@ -24,7 +24,7 @@ Short answer? Because it's **FREE**! Other benefits include:
 
 ## How it works
 
-When enabled, the feedback widget appears at bottom of every content page. Whenever a site visitor interacts with it, their feedback is collected and sent to whichever web analytics you have configured in your `hugo.toml` file.
+Once enabled, the feedback widget appears at bottom of every content page. Whenever a site visitor interacts with it, their feedback is collected and sent to whichever web analytics you have configured in your `hugo.toml` file.
 
 ### Custom Events
 
@@ -32,7 +32,7 @@ The Feedback Widget works by leveraging custom events. What is a custom event?
 
 > A custom event is an event that you define so you can collect information about an interaction that's important to your business.[^1]
 
-Check out the links below for more info on how custom events work:
+Check out the links below for more information on how custom events work:
 
 - **Google Analytics v4** - [Custom events](https://support.google.com/analytics/answer/12229021)
 - **Plausible Analytics** - [Custom event goals](https://plausible.io/docs/custom-event-goals)
@@ -79,13 +79,13 @@ Select `Custom event` as the goal trigger and enter the name of the custom event
 
 ![Add Goal to Plausible Account](https://res.cloudinary.com/lotuslabs/image/upload/v1692655733/Lotus%20Docs/images/plausible_goals_setup_2_mod_uut38r.webp)
 
-Head back to the stat page for your site and scroll to the bottom to view the `Goal Conversion` statistics. You'll see the Feedback goal along with the breakdown by `rating`. Next to it is a `message` link, which shows a breakdown of any messages received via the widget's text area.
+Head back to the stats page for your site and scroll to the bottom to view the `Goal Conversion` statistics. You'll see the Feedback goal along with the breakdown by `rating`. Next to it is a `message` link, which shows a breakdown of any messages received via the widget's text area.
 
 ![Lotus Docs Feedback Goal Conversion statistics](https://res.cloudinary.com/lotuslabs/image/upload/v1692656039/Lotus%20Docs/images/plausible_feedback_goal_conversions_mod_kcin8h.webp)
 
 ### Google
 
-Once Google Analytics and the feedback widget are configured in your `hugo.toml` file, no additional configuration is required to view collected events in the Google Analytics Admin dashboard. However, there are a couple of tasks that will help you better view and understand your feedback stats in Google Analytics:
+Once Google Analytics and the feedback widget are configured in your `hugo.toml` file, no additional configuration is required to view collected events in the Google Analytics dashboard. However, there are a couple of tasks that will help you better view and understand your feedback stats in Google Analytics:
 
 - **See the events in your reports** - After you configure the feedback widget and Google Analytics collects the feedback event, you can use the [Events](https://support.google.com/analytics/answer/12926615) report in the Reports section to see how many times feedback was collected and other data (`ratings`, `messages`) about the event in the specified date range.
 
@@ -237,7 +237,7 @@ The following options are available for the Feedback Widget:
 
 ### Template
 
-Option to choose the feedback template:
+Choose which feedback template is displayed on your site:
 
 - **`emoticonTpl`** - Set to `true` to enable the emoticon feedback template. (**default**) is `false`.
 
@@ -246,14 +246,14 @@ Option to choose the feedback template:
 This determines which of your configured web analytics services to send your collected feedback to:
 
 {{% alert context="warning" %}}
-If this parameter is not set, and the feedback widget is enabled, feedback will be sent to all web analytics configured in `hugo.toml`
+If this parameter is not set, feedback will be sent to all web analytics configured in `hugo.toml`
 {{% /alert %}}
 
-- **`eventDest`** - Which web analytics services to send visitor feedback to e.g. `["plausible", "google"]` (**default**)
+- **`eventDest`** - A list of web analytics services to send visitor feedback to e.g. `["plausible", "google"]` (**default**)
 
 ### Event Name
 
-This option sets the name of the event that's sent to the web analytics service:
+Set the name of the feedback event that's sent to the web analytics service:
 
 - **`emoticonEventName`** - The name of the event for the emoticon feedback template e.g. `Feedback` (**default**)
 
@@ -261,7 +261,7 @@ This option sets the name of the event that's sent to the web analytics service:
 
 - **`negativeEventName`** - The name of the negative event for the default feedback template e.g. `Negative Feedback` (**default**)
 
-{{% alert context="info" text="**Note** - For **Google Analytics v4** (per [Google's recommendations](https://support.google.com/analytics/answer/13316687)), before an event is sent, Lotus Docs converts its name to lowercase letters, and replaces spaces with an underscore. e.g. `Positive Feedback` is converted to `positive_feedback`." /%}}
+{{% alert context="info" text="**Note** - For **Google Analytics v4** (per [Google's recommendations](https://support.google.com/analytics/answer/13316687)), before an event is sent, Lotus Docs converts the event name to lowercase letters, and replaces spaces with an underscore. e.g. `Positive Feedback` is converted to `positive_feedback`." /%}}
 
 ### Form Title
 
