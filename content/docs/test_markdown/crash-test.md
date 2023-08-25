@@ -180,12 +180,14 @@ Incrementation is automatic, you can simply use `1.` everywhere
 
 ### Nested list
 
+**Unordered**
+
 ```
 - First item
 - Second item
 - Third item
-  1. Indented item
-  1. Indented item
+  - Indented item
+  - Indented item
 - Fourth item
 ```
 
@@ -194,9 +196,81 @@ Incrementation is automatic, you can simply use `1.` everywhere
 - First item
 - Second item
 - Third item
-  1. Indented item
-  1. Indented item
+  - Indented item
+  - Indented item
 - Fourth item
+
+**Ordered**
+
+```
+1. First item
+1. Second item
+1. Third item
+    1. Indented item
+    1. Indented item
+1. Fourth item
+1. Fifth item
+    1. Indented item
+    1. Indented item
+        1. Indented item
+```
+
+**Output:**
+
+1. First item
+1. Second item
+1. Third item
+    1. Indented item
+    1. Indented item
+1. Fourth item
+1. Fifth item
+    1. Indented item
+    1. Indented item
+        1. Indented item
+
+**Mixed**
+
+```
+1. First item
+1. Second item
+1. Third item
+    * Indented item
+    * Indented item
+1. Fourth item
+1. Fifth item
+    1. Indented item
+    1. Indented item
+        1. Indented item
+        1. Indented item
+            * Indented
+                1. Indented item
+                    * Indented
+                1. Indented item
+            * Indented
+        1. Indented item
+1. Sixth item
+```
+
+**Output:**
+
+1. First item
+1. Second item
+1. Third item
+    * Indented item
+    * Indented item
+1. Fourth item
+1. Fifth item
+    1. Indented item
+    1. Indented item
+        1. Indented item
+        1. Indented item
+            * Indented
+                1. Indented item
+                    * Indented
+                1. Indented item
+            * Indented
+        1. Indented item
+1. Sixth item
 
 
 ## Linebreaks
