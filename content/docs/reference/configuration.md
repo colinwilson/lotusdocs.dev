@@ -34,7 +34,7 @@ A list of available configuration settings in the site configuration file, `hugo
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `copyright` | string | N/A | Sets the footer copyright text for both the landing page and documentation site (**supports Markdown**) |
-| `version` | boolean | `false` | Display the site's truncated `git` commit hash in the footer? |
+| `version` | boolean | `false` | Display the site's truncated `git` commit hash in the footer? **TBC** |
 {{</ table >}}
 
 ## [params.social]
