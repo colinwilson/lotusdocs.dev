@@ -56,7 +56,8 @@ jobs:
 
       # Step 4 - Builds the site using Hugo
       - name: Build
-        run: hugo -v -D -e staging
+        # run: hugo -v -D -e staging
+        run: hugo -v --minify
         env:
           HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
           HUGO_PARAMS_PLAUSIBLE_dataDomain: ${{ secrets.PLAUSIBLE_DOMAIN }}
