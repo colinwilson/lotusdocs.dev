@@ -28,7 +28,7 @@ $$ -->
 
 ## How to use KaTex with Lotus Docs
 
-[KaTex](https://katex.org/) support is controlled by the `katex` parameter in your [front matter](https://gohugo.io/content-management/front-matter/) (**line 10 below**). Setting it to `true` enables KaTex support only for pages that require it.
+[KaTex](https://katex.org/) support is controlled by the `katex` parameter in your [front matter](https://gohugo.io/content-management/front-matter/) (**line 10 below**). Add and set it to `true` in your front matter to enable KaTex support for that page. This means KaTex support and resources are active only for pages that require it.
 
 {{< prism lang="yaml" line="10" >}}
 ---
