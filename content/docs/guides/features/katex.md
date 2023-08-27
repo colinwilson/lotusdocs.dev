@@ -82,7 +82,7 @@ $
 
 ## Syntax Rendering  Issues
 
-As a consequence of Hugo rendering to HTML before KaTex renders to math[^1], there are some instances in which the KaTex equation syntax requires heavy escaping before rendering correctly. Heavy escaping of syntax can be time-consuming and frustrating (especially for inexperienced users). To avoid this, you can use the KaTex Shortcode.
+As a consequence of Hugo rendering to HTML before KaTex renders to math[^1], there are some instances in which the KaTex equation syntax requires heavy escaping before rendering correctly. Heavy escaping of syntax can be time-consuming and frustrating (especially for inexperienced users). To avoid this, a KaTex Shortcode is available.
 
 ```go
 {{</* katex >}}
