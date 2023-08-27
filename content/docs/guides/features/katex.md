@@ -58,6 +58,8 @@ $$
 $$
 ```
 
+**renders as**:
+
 $$
 \int \frac{1}{x} dx = \ln \left| x \right| + C
 $$
@@ -71,6 +73,8 @@ $
 \int \frac{1}{x} dx = \ln \left| x \right| + C
 $
 ```
+
+**renders as**:
 
 $
 \int \frac{1}{x} dx = \ln \left| x \right| + C
