@@ -95,7 +95,8 @@ Options to help you configure Lotus Docs to suite your needs.
 {{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
-| `ghrepo` | string | N/A | Set the Git repository URL for your site e.g. `github.com/colinwilson/lotusdocs.dev` |
+| `repoURL` | string | N/A | Set the Git repository URL for your site e.g. `https://github.com/colinwilson/lotusdocs.dev` |
+| `repoBranch` | string | `main` for GitHub and GitLab. `master` for BitBucket | Set the branch name of your Git repository to use for your site e.g. `main` |
 | `editPage` | boolean | `false` | Enable '**Edit this page**' link at the bottom of documentation pages? Links to the Git repository set by the `ghrepo` parameter. |
 | `lastMod` | boolean | `false` | Enable '**Last updated**' date at the bottom of documentation pages? |
 | `lastModRelative` | boolean | `true` | Format the `lastMod` (if enabled) date parameter as relative? e.g. 8 hours ago, 2 months ago |
