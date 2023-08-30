@@ -1,16 +1,16 @@
 ---
 weight: 575
-title: "Katex"
+title: "KaTex"
 description: "A Shortcode to render KaTex syntax in your Lotus Docs site"
 icon: "function"
 date: "2023-08-27T04:13:11+01:00"
 lastmod: "2023-08-27T04:13:11+01:00"
-draft: true
+draft: false
 toc: true
 katex: true
 ---
 
-Lotus Docs has built-in support for [KaTex](https://katex.org/). However, there are certain equation syntaxes which do not render well if at all without a lot of character escaping[^1]. The KaTex shortcode is for situations such as these.
+Lotus Docs has [built-in support]({{< ref "/docs/guides/features/katex" >}}) for [KaTex](https://katex.org/). However, there are certain equation syntaxes which do not render well if at all without a lot of character escaping[^1] or alterations. The KaTex shortcode is suited to handle such cases.
 
 For example:
 
