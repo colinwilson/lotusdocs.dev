@@ -75,7 +75,11 @@ Setting the `icon` parameter to an empty space, `icon=" "`, will render an alert
 
 ## Render Markdown & HTML inside an Alert
 
-Use a [paired shortcode](https://gohugo.io/content-management/shortcodes/) with the `%` delimiter[^1] to render Markdown and HTML inside an alert:
+{{% alert context="warning" %}}
+So `%` delimited alerts render correctly, ensure you have `unsafe = true` set under `[markup.goldmark.renderer]` in your `hugo.toml` configuration file[^1].
+{{% /alert %}}
+
+Use a [paired shortcode](https://gohugo.io/content-management/shortcodes/) with the `%` delimiter[^2] to render Markdown and HTML inside an alert:
 
 ```go
 {{%/* alert icon="🛒" context="success" %}}
@@ -101,4 +105,5 @@ This ***paired shortcode*** alert contains a **markdown** list and header:
 and a sentence <em>styled</em> using <strong>HTML</strong> tags such as \<strong\> and \<em\>
 {{% /alert %}}
 
-[^1]: [Shortcodes with Markdown - gohugo.io](https://gohugo.io/content-management/shortcodes/#shortcodes-with-markdown)
+[^1]: [Markdown alerts do not seem to display background color](https://github.com/colinwilson/lotusdocs/issues/49#issuecomment-1701170810)
+[^2]: [Shortcodes with Markdown - gohugo.io](https://gohugo.io/content-management/shortcodes/#shortcodes-with-markdown)
