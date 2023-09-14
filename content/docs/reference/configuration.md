@@ -117,7 +117,7 @@ Options to help you configure Lotus Docs to suite your needs.
 {{< table "table table-striped" >}}
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
-| `intLinkTooltip` | boolean | `false` | Enable tooltips for internal links? Displays info about the link's destination? See the [Link behaviour guide]({{% ref "link-behaviour" %}}) for more details. |
+| `intLinkTooltip` | boolean | `false` | Enable tooltips for internal links? Displays info about the link's destination? See the [Link behaviour guide]({{% relref "link-behaviour" %}}) for more details. |
 | `extLinkNewTab` | boolean | `true` | Open external links in a new Tab? |
 {{</ table >}}
 
@@ -157,7 +157,7 @@ See the the [DocSearch Guide](/docs/guides/features/docsearch/) for more informa
 
 ### Plausible Analytics Options
 
-See the the [Plausible Analytics Guide]({{% ref "docs/guides/features/plausible-analytics" %}}) for more information about how to configure Plausible Analytics for your Lotus Docs site.
+See the the [Plausible Analytics Guide]({{% relref "docs/guides/features/plausible-analytics" %}}) for more information about how to configure Plausible Analytics for your Lotus Docs site.
 
 {{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |

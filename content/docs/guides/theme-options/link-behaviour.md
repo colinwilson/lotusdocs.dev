@@ -104,7 +104,7 @@ The link preview tooltip feature works by validating internal links. Links can b
 
     {{< alert context="danger" >}}
     Be sure to use the <code>%</code> delimiter if creating internal markdown links using <code>ref</code> or <code>relref</code> shortcodes. e.g.
-    <code>[Plausible Analytics Guide]({{%/* ref "/docs/guides/features/plausible-analytics" */%}})</code>
+    <code>[Plausible Analytics Guide]({{%/* relref "/docs/guides/features/plausible-analytics" */%}})</code>
     {{< /alert >}}
 
     {{< alert context="warning" text="Note, that `ref` and `relref` links don’t work with `_index` or `index` files, you’ll need to use regular Markdown links to section landing or other index pages. Specify these links relative to the site’s root URL, for example:`/docs/guides/`" />}}
