@@ -97,6 +97,10 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         # front matter
         descriptions    = true                                # enable front matter descriptions under content title?
 
+        # Link behaviour
+        intLinkTooltip  = true                                # Enable a tooltip for internal links that displays info about the destination? default false
+        # extLinkNewTab   = false                               # Open external links in a new Tab? default true
+
     [params.flexsearch] # Parameters for FlexSearch
         enabled             = true
         # tokenize            = "full"

@@ -261,7 +261,7 @@ Set the name of the feedback event that's sent to the web analytics service:
 
 - **`negativeEventName`** - The name of the negative event for the default feedback template e.g. `Negative Feedback` (**default**)
 
-{{% alert context="info" text="**Note** - For **Google Analytics v4** (per [Google's recommendations](https://support.google.com/analytics/answer/13316687)), before an event is sent, Lotus Docs converts the event name to lowercase letters, and replaces spaces with an underscore. e.g. `Positive Feedback` is converted to `positive_feedback`." /%}}
+{{< alert context="info" text="**Note** - For **Google Analytics v4** (per [Google's recommendations](https://support.google.com/analytics/answer/13316687)), before an event is sent, Lotus Docs converts the event name to lowercase letters, and replaces spaces with an underscore. e.g. `Positive Feedback` is converted to `positive_feedback`." />}}
 
 ### Form Title
 

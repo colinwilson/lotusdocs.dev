@@ -10,7 +10,7 @@ toc: true
 katex: true
 ---
 
-Lotus Docs has [built-in support]({{< ref "/docs/guides/features/katex" >}}) for [KaTex](https://katex.org/). However, there are certain equation syntaxes which do not render well if at all without a lot of character escaping[^1] or alterations. The KaTex shortcode is suited to handle such cases.
+Lotus Docs has [built-in support]({{% ref "/docs/guides/features/katex" %}}) for [KaTex](https://katex.org/). However, there are certain equation syntaxes which do not render well if at all without a lot of character escaping[^1] or alterations. The KaTex shortcode is suited to handle such cases.
 
 For example:
 
