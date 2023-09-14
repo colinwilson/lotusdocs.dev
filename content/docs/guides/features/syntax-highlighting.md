@@ -99,7 +99,7 @@ Both Prism & Chroma support a vast array of languages. See the links below for a
 ## Code Fence Translations
 
 {{% alert context="info" %}}
-For more extensive code highlighting options with Prism, consider using the [Prism Shortcode](../../shortcodes/prism/) in place of the code fences syntax.
+For more extensive code highlighting options with Prism, consider using the [Prism Shortcode]({{% ref "docs/guides/shortcodes/prism" %}}) in place of the code fences syntax.
 {{% /alert %}}
 
 If your code blocks are highlighted using the [code fences syntax](https://gohugo.io/content-management/syntax-highlighting/#highlighting-in-code-fences), Prism will auto translate the following Hugo Shortcode options[^1]:
