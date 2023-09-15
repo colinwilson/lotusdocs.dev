@@ -1,7 +1,7 @@
 ---
 weight: 525
 title: "DocSearch"
-description: "DocSearch is a free and powerful Server Side Search plugin integrated with Lotus Docs."
+description: "How to integrate DocSearch with Lotus Docs. DocSearch is a free and powerful Server Side Search plugin."
 icon: search
 date: 2023-07-01T14:09:15+00:00
 lastmod: 2023-08-04T00:22:15+00:00
