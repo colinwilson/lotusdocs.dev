@@ -2,7 +2,7 @@
 weight: 705
 title: "Configuration"
 icon: settings
-description: "Reference table of configuration options for the Lotus Docs theme."
+description: "A reference table of all available configurations options for the Lotus Docs theme."
 lead: ""
 date: 2023-01-21T16:16:15+00:00
 lastmod: 2023-01-21T16:16:15+00:00

@@ -21,10 +21,6 @@ twitter:
   image: ""
 ---
 
-{{% alert context="danger" %}}
-Lotus Docs is currently in the pre-release stage of development and, therefore, is **not** recommended for use in production. You're welcome to try out the theme yourself, and contributions to [the project](https://github.com/colinwilson/lotusdocs) a very welcome.
-{{% /alert %}}
-
 Welcome to the Lotus Docs user guide. This guide shows you how to start creating technical documentation sites using Lotus Docs, including site customisation and using Lotus Docs' features and templates.
 
 ## What is Lotus Docs?
@@ -33,7 +29,7 @@ Lotus Docs is a theme for the [Hugo](https://gohugo.io) static site generator (S
 
 ### Features
 
-Many of the features and configurations available in the Lotus Docs theme are on display here in this documentation. You can clone this entire site and edit it to suit your projects, or explore the site, its source and see what Lotus Docs can do. Check out a few of Lotus Docs' features:
+Many of the [features](/docs/guides/features) and [configurations]({{% relref "configuration" %}}) available in the Lotus Docs theme are on display here in this documentation. You can clone this entire site and edit it to suit your projects, or explore the site, its source and see what Lotus Docs can do. Check out a few of Lotus Docs' features:
 
 <div class="row flex-xl-wrap pb-4">
 

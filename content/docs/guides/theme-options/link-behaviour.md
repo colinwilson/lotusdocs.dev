@@ -9,7 +9,7 @@ draft: false
 toc: true
 ---
 
-## External links
+## Open external links in a new tab
 
 By default, Lotus Docs will open external links in a new tab.
 
@@ -49,19 +49,19 @@ This behaviour can be disabled by setting the `extLinkNewTab` parameter to `fals
 {{< /tabs >}}
 
 
-External links are indicated by the 'external link' icon:
+External links are indicated by the 'external link' icon to the right of the link text. e.g. [Lotus Docs GitHub repository](https://github.com/colinwilson/lotusdocs):
 
-![External link with external link icon](https://res.cloudinary.com/lotuslabs/image/upload/v1694716415/Lotus%20Docs/images/screenshot_lotus_docs_external_link_icon_pejqum.webp)
+<!-- ![External link with external link icon](https://res.cloudinary.com/lotuslabs/image/upload/v1694716415/Lotus%20Docs/images/screenshot_lotus_docs_external_link_icon_pejqum.webp) -->
 
-## Internal link preview tooltip
+## Preview tooltip for internal links
 
-When this option is enabled, internal links feature a tooltip containing basic information about the destination page such as it's section, title, and description.
+When this option is enabled, internal links feature a tooltip that displays basic information about the destination page, such as it's parent section, title, and description.
 
 ![Internal link preview tooltip](https://res.cloudinary.com/lotuslabs/image/upload/v1694720495/Lotus%20Docs/images/lotus_docs_tooltip_screenshot_ttmre4.webp)
 
 ### How to enable the link preview tooltip
 
-This option can be enabled by setting the `intLinkTooltip` parameter to `true` in your config:
+To enable tooltip previews for internal links, set the `intLinkTooltip` parameter to `true` in your config:
 
 {{< tabs tabTotal="3">}}
 {{% tab tabName="hugo.toml" %}}
@@ -96,9 +96,9 @@ This option can be enabled by setting the `intLinkTooltip` parameter to `true` i
 {{% /tab %}}
 {{< /tabs >}}
 
-### How to format internal links for preview tooltips
+### How to format links in your Markdown for preview tooltips
 
-The link preview tooltip feature works by validating internal links. Links can be formatted in the following ways:
+The link preview tooltip feature works by using a custom [Markdown render hook](https://gohugo.io/templates/render-hooks/) to first validate a link is internal, and then enables the tooltip function for those links. Markdown links in your content pages can be formatted in one of two ways:
 
 1. Using the `relref` shortcode - This shortcode displays the relative permalink to a document[^1].
 
@@ -111,6 +111,6 @@ The link preview tooltip feature works by validating internal links. Links can b
 
 2. Links relative to the site's root - e.g. `/docs/guides/features/docsearch/` - [/docs/guides/features/docsearch/](/docs/guides/features/docsearch/)
 
-Both these formats will have link preview tooltips enabled.
+Both these formats will enable preview tooltips on internal links.
 
 [^1]: [Links and cross references | Hugo](https://gohugo.io/content-management/cross-references/#use-ref-and-relref)
