@@ -1,8 +1,8 @@
 ---
 weight: 605
-title: "Platforms"
+title: "Cloud Platforms"
 description: "How to deploy Lotus Docs on various cloud hosting platforms"
-icon: "dns"
+icon: "cloud_upload"
 date: "2023-08-26T15:36:09+01:00"
 lastmod: "2023-08-26T15:36:09+01:00"
 draft: false
