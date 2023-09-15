@@ -157,7 +157,7 @@ See the the [DocSearch Guide](/docs/guides/features/docsearch/) for more informa
 
 ### Plausible Analytics Options
 
-See the the [Plausible Analytics Guide]({{% relref "docs/guides/features/plausible-analytics" %}}) for more information about how to configure Plausible Analytics for your Lotus Docs site.
+See the the [Plausible Analytics Guide]({{% relref "plausible-analytics" %}}) for more information about how to configure Plausible Analytics for your Lotus Docs site.
 
 {{< table "table table-responsive table-striped" >}}
 | Parameter | Type | Default Value | Description |

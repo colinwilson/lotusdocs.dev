@@ -100,14 +100,14 @@ This option can be enabled by setting the `intLinkTooltip` parameter to `true` i
 
 The link preview tooltip feature works by validating internal links. Links can be formatted in the following ways:
 
-1. Using the `ref` and `relref` shortcodes - These two shortcodes display the absolute and relative permalinks to a document, respectively[^1].
+1. Using the `relref` shortcode - This shortcode displays the relative permalink to a document[^1].
 
     {{< alert context="danger" >}}
-    Be sure to use the <code>%</code> delimiter if creating internal markdown links using <code>ref</code> or <code>relref</code> shortcodes. e.g.
+    Be sure to use the <code>%</code> delimiter if creating internal markdown links using the <code>relref</code> shortcode. e.g.
     <code>[Plausible Analytics Guide]({{%/* relref "/docs/guides/features/plausible-analytics" */%}})</code>
     {{< /alert >}}
 
-    {{< alert context="warning" text="Note, that `ref` and `relref` links don’t work with `_index` or `index` files, you’ll need to use regular Markdown links to section landing or other index pages. Specify these links relative to the site’s root URL, for example:`/docs/guides/`" />}}
+    {{< alert context="warning" text="Note, that `relref` links don’t work with `_index` or `index` files, you’ll need to use regular Markdown links to section landing or other index pages. Specify these links relative to the site’s root URL, for example:`/docs/guides/`" />}}
 
 2. Links relative to the site's root - e.g. `/docs/guides/features/docsearch/` - [/docs/guides/features/docsearch/](/docs/guides/features/docsearch/)
 
