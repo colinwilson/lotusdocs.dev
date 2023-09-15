@@ -25,7 +25,7 @@ Welcome to the Lotus Docs user guide. This guide shows you how to start creating
 
 ## What is Lotus Docs?
 
-Lotus Docs is a theme for the [Hugo](https://gohugo.io) static site generator (SSG), specifically designed for technical documentation sets and includes many best practices by default (The site you’re currently reading was built using the Lotus Docs theme!). Use Lotus Docs to get a working and reliable documentation site up and running fast, leaving valuable time to focus on creating content for your users.
+Lotus Docs is a theme for the [Hugo](https://gohugo.io) static site generator (SSG), specifically designed for technical documentation sets and includes many best practices by default (The site you’re currently reading was built using the Lotus Docs theme!). Use Lotus Docs to get a working and reliable documentation site [up and running]({{% relref "deployment" %}}) fast, leaving valuable time to focus on creating content for your users.
 
 ### Features
 
