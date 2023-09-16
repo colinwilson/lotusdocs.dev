@@ -5,7 +5,7 @@ description: "How to deploy Lotus Docs on GitLab Pages"
 icon: "filter_drama"
 date: "2023-08-26T15:36:47+01:00"
 lastmod: "2023-08-26T15:36:47+01:00"
-draft: true
+draft: false
 toc: true
 ---
 
@@ -32,15 +32,25 @@ GitLab makes it easy to build, deploy, and host your Lotus Docs website via thei
 
 Use the following steps to get your Lotus Docs site up and running on GitLab Pages.
 
-1. Create a new repo on GitLab e.g. `https://gitlab.com/colinwilson/colinwilson.gitlab.io`
+1. Create a [new repo on GitLab](https://docs.gitlab.com/ee/user/project/index.html) e.g. `https://gitlab.com/colinwilson/colinwilson.gitlab.io`. Select `GitLab Pages` as the `Project deployment target`:
 
-2. Follow the [quickstart]({{% relref "quickstart#create-a-new-lotus-docs-site" %}}) guide to create your new site locally.
+    ![](https://res.cloudinary.com/lotuslabs/image/upload/v1694886749/Lotus%20Docs/images/gitlab_create_new_repo_for_gitlab_pages_screenshot_t2sbwa.webp)
+
+2. Create a new Hugo project using the `hugo new` command:
 
     ```bash
     hugo new site colinwilson.gitlab.io && cd colinwilson.gitlab.io
     ```
 
+    Initialize your project as a Hugo Module using the hugo mod init command:
+
+    ```
+    hugo mod init my-docs-site
+    ```
+
 3. Update your site's config file (`hugo.toml` / `hugo.yaml` / `hugo.json`) to include the required theme modules and update your `baseURL` to your intended GitLab Pages domain e.g. `colinwilson.gitlab.io`. You can also configure a `[[menu.primary]]` item. This creates a link on the landing page to the `docs/` section.
+
+    {{< alert context="info" text="Refer to the [quickstart guide]({{% relref `quickstart` %}}) if you wish install the Lotus Docs theme in a manner other than Hugo Modules (below)." />}}
 
     {{< tabs tabTotal="3">}}
     {{< tab tabName="hugo.toml" disabled="true" >}}
@@ -209,17 +219,30 @@ Use the following steps to get your Lotus Docs site up and running on GitLab Pag
     ```treeview
     colinwilson.gitlab.io/
       ├── archetypes/
+      ├── assets/
       ├── content/
       │   └── docs/
       │       └── example-page.md
+      ├── data/
+      ├── i18n/
+      ├── layouts/
+      ├── static/
+      ├── themes/
       ├── .gitignore
       ├── .gitlab-ci.yml
+      ├── .hugo_build.lock
       ├── go.mod
       ├── go.sum
       └── hugo.toml
     ```
-9. Commit all the changes to your local repository with a commit message of something like “New site & job”, and push your local repo to the repository you created on GitLab in `step 1`.
+9. Use `git int` to initialize your project as a repository, then commit all the changes to your local repository with a commit message of something like “🎉 initial commit”. Push your local repo to the repository you created on GitLab in `step 1`.
 
-10. On Gitlab, navigate to **Settings > General**, scroll down and expand the **Advanced** section. Scroll once more till you see the **Change path** section and change the path to match that of your repo.
+10. Revisit your repository on GitLab, navigate to **Build > Pipelines**, and you should see that your Hugo site was successfully built.
 
-    ![](https://res.cloudinary.com/lotuslabs/image/upload/v1694817677/Lotus%20Docs/images/gitlab_settings_change_path_u8vxvs.webp)
+    ![GitLab pipelines screenshot](https://res.cloudinary.com/lotuslabs/image/upload/v1694885877/Lotus%20Docs/images/gitlab_pages_pipeline_01_engtdo.webp)
+
+<!-- 11. On Gitlab, navigate to **Settings > General**, scroll down and expand the **Advanced** section. Scroll once more till you see the **Change path** section and change the path to match that of your repo.
+
+    ![](https://res.cloudinary.com/lotuslabs/image/upload/v1694817677/Lotus%20Docs/images/gitlab_settings_change_path_u8vxvs.webp) -->
+
+12. You should now be able to see your site at the `baseURL` (e.g. `https://colinwilson.gitlab.io`) defined in your `hugo.toml` / `hugo.yaml` / `hugo.json` config file
