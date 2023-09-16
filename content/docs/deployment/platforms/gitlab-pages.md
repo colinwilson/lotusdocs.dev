@@ -32,21 +32,21 @@ GitLab makes it easy to build, deploy, and host your Lotus Docs website via thei
 
 Use the following steps to get your Lotus Docs site up and running on GitLab Pages.
 
-1. Create a new repo on GitLab e.g. `https://github.com/colinwilson/colinwilson.gitlab.io`
+1. Create a new repo on GitLab e.g. `https://gitlab.com/colinwilson/colinwilson.gitlab.io`
 
 2. Follow the [quickstart]({{% relref "quickstart#create-a-new-lotus-docs-site" %}}) guide to create your new site locally.
 
     ```bash
-    hugo new site colinwilson.github.io && cd colinwilson.github.io
+    hugo new site colinwilson.gitlab.io && cd colinwilson.gitlab.io
     ```
 
-3. Update your site's config file (`hugo.toml` / `hugo.yaml` / `hugo.json`) to include the required theme modules and update your `baseURL` to your intended GitHub Pages domain e.g. `colinwilson.github.io`. You can also configure a `[[menu.primary]]` item. This creates a link on the landing page to the `docs/` section.
+3. Update your site's config file (`hugo.toml` / `hugo.yaml` / `hugo.json`) to include the required theme modules and update your `baseURL` to your intended GitLab Pages domain e.g. `colinwilson.gitlab.io`. You can also configure a `[[menu.primary]]` item. This creates a link on the landing page to the `docs/` section.
 
     {{< tabs tabTotal="3">}}
     {{< tab tabName="hugo.toml" disabled="true" >}}
     {{< prism lang="toml" >}}
 
-     baseURL = 'https://colinwilson.github.io'
+     baseURL = 'https://colinwilson.gitlab.io'
     languageCode = 'en-us'
     title = 'My New Hugo Site'
 
@@ -72,7 +72,7 @@ Use the following steps to get your Lotus Docs site up and running on GitLab Pag
     {{< tab tabName="hugo.yaml" >}}
     {{< prism lang="yaml" >}}
 
-    baseURL: 'https://colinwilson.github.io'
+    baseURL: 'https://colinwilson.gitlab.io'
     languageCode: en-us
     title: My New Hugo Site
     module:
@@ -98,7 +98,7 @@ Use the following steps to get your Lotus Docs site up and running on GitLab Pag
     {{< prism lang="json" >}}
 
     {
-      "baseURL": "https://colinwilson.github.io",
+      "baseURL": "https://colinwilson.gitlab.io",
       "languageCode": "en-us",
       "title": "My New Hugo Site",
       "module": {
@@ -155,7 +155,7 @@ Use the following steps to get your Lotus Docs site up and running on GitLab Pag
 5. Create an empty `.gitlab-ci.yml` file at the root of your local repository.
 
     ```
-    /.github-ci.aml
+    /.gitlab-ci.aml
     ```
 6. Copy and paste the YAML below into the job file you created.
 
