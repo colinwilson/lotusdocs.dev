@@ -57,7 +57,7 @@ External links are indicated by the 'external link' icon to the right of the lin
 
 When this option is enabled, internal links feature a tooltip that displays basic information about the destination page, such as it's parent section, title, and description.
 
-![Internal link preview tooltip](https://res.cloudinary.com/lotuslabs/image/upload/v1694720495/Lotus%20Docs/images/lotus_docs_tooltip_screenshot_ttmre4.webp)
+![Internal link preview tooltip](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694720495/Lotus%20Docs/images/lotus_docs_tooltip_screenshot_ttmre4.webp)
 
 ### How to enable the link preview tooltip
 
