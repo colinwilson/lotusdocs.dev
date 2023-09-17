@@ -89,6 +89,28 @@ The URL format follows, `/#{code block id}.{line no. range}`.
 
 For example, [`/#80c9335.3,5,7-13`](#80c9335.3,5,7-13) will link to (and highlight) lines 3, 5 and 7-13 in the code block above:
 
+### Themes
+
+You can change the Prism theme via the `prismTheme` parameter under `[params.docs]`. Choose from:
+
+{{< alert context="info" text="Additional [PrismJS themes](https://github.com/PrismJS/prism-themes) will be adapted and add to Lotus Docs periodically. Keep an eye on new release to know when." />}}
+
+- `lotusdocs` - (**default**)
+
+  ![PrismJS Lotus Docs Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962083/Lotus%20Docs/images/prismjs_theme_lotusdocs_ttvkpg.webp)
+
+- `solarized-light`
+
+  ![PrismJS Solarized Light Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962222/Lotus%20Docs/images/prismjs_theme_solarized-light_vdznlf.webp)
+
+- `twilight`
+
+  ![PrismJS Twilight Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962129/Lotus%20Docs/images/prismjs_theme_twilight_r7vdno.webp)
+
+- `lucario`
+
+  ![PrismJS Lucario Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962084/Lotus%20Docs/images/prismjs_theme_lucario_qohmre.webp)
+
 ## Supported Languages
 
 Both Prism & Chroma support a vast array of languages. See the links below for a complete list of languages supported by each highlighter:
