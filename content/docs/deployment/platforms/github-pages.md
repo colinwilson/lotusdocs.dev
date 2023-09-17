@@ -27,11 +27,11 @@ Use the following steps to get your Lotus Docs site up and running on GitHub Pag
 
 2. Visit your GitHub repository. From the main menu choose **Settings > Pages**. In then center of your screen you will see this:
 
-    ![GitHub Pages settings 01](https://res.cloudinary.com/lotuslabs/image/upload/v1694797503/Lotus%20Docs/images/github_pages_settings_01_camkns.webp)
+    ![GitHub Pages settings 01](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694797503/Lotus%20Docs/images/github_pages_settings_01_camkns.webp)
 
 3. Change the Source to `GitHub Actions`. The change is immediate; you do not have to press a Save button.
 
-    ![GitHub Pages settings 02](https://res.cloudinary.com/lotuslabs/image/upload/v1694797611/Lotus%20Docs/images/github_pages_settings_02_xseoyt.webp)
+    ![GitHub Pages settings 02](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694797611/Lotus%20Docs/images/github_pages_settings_02_xseoyt.webp)
 
 4. Follow the [quickstart]({{% relref "quickstart#create-a-new-lotus-docs-site" %}}) guide to create your new site locally.
 
@@ -240,15 +240,15 @@ Use the following steps to get your Lotus Docs site up and running on GitHub Pag
 
 10. From GitHub’s main menu, choose Actions. You will see something like this:
 
-    ![GitHub Pages settings 03](https://res.cloudinary.com/lotuslabs/image/upload/v1694798306/Lotus%20Docs/images/github_pages_settings_03_x0zvvd.webp)
+    ![GitHub Pages settings 03](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694798306/Lotus%20Docs/images/github_pages_settings_03_x0zvvd.webp)
 
 11. When GitHub has finished building and deploying your site, the color of the status indicator will change to green.
 
-    ![GitHub Pages settings 04](https://res.cloudinary.com/lotuslabs/image/upload/v1694798414/Lotus%20Docs/images/github_pages_settings_04_wosrsa.webp)
+    ![GitHub Pages settings 04](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694798414/Lotus%20Docs/images/github_pages_settings_04_wosrsa.webp)
 
 12. Click on the commit message as shown above. You will see this:
 
-    ![GitHub Pages settings 05](https://res.cloudinary.com/lotuslabs/image/upload/v1694798537/Lotus%20Docs/images/github_pages_settings_05_sfpvpf.webp)
+    ![GitHub Pages settings 05](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694798537/Lotus%20Docs/images/github_pages_settings_05_sfpvpf.webp)
 
     Under the deploy step, you will see a link to your live site 🎉.
 
