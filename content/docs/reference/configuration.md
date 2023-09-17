@@ -66,6 +66,7 @@ Options to help you configure Lotus Docs to suite your needs.
 | `themeColor` | string | `blue` | Set the sites accent color. This affects links, buttons and icons. Available options/colors include, `blue` (default), `green`, `red`, `yellow`, `emerald`, `cardinal`, `magenta`, `cyan`. |
 | `darkMode` | boolean | `false` | Enable Dark Mode? |
 | `prism` | boolean | `true` | Enable the PrismJS syntax highlighting plugin? See the [Syntax Highlighting](/docs/guides/features/syntax-highlighting/#prism-features) and [Prism Shortcode](/docs/guides/shortcodes/prism/) guides for more details. |
+| `prismTheme` | string | `lotusdocs` | **optional** - Set theme for PrismJS. Options include: `lotusdocs`, `solarized-light`, `twilight`, `lucario`. See the [Syntax Highlighting](/docs/guides/features/syntax-highlighting/#themes) guide for more details. |
 {{</ table >}}
 
 ### UI Options
