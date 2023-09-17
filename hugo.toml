@@ -70,6 +70,8 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
         prism           = true                                # enable syntax highlighting via Prism
 
+        # prismTheme      = "lotusdocs"                         # (optional) - Set theme for PrismJS. Options include: lotusdocs (default), solarized-light, twilight, lucario
+
         # gitinfo
         repoURL         = "https://github.com/colinwilson/lotusdocs.dev"  # Git repository URL for your site [support for GitHub, GitLab, and BitBucket]
         repoBranch      = "release"                           # Name of your Git repository branch
