@@ -91,9 +91,44 @@ For example, [`/#80c9335.3,5,7-13`](#80c9335.3,5,7-13) will link to (and highlig
 
 ### Themes
 
-You can change the Prism theme via the `prismTheme` parameter under `[params.docs]`. Choose from:
+You can change the Prism theme via the `prismTheme` parameter under `[params.docs]` in your config file.
 
-{{< alert context="info" text="Additional [PrismJS themes](https://github.com/PrismJS/prism-themes) will be adapted and add to Lotus Docs periodically. Keep an eye on new release to know when." />}}
+{{< alert context="info" text="Additional [PrismJS themes](https://github.com/PrismJS/prism-themes) will be adapted and added to Lotus Docs periodically. Keep an eye on new [releases](https://github.com/colinwilson/lotusdocs/releases) to know when." />}}
+
+{{< tabs tabTotal="3">}}
+{{% tab tabName="hugo.toml" %}}
+
+```toml
+[params.docs]
+    prismTheme = "lotusdocs" # (optional) - Set theme for PrismJS. Options include: lotusdocs (default), solarized-light, twilight, lucario
+```
+
+{{% /tab %}}
+{{% tab tabName="hugo.yaml" %}}
+
+```yaml
+params:
+    docs:
+      prismTheme: lotusdocs # (optional) - Set theme for PrismJS. Options include: lotusdocs (default), solarized-light, twilight, lucario
+```
+
+{{% /tab %}}
+{{% tab tabName="hugo.json" %}}
+
+```json
+{
+   "params": {
+      "docs": {
+          "prismTheme": "lotusdocs"
+      }
+   }
+}
+```
+
+{{% /tab %}}
+{{< /tabs >}}
+
+Choose from:
 
 - `lotusdocs` - (**default**)
 
