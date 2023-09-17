@@ -93,7 +93,7 @@ For example, [`/#80c9335.3,5,7-13`](#80c9335.3,5,7-13) will link to (and highlig
 
 You can change the Prism theme via the `prismTheme` parameter under `[params.docs]`. Choose from:
 
-{{< alert context="info" text="Additional [PrismJS themes](https://github.com/PrismJS/prism-themes) will be adapted and add to Lotus Docs periodically. Keep an eye on new release to know when." />}}
+{{< alert context="info" text="Additional [PrismJS themes](https://github.com/PrismJS/prism-themes) will be adapted and added to Lotus Docs periodically. Keep an eye on new [releases](https://github.com/colinwilson/lotusdocs/releases) to know when." />}}
 
 - `lotusdocs` - (**default**)
 
