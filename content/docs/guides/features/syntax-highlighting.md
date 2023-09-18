@@ -128,23 +128,30 @@ params:
 {{% /tab %}}
 {{< /tabs >}}
 
-Choose from:
+Choose from the following theme options:
 
-- `lotusdocs` - (**default**)
+{{< tabs tabTotal="4">}}
+{{% tab tabName="lotusdocs (default)" %}}
 
-  ![PrismJS Lotus Docs Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962083/Lotus%20Docs/images/prismjs_theme_lotusdocs_ttvkpg.webp)
+![PrismJS Lotus Docs Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962083/Lotus%20Docs/images/prismjs_theme_lotusdocs_ttvkpg.webp)
 
-- `solarized-light`
+{{% /tab %}}
+{{% tab tabName="solarized-light" %}}
 
-  ![PrismJS Solarized Light Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962222/Lotus%20Docs/images/prismjs_theme_solarized-light_vdznlf.webp)
+![PrismJS Solarized Light Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962222/Lotus%20Docs/images/prismjs_theme_solarized-light_vdznlf.webp)
 
-- `twilight`
+{{% /tab %}}
+{{% tab tabName="twilight" %}}
 
-  ![PrismJS Twilight Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962129/Lotus%20Docs/images/prismjs_theme_twilight_r7vdno.webp)
+![PrismJS Twilight Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962129/Lotus%20Docs/images/prismjs_theme_twilight_r7vdno.webp)
 
-- `lucario`
+{{% /tab %}}
+{{% tab tabName="lucario" %}}
 
-  ![PrismJS Lucario Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962084/Lotus%20Docs/images/prismjs_theme_lucario_qohmre.webp)
+![PrismJS Lucario Theme Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694962084/Lotus%20Docs/images/prismjs_theme_lucario_qohmre.webp)
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ## Supported Languages
 
