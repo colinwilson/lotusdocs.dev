@@ -34,7 +34,7 @@ Use the following steps to get your Lotus Docs site up and running on GitLab Pag
 
 1. Create a [new repo on GitLab](https://docs.gitlab.com/ee/user/project/index.html) e.g. `https://gitlab.com/colinwilson/colinwilson.gitlab.io`. Select `GitLab Pages` as the `Project deployment target`:
 
-    ![](https://res.cloudinary.com/lotuslabs/image/upload/v1694886749/Lotus%20Docs/images/gitlab_create_new_repo_for_gitlab_pages_screenshot_t2sbwa.webp)
+    ![](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694886749/Lotus%20Docs/images/gitlab_create_new_repo_for_gitlab_pages_screenshot_t2sbwa.webp)
 
 2. Create a new Hugo project using the `hugo new` command:
 
@@ -239,7 +239,7 @@ Use the following steps to get your Lotus Docs site up and running on GitLab Pag
 
 10. Revisit your repository on GitLab, navigate to **Build > Pipelines**, and you should see that your Hugo site was successfully built.
 
-    ![GitLab pipelines screenshot](https://res.cloudinary.com/lotuslabs/image/upload/v1694885877/Lotus%20Docs/images/gitlab_pages_pipeline_01_engtdo.webp)
+    ![GitLab pipelines screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_7/v1694885877/Lotus%20Docs/images/gitlab_pages_pipeline_01_engtdo.webp)
 
 <!-- 11. On Gitlab, navigate to **Settings > General**, scroll down and expand the **Advanced** section. Scroll once more till you see the **Change path** section and change the path to match that of your repo.
 
