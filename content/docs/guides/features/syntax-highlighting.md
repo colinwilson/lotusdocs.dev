@@ -1,7 +1,7 @@
 ---
 weight: 510
 title: "Syntax Highlighting"
-description: "Code highlighting in Lotus Docs."
+description: "How to highlight code in Lotus Docs using the built-in The PrismJS library (or Chroma)."
 icon: highlight
 date: 2022-12-16T01:07:15+00:00
 lastmod: 2022-12-16T01:07:15+00:00
