@@ -32,10 +32,9 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
       unsafe = true # https://jdhao.github.io/2019/12/29/hugo_html_not_shown/
   # [markup.highlight]
   #   codeFences = false # disables Hugo's default syntax highlighting
-  # [markup.goldmark.parser]
-  #   [markup.goldmark.parser.attribute]
-  #     block = true
-  #     title = true
+  [markup.goldmark.parser]
+    [markup.goldmark.parser.attribute]
+      block = true
 
 [params]
 
