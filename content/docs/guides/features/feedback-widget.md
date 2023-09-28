@@ -11,7 +11,8 @@ images: []
 
 The Lotus Docs feedback plugin integrates with Google or Plausible Analytics to allow you to collect visitor feedback on your sites' content.
 
-![Lotus Docs Emoticon Feedback Widget Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/v1692841008/Lotus%20Docs/images/lotusdocs_emoticon_feedback_widget_screenshot_rd_v2_mmoxca.webp)
+![Lotus Docs Emoticon Feedback Widget Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_20,c_scale,w_800/v1692841008/Lotus%20Docs/images/lotusdocs_emoticon_feedback_widget_screenshot_rd_v2_mmoxca.webp)
+{.text-center}
 
 ## Why use web analytics to collect feedback?
 
@@ -47,8 +48,8 @@ Lotus Docs currently offers two template styles for the feedback widget:
 
 <div class="d-flex justify-content-center pb-4">
     <video width="90%" controls>
-    <source src="https://res.cloudinary.com/lotuslabs/video/upload/v1692663574/Lotus%20Docs/video/lotusdocs_emoticon_feedback_template_sjk1rm.webm" type="video/webm">
-    <source src="https://res.cloudinary.com/lotuslabs/video/upload/v1692663574/Lotus%20Docs/video/lotusdocs_emoticon_feedback_template_sjk1rm.mp4" type="video/mp4">
+        <source src="https://res.cloudinary.com/lotuslabs/video/upload/r_10/v1692663574/Lotus%20Docs/video/lotusdocs_emoticon_feedback_template_sjk1rm.webm" type="video/webm">
+        <source src="https://res.cloudinary.com/lotuslabs/video/upload/r_10/v1692663574/Lotus%20Docs/video/lotusdocs_emoticon_feedback_template_sjk1rm.mp4" type="video/mp4">
     </video>
 </div>
 
@@ -56,8 +57,8 @@ Lotus Docs currently offers two template styles for the feedback widget:
 
 <div class="d-flex justify-content-center pb-4">
     <video width="90%" controls>
-    <source src="https://res.cloudinary.com/lotuslabs/video/upload/v1692664585/Lotus%20Docs/video/lotusdocs_default_feedback_template_ybut2q.webm" type="video/webm">
-    <source src="https://res.cloudinary.com/lotuslabs/video/upload/v1692664585/Lotus%20Docs/video/lotusdocs_default_feedback_template_ybut2q.wmp4" type="video/mp4">
+        <source src="https://res.cloudinary.com/lotuslabs/video/upload/r_10/v1692664585/Lotus%20Docs/video/lotusdocs_default_feedback_template_ybut2q.webm" type="video/webm">
+        <source src="https://res.cloudinary.com/lotuslabs/video/upload/r_10/v1692664585/Lotus%20Docs/video/lotusdocs_default_feedback_template_ybut2q.wmp4" type="video/mp4">
     </video>
 </div>
 
