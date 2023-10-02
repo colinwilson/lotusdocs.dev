@@ -6,6 +6,8 @@ description: "How to use the Lotus Docs tabs shortcode to render Bootstrap Tabs"
 lead: "Use the Lotus docs tabs shortcode to render various tabs styles."
 date: 2023-04-25T03:51:15+00:00
 lastmod: 2023-04-25T22:08:15+00:00
+aliases:
+    - ../guides/shortcodes/tabs
 draft: false
 images: []
 toc: true

@@ -5,6 +5,8 @@ description: "Options for Link behaviour in content pages"
 icon: "link"
 date: "2023-09-14T19:10:58+01:00"
 lastmod: "2023-09-14T19:10:58+01:00"
+aliases:
+    - ../guides/theme-options/link-behaviour
 draft: false
 toc: true
 ---

@@ -7,6 +7,8 @@ lead: "Alerts."
 date: 2022-11-22T13:42:31+00:00
 lastmod: 2022-11-22T13:42:31+00:00
 draft: false
+aliases:
+    - ../guides/shortcodes/alerts
 images: []
 toc: true
 ---

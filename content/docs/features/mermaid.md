@@ -5,6 +5,8 @@ description: "How to use the Mermaid diagramming and chart tool with Lotus Docs"
 icon: "schema"
 date: "2023-09-08T06:05:19+01:00"
 lastmod: "2023-09-08T06:05:19+01:00"
+aliases:
+    - ../guides/features/mermaid
 draft: false
 toc: true
 ---

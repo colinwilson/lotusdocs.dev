@@ -6,6 +6,8 @@ description: "A simple shortcode to render content as Markdown."
 lead: "A shortcode to render Markdown."
 date: 2023-04-28T16:35:15+00:00
 lastmod: 2023-08-04T00:23:15+00:00
+aliases:
+    - ../guides/shortcodes/markdownify
 draft: false
 images: []
 toc: true

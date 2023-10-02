@@ -5,6 +5,8 @@ icon: change_history
 description: "How to use the Prism Shortcode for syntax highlighting code blocks."
 date: 2022-11-28T04:05:31+00:00
 lastmod: 2022-11-28T04:05:31+00:00
+aliases:
+    - ../guides/shortcodes/prism
 draft: false
 images: []
 toc: true
