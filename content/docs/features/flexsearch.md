@@ -1,5 +1,5 @@
 ---
-weight: 520
+weight: 720
 title: "FlexSearch"
 description: "Search your Lotus Docs site using the FlexSearch Static site Search plugin."
 icon: search

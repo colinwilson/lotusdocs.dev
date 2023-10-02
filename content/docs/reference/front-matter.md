@@ -1,5 +1,5 @@
 ---
-weight: 710
+weight: 1710
 title: "Front Matter"
 description: "Reference of custom front matter options in Lotus Docs"
 icon: "label"

@@ -1,5 +1,5 @@
 ---
-weight: 518
+weight: 718
 title: "Feedback Widget"
 description: "How to configure the Feedback Widget so visitors can rate or/and comment on your site's content."
 icon: reviews

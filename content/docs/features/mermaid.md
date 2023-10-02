@@ -1,5 +1,5 @@
 ---
-weight: 540
+weight: 740
 title: "Mermaid"
 description: "How to use the Mermaid diagramming and chart tool with Lotus Docs"
 icon: "schema"

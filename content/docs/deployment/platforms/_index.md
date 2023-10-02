@@ -1,5 +1,5 @@
 ---
-weight: 605
+weight: 1505
 title: "Cloud Platforms"
 description: "How to deploy Lotus Docs on various cloud hosting platforms"
 icon: "cloud_upload"

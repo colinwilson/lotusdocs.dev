@@ -1,5 +1,5 @@
 ---
-weight: 905
+weight: 1905
 title: "How to Contribute"
 icon: volunteer_activism
 description: "Contribute to code, improve documentation, help others, submit to showcase, and contribute financially."

@@ -1,5 +1,5 @@
 ---
-weight: 515
+weight: 715
 title: "Plausible Analytics"
 description: "How to add Plausible Analytics to your Lotus Docs site."
 icon: trending_up

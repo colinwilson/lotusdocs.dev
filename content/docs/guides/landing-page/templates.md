@@ -1,5 +1,5 @@
 ---
-weight: 580
+weight: 510
 title: "Templates"
 icon: dashboard
 description: "A guide to using Lotus Docs' included landing page templates."

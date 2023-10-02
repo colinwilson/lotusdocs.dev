@@ -1,5 +1,5 @@
 ---
-weight: 535
+weight: 1135
 title: "Breadcrumb Navigation"
 icon: keyboard_double_arrow_right
 description: "How to configure Breadcrumb navigation for your Lotus Docs site."

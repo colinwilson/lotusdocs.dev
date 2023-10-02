@@ -1,5 +1,5 @@
 ---
-weight: 999
+weight: 1550
 title: "AWS Amplify"
 description: "How to deploy Hugo on AWS Amplify using the Lotus Docs theme."
 icon: "filter_drama"

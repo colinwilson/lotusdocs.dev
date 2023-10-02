@@ -1,5 +1,5 @@
 ---
-weight: 517
+weight: 717
 title: "Google Analytics v4"
 description: "How to enable Google Analytics on your Lotus Docs site."
 icon: trending_up

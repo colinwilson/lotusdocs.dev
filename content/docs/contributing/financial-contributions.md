@@ -1,5 +1,5 @@
 ---
-weight: 910
+weight: 1910
 title: "Financial Contributions"
 icon: paid
 description: "Help support the Lotus Docs development team by becoming a financial contributor."

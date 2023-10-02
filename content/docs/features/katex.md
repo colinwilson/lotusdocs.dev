@@ -1,5 +1,5 @@
 ---
-weight: 530
+weight: 730
 title: "KaTex"
 description: "Fast Tex math rendering for your Lotus Docs site"
 icon: "function"
@@ -82,7 +82,7 @@ $
 
 ## Syntax Rendering  Issues
 
-As a consequence of Hugo rendering to HTML before KaTex renders to math[^1], there are some instances in which the KaTex equation syntax requires heavy escaping or alterations before rendering correctly. This can be time-consuming and frustrating (especially for inexperienced users). To avoid this, a [KaTex Shortcode]({{% relref "/docs/guides/shortcodes/katex" %}}) is available.
+As a consequence of Hugo rendering to HTML before KaTex renders to math[^1], there are some instances in which the KaTex equation syntax requires heavy escaping or alterations before rendering correctly. This can be time-consuming and frustrating (especially for inexperienced users). To avoid this, a [KaTex Shortcode]({{% relref "/docs/shortcodes/katex" %}}) is available.
 
 ```go
 {{</* katex >}}

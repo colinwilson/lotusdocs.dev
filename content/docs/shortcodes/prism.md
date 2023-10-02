@@ -1,5 +1,5 @@
 ---
-weight: 565
+weight: 1365
 title: "Prism"
 icon: change_history
 description: "How to use the Prism Shortcode for syntax highlighting code blocks."
