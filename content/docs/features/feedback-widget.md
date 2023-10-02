@@ -5,6 +5,8 @@ description: "How to configure the Feedback Widget so visitors can rate or/and c
 icon: reviews
 date: 2023-08-08T23:33:15+00:00
 lastmod: 2023-08-24T02:43:15+00:00
+aliases:
+    - ../guides/features/feedback-widget
 draft: false
 images: []
 ---

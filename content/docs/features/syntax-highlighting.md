@@ -5,6 +5,8 @@ description: "How to highlight code in Lotus Docs using the built-in The PrismJS
 icon: highlight
 date: 2022-12-16T01:07:15+00:00
 lastmod: 2022-12-16T01:07:15+00:00
+aliases:
+    - ../guides/features/syntax-highlighting
 draft: false
 images: []
 ---

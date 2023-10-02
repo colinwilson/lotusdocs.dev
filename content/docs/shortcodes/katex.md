@@ -5,6 +5,8 @@ description: "A Shortcode to render KaTex syntax in your Lotus Docs site"
 icon: "function"
 date: "2023-08-27T04:13:11+01:00"
 lastmod: "2023-08-27T04:13:11+01:00"
+aliases:
+    - ../guides/shortcodes/katex
 draft: false
 toc: true
 katex: true

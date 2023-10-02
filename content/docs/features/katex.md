@@ -5,6 +5,8 @@ description: "Fast Tex math rendering for your Lotus Docs site"
 icon: "function"
 date: "2023-08-26T20:43:23+01:00"
 lastmod: "2023-08-26T20:43:23+01:00"
+aliases:
+    - ../guides/features/katex
 draft: false
 toc: true
 katex: true

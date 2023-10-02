@@ -5,6 +5,8 @@ icon: keyboard_double_arrow_right
 description: "How to configure Breadcrumb navigation for your Lotus Docs site."
 date: 2022-11-27T07:08:15+00:00
 lastmod: 2023-08-16T02:49:15+00:00
+aliases:
+    - ../guides/theme-options/breadcrumbs
 draft: false
 images: []
 toc: true
