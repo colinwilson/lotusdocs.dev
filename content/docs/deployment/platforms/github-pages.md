@@ -1,5 +1,5 @@
 ---
-weight: 610
+weight: 1510
 title: "GitHub Pages"
 description: "How to deploy Lotus Docs on GitHub Pages"
 icon: "filter_drama"

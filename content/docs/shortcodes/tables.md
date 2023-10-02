@@ -1,5 +1,5 @@
 ---
-weight: 555
+weight: 1355
 title: "Tables"
 icon: table_chart
 description: "How to use the Lotus Docs table shortcode to render great looking markdown tables"

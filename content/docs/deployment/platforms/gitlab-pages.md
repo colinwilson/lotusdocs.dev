@@ -1,5 +1,5 @@
 ---
-weight: 615
+weight: 1515
 title: "GitLab Pages"
 description: "How to deploy Lotus Docs on GitLab Pages"
 icon: "filter_drama"

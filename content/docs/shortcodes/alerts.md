@@ -1,5 +1,5 @@
 ---
-weight: 550
+weight: 1350
 title: "Alerts"
 icon: notification_important
 description: "How to use Alert Shortcodes to render custom page alerts in markdown."

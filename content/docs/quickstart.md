@@ -24,7 +24,7 @@ twitter:
 
 - **git**
 - **Go ≥ v1.19**
-- **Hugo ≥ v0.117.0** (Extended Version)
+- **Hugo ≥ v0.117.0** (**Extended Version**)
 
 ## Install Hugo
 

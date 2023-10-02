@@ -1,5 +1,5 @@
 ---
-weight: 600
+weight: 1500
 title: "Deployment"
 description: "Deploy Lotus Docs on various hosting and cloud platforms"
 icon: "deployed_code"

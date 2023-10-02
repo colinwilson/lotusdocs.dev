@@ -1,5 +1,5 @@
 ---
-weight: 510
+weight: 710
 title: "Syntax Highlighting"
 description: "How to highlight code in Lotus Docs using the built-in The PrismJS library (or Chroma)."
 icon: highlight
@@ -163,7 +163,7 @@ Both Prism & Chroma support a vast array of languages. See the links below for a
 ## Code Fence Translations
 
 {{% alert context="info" %}}
-For more extensive code highlighting options with Prism, consider using the [Prism Shortcode]({{% relref "docs/guides/shortcodes/prism" %}}) in place of the code fences syntax.
+For more extensive code highlighting options with Prism, consider using the [Prism Shortcode]({{% relref "docs/shortcodes/prism" %}}) in place of the code fences syntax.
 {{% /alert %}}
 
 If your code blocks are highlighted using the [code fences syntax](https://gohugo.io/content-management/syntax-highlighting/#highlighting-in-code-fences), Prism will auto translate the following Hugo Shortcode options[^1]:

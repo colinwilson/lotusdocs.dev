@@ -1,5 +1,5 @@
 ---
-weight: 537
+weight: 1137
 title: "Link behaviour"
 description: "Options for Link behaviour in content pages"
 icon: "link"
@@ -104,13 +104,13 @@ The link preview tooltip feature works by using a custom [Markdown render hook](
 
     {{< alert context="danger" >}}
     Be sure to use the <code>%</code> delimiter if creating internal markdown links using the <code>relref</code> shortcode. e.g.
-    <code>[Plausible Analytics Guide]({{%/* relref "/docs/guides/features/plausible-analytics" */%}})</code>
+    <code>[Plausible Analytics Guide]({{%/* relref "/docs/features/plausible-analytics" */%}})</code>
     {{< /alert >}}
 
     {{< alert context="warning" text="Note, that `relref` links don’t work with `_index` or `index` files, you’ll need to use regular Markdown links to section landing or other index pages. Specify these links relative to the site’s root URL, for example:`/docs/guides/`" />}}
 
-2. Links relative to the site's root - e.g. `/docs/guides/features/docsearch/` - [/docs/guides/features/docsearch/](/docs/guides/features/docsearch/)
+2. Links relative to the site's root - e.g. `/docs/guides/features/docsearch/` - [/docs/guides/features/docsearch/](/docs/features/docsearch/)
 
-Both these formats will enable preview tooltips on internal links.
+Both these formats will enable preview tooltips on internal links. However, one benefit of using `relref` to link internal content is that the `hugo` command will produce an error if an internal link's path is invalid.
 
 [^1]: [Links and cross references | Hugo](https://gohugo.io/content-management/cross-references/#use-ref-and-relref)

@@ -1,5 +1,5 @@
 ---
-weight: 575
+weight: 505
 title: "Landing Page"
 description: "Landing Page Templates & Options."
 icon: flight_land

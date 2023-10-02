@@ -1,5 +1,5 @@
 ---
-weight: 920
+weight: 1920
 title: "Code of Conduct"
 icon: handshake
 description: "Contributor Covenant Code of Conduct."

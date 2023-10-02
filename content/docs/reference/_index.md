@@ -1,5 +1,5 @@
 ---
-weight: 700
+weight: 1700
 title: "Reference"
 description: "Reference information for Lotus Docs"
 icon: quick_reference_all
