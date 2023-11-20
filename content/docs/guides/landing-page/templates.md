@@ -27,9 +27,9 @@ Each section on the landing page corresponds to a specific template with its own
 
 ## Required data file parameters
 
-For each section defined in your data file (`/data/landing.yaml`), the following parameters are required:
+For each enabled section defined in your data file (`/data/landing.yaml`), the following parameters are required:
 
-- **title** - Choose a unique name for each section array defined in the data file.
+- Choose a unique name for each section array defined in the data file. e.g. `myCoolHero` for the section using the `hero` template.
 
 - **`weight`** - This key is nested under a section's array title. It's value defines where in the landing page the section should appear. Sections with lower values appear higher up on the rendered landing page.
 
@@ -72,6 +72,10 @@ This diagram illustrates the order in which each section configured in the first
 
 {{% /tab %}}
 {{< /tabs >}}
+
+## Section anchors
+
+Each section defined in the `landing.yaml` configuration has an `id` auto-generated using the section name. So a section named `appImageCompare` can be linked using the anchor `/#appImageCompare`. This is useful for linking from one section to another on the landing page.
 
 ## Hero
 
