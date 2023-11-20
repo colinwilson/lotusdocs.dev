@@ -231,7 +231,7 @@ heroSection:
 
 The `feature grid` template has 5 configurable components. The illustration below demonstrates a rendered layout of these components.
 
-![Lotus Docs Landing Page Feature Grid Section Diagram](https://res.cloudinary.com/lotuslabs/image/upload/bo_1px_solid_rgb:c4c4c4,r_8/v1700270166/Lotus%20Docs/images/lotusdocs_feature_grid_template_diag_v1.0_hvlzxp.webp)
+![Lotus Docs Landing Page Feature Grid Section Diagram](https://res.cloudinary.com/lotuslabs/image/upload/bo_1px_solid_rgb:c4c4c4,r_8/v1700520249/Lotus%20Docs/images/lotusdocs_feature_grid_template_diag_v1.1_cz593r.webp)
 {.text-center}
 
 {{< tabs tabTotal="2">}}
@@ -253,20 +253,26 @@ featureGrid:
 {{</ table >}}
 
 {{% /tab %}}
-{{% tab tabName="3., 4., 5. feature item" %}}
+{{% tab tabName="3., 4., 5., 6. feature item" %}}
 
 ```yaml
 # landing.yaml
 featureGrid:
     ...
     items:
-    - title: Fast
-      icon: speed
-      description: 4 x 100's score on Google Lighthouse by default. Lotus Docs removes unused CSS, prefetches asset links, and lazy loads content images.
+    - title: Fast # 4
+      icon: speed # 3
+      description: 4 x 100's score on Google Lighthouse by default. Lotus Docs removes unused CSS, prefetches asset links, and lazy loads content images. # 5
+      ctaLink: # 6
+        text: learn more
+        url: /docs/
 
     - title: SEO Friendly
       icon: trending_up
       description: Data is automatically structured to be SEO friendly. Includes Meta tags, Opengraph, and Twitter cards. Choose the settings that best suit you.
+      ctaLink:
+        text: learn more
+        url: /docs/
     ...
 ```
 
@@ -276,6 +282,8 @@ featureGrid:
 | `items.title` | N/A | Set the title for the feature item.  |
 | `items.icon` | N/A | Set the [Material Symbol](https://fonts.google.com/icons?icon.style=Outlined) icon for the feature item. **e.g.** setting the value to `trending_up` will prefix the item's `title` text with a <span class="material-icons align-text-bottom">trending_up</span> icon. (**optional**) |
 | `items.description` | N/A | Set the description text for the feature item. |
+| `items.ctaLink.text` | N/A | Set the text for the call-to-action link. |
+| `items.ctaLink.url` | N/A | Set the URL for the call-to-action link. |
 {{</ table >}}
 
 {{% /tab %}}
