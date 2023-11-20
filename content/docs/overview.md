@@ -88,8 +88,8 @@ Many of the [features]({{% relref "/docs/features" %}}) and [configurations]({{%
   </a>
 </div>
 
-<!-- <div id="list-item" class="col-md-4 col-12 py-2">
-  <a class="text-decoration-none text-reset" href="../guides/landing-page/">
+<div id="list-item" class="col-md-4 col-12 py-2">
+  <a class="text-decoration-none text-reset" href="../guides/landing-page/overview/">
     <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
       <span class="h1 icon-color">
         <i class="material-icons align-middle">flight_land</i>
@@ -100,7 +100,7 @@ Many of the [features]({{% relref "/docs/features" %}}) and [configurations]({{%
       </div>
     </div>
   </a>
-</div> -->
+</div>
 
 <div id="list-item" class="col-md-4 col-12 py-2">
   <a class="text-decoration-none text-reset" href="../features/feedback-widget/">
