@@ -47,6 +47,20 @@ Many of the [features]({{% relref "/docs/features" %}}) and [configurations]({{%
 </div>
 
 <div id="list-item" class="col-md-4 col-12 py-2">
+  <a class="text-decoration-none text-reset" href="../guides/landing-page/overview/">
+    <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
+      <span class="h1 icon-color">
+        <i class="material-icons align-middle">flight_land</i>
+      </span>
+      <div class="card-body p-0 content">
+        <p class="fs-5 fw-semibold card-title mb-1">Landing Page</p>
+        <p class="para card-text mb-0">Customizable landing page and templates</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div id="list-item" class="col-md-4 col-12 py-2">
   <a class="text-decoration-none text-reset" href="../features/docsearch/">
     <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
       <span class="h1 icon-color">
@@ -83,20 +97,6 @@ Many of the [features]({{% relref "/docs/features" %}}) and [configurations]({{%
       <div class="card-body p-0 content">
         <p class="fs-5 fw-semibold card-title mb-1">Shortcodes</p>
         <p class="para card-text mb-0">Custom shortcodes for when you want to do more than Markdown can offer</p>
-      </div>
-    </div>
-  </a>
-</div>
-
-<div id="list-item" class="col-md-4 col-12 py-2">
-  <a class="text-decoration-none text-reset" href="../guides/landing-page/overview/">
-    <div class="card h-100 features feature-full-bg rounded p-4 position-relative overflow-hidden border-1">
-      <span class="h1 icon-color">
-        <i class="material-icons align-middle">flight_land</i>
-      </span>
-      <div class="card-body p-0 content">
-        <p class="fs-5 fw-semibold card-title mb-1">Landing Page</p>
-        <p class="para card-text mb-0">Customizable landing page and templates</p>
       </div>
     </div>
   </a>
