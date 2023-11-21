@@ -120,6 +120,7 @@ Options to help you configure Lotus Docs to suite your needs.
 |---------|-----|-----|------|
 | `intLinkTooltip` | boolean | `false` | Enable tooltips for internal links? Displays info about the link's destination? See the [Link behaviour guide]({{% relref "link-behaviour" %}}) for more details. |
 | `extLinkNewTab` | boolean | `true` | Open external links in a new Tab? |
+| `logoLinkURL` | string | `true` | Set a custom URL destination for the top header logo link. |
 {{</ table >}}
 
 ## [params.flexsearch]
