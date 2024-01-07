@@ -54,7 +54,7 @@ brew install hugo
 If you use the package manager [Chocolatey](https://chocolatey.org/), run the `choco install` command in your terminal to install Hugo:
 
 ```shell
-choco install hugo --confirm
+choco install hugo-extended --confirm
 ```
 
 {{% /tab %}}
@@ -63,7 +63,7 @@ choco install hugo --confirm
 If you use the package manager [Scoop](https://scoop.sh/), run the `scoop install` command in your terminal to install Hugo:
 
 ```shell
-scoop install hugo
+scoop install hugo-exntended
 ```
 
 {{% /tab %}}
