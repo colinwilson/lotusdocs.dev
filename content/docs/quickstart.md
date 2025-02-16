@@ -231,7 +231,7 @@ hugo new docs/examplepage.md
 
 ## Preview your Site
 
-Now that you've created some sample content you can preview your new Lotus Docs site using the `huge server` command:
+Now that you've created some sample content you can preview your new Lotus Docs site using the `hugo server` command:
 
 ```shell
 hugo server -D
