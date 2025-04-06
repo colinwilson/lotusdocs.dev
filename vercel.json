@@ -2,11 +2,11 @@
     "rewrites": [
         {
             "source": "/docs/s/js/script.outbound-links.js",
-            "destination": "https://plausible.aigis.uk/js/script.outbound-links.js"
+            "destination": "https://plausible.lotuslabs.co.uk/js/script.outbound-links.js"
         },
         {
           "source": "/docs/s/api/event/",
-          "destination": "https://plausible.aigis.uk/api/event"
+          "destination": "https://plausible.lotuslabs.co.uk/api/event"
         }
     ],
     "headers": [
