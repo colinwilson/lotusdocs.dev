@@ -21,7 +21,7 @@ GitHub provides free and fast static hosting over SSL for personal, organization
 
 ## Procedure
 
-Use the following steps to get your Lotus Docs site up and running on GitHub Pages.
+Use the following steps to get your Lotus Docs themed site up and running on GitHub Pages.
 
 1. Create a new repo on GitHub e.g. `https://github.com/colinwilson/colinwilson.github.io`
 

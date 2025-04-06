@@ -11,7 +11,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains two jobs called "deploy-production" and "docsearch-scrape"
+  # This workflow contains two jobs called "deploy-production" and "docsearch-crawl"
   deploy-production:
     # The environment this job references
     environment:
@@ -78,32 +78,30 @@ jobs:
           vercel-args: "--prod --local-config ../vercel.json" #Optional
           working-directory: public
 
-  # docsearch-scrape:
+  docsearch-crawl:
+    # The environment this job references
+    environment: Production
 
-  #     # The type of runner that the job will run on
-  #     runs-on: ubuntu-20.04
-  #     needs: [deploy-production]
-  #     # Run job only if there are changes to 'content/docs/**' or 'docsearch-prod.json'
-  #     if: |
-  #       needs.deploy-production.outputs.docs == 'true' ||
-  #       needs.deploy-production.outputs.docsearch_config == 'true'
+    # The type of runner that the job will run on
+    runs-on: ubuntu-20.04
+    needs: [deploy-production]
+    # Run job only if there are changes to 'content/docs/**'
+    if: |
+      needs.deploy-production.outputs.docs == 'true'
 
-  #     steps:
-  #       # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
-  #       - name: Checkout
-  #         uses: actions/checkout@v3
+    steps:
+      # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
+      - name: Checkout
+        uses: actions/checkout@v3
 
-  #       # Step 2 - Format and output DocSearch config
-  #       - name: Output formatted docsearch-*.json as config
-  #         id: docsearch-config
-  #         # run: echo "::set-output name=config::$(cat docsearch-preview.json | jq -r tostring)"
-  #         run: echo "config=$(cat docsearch-prod.json | jq -r tostring)" >> $GITHUB_OUTPUT
-
-  #       # Step 3 - Update DocSearch Index only if content files were changed
-  #       - name: Algolia DocSearch Crawl & Index
-  #         id: docsearch-scrape
-  #         uses: adapttive/algolia-docsearch-action@1.1.1
-  #         env:
-  #           APPLICATION_ID: ${{ secrets.DOCSEARCH_APP_ID_PROD }}
-  #           API_KEY: ${{ secrets.DOCSEARCH_WRITE_API_KEY_PROD }}
-  #           CONFIG: ${{ steps.docsearch-config.outputs.config }}
+      # Step 2 -  Perform DocSearch crawl and reindex of the site contents
+      - name: Algolia crawl and reindex
+        uses: algolia/algoliasearch-crawler-github-actions@v1.1.13
+        id: docsearch-crawl
+        with:
+          crawler-user-id: ${{ secrets.CRAWLER_USER_ID }}
+          crawler-name: 'lotusdev'
+          crawler-api-key: ${{ secrets.CRAWLER_API_KEY }}
+          algolia-app-id: ${{ secrets.ALGOLIA_APP_ID }}
+          algolia-api-key: ${{ secrets.ALGOLIA_API_KEY }}
+          site-url: 'https://lotusdocs.dev/'

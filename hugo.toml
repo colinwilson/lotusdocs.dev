@@ -57,7 +57,8 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
 
     [params.social]
         github = "colinwilson/lotusdocs" # github.com/YOUR_GITHUB_ID
-        twitter = "lotusdocs"            # twitter.com/YOUR_TWITTER_ID
+        # twitter = "lotusdocs"            # twitter.com/YOUR_TWITTER_ID
+        # bluesky = "colinwilson.uk"       # bsky.app/profile/YOUR_BLUESKY_ID
         # instagram = "colinwilson"      # instagram.com/YOUR_INSTAGRAM_ID
         # rss = true                     # show rss icon with link
 

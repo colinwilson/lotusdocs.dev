@@ -47,6 +47,7 @@ Social links are displayed as icons in the top left corner of the Lotus Docs the
 | Parameter | Type | Default Value | Description |
 |---------|-----|-----|------|
 | `github` | string | N/A | Enables the GitHub social icon link using the GitHub URL value set here e.g. `colinwilson` or `colinwilson/lotusdocs` |
+| `bluesky` | string | N/A | Enables the Bluesky social icon link using the username value set here e.g. `lotusdocs.bsky.social` |
 | `twitter` | string | N/A | Enables the Twitter / X social icon link using the username value set here e.g. `lotusdocs` |
 | `instagram` | string | N/A | Enables the Instagram social icon link using the username value set here e.g. `lotusdocs` |
 | `rss` | boolean | `false` | Display an RSS icon link? |

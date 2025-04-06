@@ -11,7 +11,7 @@ draft: false
 images: []
 ---
 
-The Lotus Docs feedback plugin integrates with Google or Plausible Analytics to allow you to collect visitor feedback on your sites' content.
+The Lotus Docs feedback plugin integrates with Google or Plausible Analytics allowing you to collect visitor feedback on your sites' content.
 
 ![Lotus Docs Emoticon Feedback Widget Screenshot](https://res.cloudinary.com/lotuslabs/image/upload/r_20,c_scale,w_800/v1692841008/Lotus%20Docs/images/lotusdocs_emoticon_feedback_widget_screenshot_rd_v2_mmoxca.webp)
 {.text-center}

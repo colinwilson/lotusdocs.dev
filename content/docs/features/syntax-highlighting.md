@@ -13,9 +13,9 @@ images: []
 
 ## Code Highlighters
 
-Lotus Docs supports syntax highlighting by [Prism](https://prismjs.com/) (enabled by default via `param.docs.prism` in `hugo.toml`) or Hugo's built-in code highlighter [Chroma](https://github.com/alecthomas/chroma).
+Lotus Docs supports syntax highlighting using [Prism](https://prismjs.com/) (enabled by default via `param.docs.prism` in `hugo.toml`) or Hugo's built-in code highlighter [Chroma](https://github.com/alecthomas/chroma).
 
-Fenced code blocks (code enclosed by triple backticks above and below) that specify a code language (declared right of the opening fence), will automatically highlight the code content as HTML e.g. ` ```html `:
+Fenced code blocks (code enclosed between triple backticks above and below) that specify a code language (declared right of the opening fence), will automatically highlight the code content as HTML e.g. ` ```html `:
 
 ````md
 ```html

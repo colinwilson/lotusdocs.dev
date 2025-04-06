@@ -59,9 +59,9 @@ jobs:
         run: hugo --logLevel info -D -e staging
         env:
           # HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.ALGOLIA_INDEX_NAME }}
-          HUGO_PARAMS_DOCSEARCH_appID: ${{ vars.DOCSEARCH_APPID }}
-          HUGO_PARAMS_DOCSEARCH_apiKey: ${{ vars.DOCSEARCH_APIKEY }}
-          HUGO_PARAMS_DOCSEARCH_indexName: ${{ vars.DOCSEARCH_INDEXNAME }}
+          HUGO_PARAMS_DOCSEARCH_appID: ${{ secrets.DOCSEARCH_APP_ID }}
+          HUGO_PARAMS_DOCSEARCH_apiKey: ${{ secrets.DOCSEARCH_PUBLIC_API_KEY }}
+          HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.DOCSEARCH_INDEXNAME }}
           HUGO_PARAMS_PLAUSIBLE_dataDomain: ${{ secrets.PLAUSIBLE_DOMAIN }}
           HUGO_GOOGLEANALYTICS: ${{ vars.HUGO_GOOGLEANALYTICS }}
 
@@ -82,6 +82,8 @@ jobs:
             lotusdocs-staging.vercel.app
 
   docsearch-scrape:
+    # The environment this job references
+    environment: Preview
 
     # The type of runner that the job will run on
     runs-on: ubuntu-20.04
@@ -107,6 +109,6 @@ jobs:
         id: docsearch-scrape
         uses: adapttive/algolia-docsearch-action@1.1.1
         env:
-          APPLICATION_ID: ${{ secrets.DOCSEARCH_APP_ID_PREVIEW }}
-          API_KEY: ${{ secrets.DOCSEARCH_WRITE_API_KEY_PREVIEW }}
+          APPLICATION_ID: ${{ secrets.DOCSEARCH_APP_ID }}
+          API_KEY: ${{ secrets.DOCSEARCH_WRITE_API_KEY }}
           CONFIG: ${{ steps.docsearch-config.outputs.config }}
