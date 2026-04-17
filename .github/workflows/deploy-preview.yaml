@@ -62,12 +62,14 @@ jobs:
           HUGO_PARAMS_DOCSEARCH_appID: ${{ secrets.DOCSEARCH_APP_ID }}
           HUGO_PARAMS_DOCSEARCH_apiKey: ${{ secrets.DOCSEARCH_PUBLIC_API_KEY }}
           HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.DOCSEARCH_INDEXNAME }}
-          HUGO_PARAMS_PLAUSIBLE_dataDomain: ${{ secrets.PLAUSIBLE_DOMAIN }}
+          # HUGO_PARAMS_PLAUSIBLE_dataDomain: ${{ secrets.PLAUSIBLE_DOMAIN }}
+          # HUGO_PARAMS_PLAUSIBLE_scriptURL: ${{ vars.PLAUSIBLE_SCRIPT_PATH}}
+          HUGO_PARAMS_PLAUSIBLE_scriptPath: ${{ vars.PLAUSIBLE_SCRIPT_PATH}}
           HUGO_GOOGLEANALYTICS: ${{ vars.HUGO_GOOGLEANALYTICS }}
 
       # Step 5 - Push our generated site to Vercel
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
+        uses: amondnet/vercel-action@v42.2.0
         id: vercel-action
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
@@ -76,7 +78,7 @@ jobs:
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }} #Required
           github-comment: false
           #vercel-args: '--prod' #Optional
-          vercel-args: "--local-config ../vercel.json" #Optional
+          vercel-args: "--local-config ../vercel.development.json" #Optional
           working-directory: public
           alias-domains: | #Optional
             lotusdocs-staging.vercel.app
