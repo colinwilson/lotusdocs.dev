@@ -122,12 +122,12 @@ enableGitInfo = true # N.B. .GitInfo does not currently function with submodule 
         indexName = "dev_lotusdocs.dev"               # Index Name to perform search on (or set env variable HUGO_PARAM_DOCSEARCH_indexName)
 
     [params.plausible] # Parameters for Plausible Analytics
-        dataDomain = "lotusdocs.dev" # (or set via env variable HUGO_PARAMS_PLAUSIBLE_dataDomain)
-        scriptURL  = "/docs/s/js/e2f15511-354c-4165-83dc-4261fb95389d"       # (or set via env variable HUGO_PARAMS_PLAUSIBLE_scriptURL)
+        # dataDomain = "lotusdocs.dev" # (or set via env variable HUGO_PARAMS_PLAUSIBLE_dataDomain)
+        # scriptURL  = "/docs/s/js/e2f15511-354c-4165-83dc-4261fb95389d"       # (or set via env variable HUGO_PARAMS_PLAUSIBLE_scriptURL)
         # src        = "https://plausible.lotuslabs.co.uk/js/pa-o2IXj18GiC1kn1tlnOePK.js" # (or set via env variable HUGO_PARAMS_PLAUSIBLE_src)
-        # scriptPath = "/docs/s/js/e2f15511-354c-4165-83dc-4261fb95389d"       # (or set via env variable HUGO_PARAMS_PLAUSIBLE_scriptPath)
+        scriptPath = "/docs/s/js/e2f15511-354c-4165-83dc-4261fb95389d.js"       # (or set via env variable HUGO_PARAMS_PLAUSIBLE_scriptPath)
         eventAPI   = "/docs/s/api/event/"       # optional - (or set via env variable HUGO_PARAMS_PLAUSIBLE_eventAPI)
-        # hashBasedRouting = true # optional (default: false) - (or set via env variable HUGO_PARAMS_PLAUSIBLE_hashBasedRouting)
+        hashBasedRouting = true # optional (default: false) - (or set via env variable HUGO_PARAMS_PLAUSIBLE_hashBasedRouting)
         # captureOnLocalhost = true # optional (default: false) - (or set via env variable HUGO_PARAMS_PLAUSIBLE_captureOnLocalhost)
 
     [params.feedback]

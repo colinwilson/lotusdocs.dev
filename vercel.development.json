@@ -1,7 +1,7 @@
 {
     "rewrites": [
         {
-            "source": "/docs/s/js/e2f15511-354c-4165-83dc-4261fb95389d",
+            "source": "/docs/s/js/e2f15511-354c-4165-83dc-4261fb95389d.js",
             "destination": "https://plausible.lotuslabs.co.uk/js/pa-o2IXj18GiC1kn1tlnOePK.js"
         },
         {
@@ -10,15 +10,6 @@
         }
     ],
     "headers": [
-        {
-            "source": "/docs/s/js/:path*",
-            "headers": [
-                {
-                    "key": "content-type",
-                    "value": "text/javascript"
-                }
-            ]
-        },
         {
             "source": "/(.*)",
             "headers": [
