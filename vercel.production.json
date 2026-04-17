@@ -1,12 +1,12 @@
 {
     "rewrites": [
         {
-            "source": "/docs/s/js/f9316415-19d8-4d15-9e7f-904bdf66089a",
+            "source": "/docs/s/js/f9316415-19d8-4d15-9e7f-904bdf66089a.js",
             "destination": "https://plausible.lotuslabs.co.uk/js/pa-22fIThl4TixhBNKZ0Lmzg.js"
         },
         {
-          "source": "/docs/s/api/event/",
-          "destination": "https://plausible.lotuslabs.co.uk/api/event"
+            "source": "/docs/s/api/event/",
+            "destination": "https://plausible.lotuslabs.co.uk/api/event"
         }
     ],
     "headers": [
