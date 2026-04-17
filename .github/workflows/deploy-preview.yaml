@@ -68,7 +68,7 @@ jobs:
 
       # Step 5 - Push our generated site to Vercel
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v42
+        uses: amondnet/vercel-action@v42.2.0
         id: vercel-action
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
