@@ -5,11 +5,20 @@
             "destination": "https://plausible.lotuslabs.co.uk/js/pa-o2IXj18GiC1kn1tlnOePK.js"
         },
         {
-          "source": "/docs/s/api/event/",
-          "destination": "https://plausible.lotuslabs.co.uk/api/event"
+            "source": "/docs/s/api/event/",
+            "destination": "https://plausible.lotuslabs.co.uk/api/event"
         }
     ],
     "headers": [
+        {
+            "source": "/docs/s/js/:path*",
+            "headers": [
+                {
+                    "key": "content-type",
+                    "value": "text/javascript"
+                }
+            ]
+        },
         {
             "source": "/(.*)",
             "headers": [
