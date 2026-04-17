@@ -64,6 +64,7 @@ jobs:
           HUGO_PARAMS_DOCSEARCH_apiKey: ${{ vars.DOCSEARCH_APIKEY }}
           HUGO_PARAMS_DOCSEARCH_indexName: ${{ vars.DOCSEARCH_INDEXNAME }}
           HUGO_PARAMS_PLAUSIBLE_dataDomain: ${{ secrets.PLAUSIBLE_DOMAIN }}
+          HUGO_PARAMS_PLAUSIBLE_scriptPath: ${{ vars.PLAUSIBLE_SCRIPT_PATH}}
 
       # Step 5 - Push our generated site to Vercel
       - name: Deploy to Vercel
@@ -75,7 +76,7 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }} #Required
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }} #Required
           github-comment: false
-          vercel-args: "--prod --local-config ../vercel.json" #Optional
+          vercel-args: "--prod --local-config ../vercel.production.json" #Optional
           working-directory: public
 
   docsearch-crawl:

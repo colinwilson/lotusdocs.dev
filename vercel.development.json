@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/docs/s/js/script.outbound-links.js",
-            "destination": "https://plausible.lotuslabs.co.uk/js/script.outbound-links.js"
+            "source": "/docs/s/js/e2f15511-354c-4165-83dc-4261fb95389d",
+            "destination": "https://plausible.lotuslabs.co.uk/js/pa-o2IXj18GiC1kn1tlnOePK.js"
         },
         {
           "source": "/docs/s/api/event/",
