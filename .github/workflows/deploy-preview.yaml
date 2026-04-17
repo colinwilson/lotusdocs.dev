@@ -63,7 +63,7 @@ jobs:
           HUGO_PARAMS_DOCSEARCH_apiKey: ${{ secrets.DOCSEARCH_PUBLIC_API_KEY }}
           HUGO_PARAMS_DOCSEARCH_indexName: ${{ secrets.DOCSEARCH_INDEXNAME }}
           HUGO_PARAMS_PLAUSIBLE_dataDomain: ${{ secrets.PLAUSIBLE_DOMAIN }}
-          HUGO_PARAMS_PLAUSIBLE_scriptPath: ${{ vars.PLAUSIBLE_SCRIPT_PATH}}
+          # HUGO_PARAMS_PLAUSIBLE_scriptPath: ${{ vars.PLAUSIBLE_SCRIPT_PATH}}
           HUGO_PARAMS_PLAUSIBLE_scriptURL: ${{ vars.PLAUSIBLE_SCRIPT_PATH}}
           HUGO_GOOGLEANALYTICS: ${{ vars.HUGO_GOOGLEANALYTICS }}
 
