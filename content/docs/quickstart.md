@@ -58,6 +58,15 @@ choco install hugo --confirm
 ```
 
 {{% /tab %}}
+{{% tab tabName="Windows (Winget)" %}}
+
+Winget is Microsoft’s official free and open-source package manager for Windows. This will install the extended edition of Hugo:
+
+```shell
+winget install Hugo.Hugo.Extended
+```
+
+{{% /tab %}}
 {{% tab tabName="Windows (Scoop)" %}}
 
 If you use the package manager [Scoop](https://scoop.sh/), run the `scoop install` command in your terminal to install Hugo:
